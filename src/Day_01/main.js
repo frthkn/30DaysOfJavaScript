@@ -97,6 +97,3 @@ country =turkey
 // console.log("You are "+yourAge+" "+"years old" )
 
 
-
-
-
