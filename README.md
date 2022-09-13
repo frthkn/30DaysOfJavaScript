@@ -27,4 +27,8 @@ I am thankful to Asabeneh S. Yetayeh , and also if you wanna, you can visit his 
 
 ## The Sources
 
+- [@Asabeneh](https://www.github.com/octokatherine)
+- https://stackoverflow.com
+- https://javascript.info
+- https://www.w3schools.com/js/default.asp
 
