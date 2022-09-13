@@ -208,8 +208,8 @@
 
 // let numOfSalary = sentence3.match(/\d+/g)
 // let sumOfSalary = 0
-// for (let index = 0; index < numOfSalary.length; index++) {
-//      sumOfSalary += parseInt(numOfSalary[index]);
+// for (let index = 0; i < numOfSalary.length; i++) {
+//      sumOfSalary += parseInt(numOfSalary[i]);
 // }
 
 // console.log(sumOfSalary)
