@@ -21,9 +21,10 @@ Day 2-	Data Types
 
 ## Authors
 
-I am thankful to Asabeneh S. Yetayeh , and also if you wanna, you can visit his github profile click here 
+I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
 
 - [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+- [@tayfunerbilen ](https://github.com/tayfunerbilen)
 
 ## The Sources
 
