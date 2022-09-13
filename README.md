@@ -23,11 +23,11 @@ Day 2-	Data Types
 
 I am thankful to Asabeneh S. Yetayeh , and also if you wanna, you can visit his github profile click here 
 
-- [@Asabeneh](https://www.github.com/octokatherine)
+- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 ## The Sources
 
-- [@Asabeneh](https://www.github.com/octokatherine)
+- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - https://stackoverflow.com
 - https://javascript.info
 - https://www.w3schools.com/js/default.asp
