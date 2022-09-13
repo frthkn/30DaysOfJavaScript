@@ -204,6 +204,7 @@
 
 let sentence3 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let numOfSalary = sentence3.match(/\d+/g)
+console.log(numOfSalary)
 let sumOfSalary = 0
 for (let i = 0; i < numOfSalary.length; i++) {
       sumOfSalary += parseInt(numOfSalary[i]);
