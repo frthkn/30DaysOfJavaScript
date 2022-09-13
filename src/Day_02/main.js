@@ -202,14 +202,14 @@
 
 // 4- Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 
-let sentence3 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
-let numOfSalary = sentence3.match(/\d+/g)
-console.log(numOfSalary)
-let sumOfSalary = 0
-for (let i = 0; i < numOfSalary.length; i++) {
-      sumOfSalary += parseInt(numOfSalary[i]);
-}
+// let sentence3 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+// let numOfSalary = sentence3.match(/\d+/g)
+// console.log(numOfSalary)
+// let sumOfSalary = 0
+// for (let i = 0; i < numOfSalary.length; i++) {
+//       sumOfSalary += parseInt(numOfSalary[i]);
+// }
 
-console.log(sumOfSalary)
+// console.log(sumOfSalary)
 
 
