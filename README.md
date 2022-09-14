@@ -15,7 +15,7 @@ If you want to learn it with me, don't hesiteiate and join me.
 ## What I will learn
 ### The topics
 
-Day 1-	Introduction
+Day 1-	Introduction to JavaScript and learn some begining stuff
 
 Day 2-	Data Types
 
