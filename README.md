@@ -24,11 +24,25 @@ Day 2-	Data Types
 ## Authors
 
 I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
+<<<<<<< HEAD
 
 - [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - [@tayfunerbilen ](https://github.com/tayfunerbilen)
 
 ## The Sources
+=======
+
+- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+- [@tayfunerbilen ](https://github.com/tayfunerbilen)
+
+## The Sources
+
+- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+- https://stackoverflow.com
+- https://javascript.info
+- https://www.w3schools.com/js/default.asp
+- https://www.javascript.com/
+>>>>>>> 319b12543a09d6382db250ed3d8d65af06e6c5ee
 
 - [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - https://stackoverflow.com
