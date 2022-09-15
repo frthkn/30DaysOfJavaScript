@@ -17,11 +17,13 @@ If you want to learn it with me, don't hesiteiate and join me.
 
 Day 1-	Introduction to JavaScript and learn some beginning stuff
 
-Day 2-	Data Types
+Day 2-	Data Types Exircises
+
+Day 3- Booleans, Operators and Date Exircises
 
 
 
-## Authors
+## Thanks
 
 I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
 
@@ -32,13 +34,11 @@ I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
 
 ## The Sources
 
-- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+- https://github.com/Asabeneh/30-Days-Of-JavaScript
 - https://stackoverflow.com
 - https://javascript.info
 - https://www.w3schools.com/js/default.asp
 - https://www.javascript.com/
-- [@Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript)
-- https://stackoverflow.com
-- https://javascript.info
-- https://www.w3schools.com/js/default.asp
-- https://www.javascript.com/
+- https://www.geeksforgeeks.org/
+
+
