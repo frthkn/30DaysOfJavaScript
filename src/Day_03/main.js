@@ -226,7 +226,7 @@ let times = new Date()
 // 5- Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
 // let y,x
- y = '2*x-2'
+//  y = '2*x-2'
 // let getX = y.includes('x')
 // getX == true
 // ? console.log('This is slope: ' + y[0]): console.log('The slope is 0')
@@ -249,6 +249,9 @@ let times = new Date()
 // console.log('This is compare slope of two question: ' +compare) 
 
 // 8- Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
+//let y = 'x2+6x+9'
+
 
 
 // 9- Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
