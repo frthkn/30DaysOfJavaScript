@@ -233,14 +233,14 @@ let times = new Date()
 
 // 6- Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
-let m, x1, x2, y1,y2
-y1 = 2
-y2 = 10
-x1 = 2
-x2 = 6
-m = (y2-y1)/(x2-x1)
+// let m, x1, x2, y1,y2
+// y1 = 2
+// y2 = 10
+// x1 = 2
+// x2 = 6
+// m = (y2-y1)/(x2-x1)
 
-console.log('This is slope: '+m)
+// console.log('This is slope: '+m)
 
 
 // 7- Compare the slope of above two questions.
