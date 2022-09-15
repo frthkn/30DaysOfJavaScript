@@ -21,7 +21,7 @@ Day 2-	Data Types
 
 
 
-## Authors
+## Thanks
 
 I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
 
