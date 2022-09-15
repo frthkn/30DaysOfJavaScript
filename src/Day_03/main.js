@@ -224,6 +224,13 @@ let times = new Date()
 // alert('The circumference of a circle is: ' + calcCircumferenceOfCircle)
 
 // 5- Calculate the slope, x-intercept and y-intercept of y = 2x -2
+let y,x
+y = '2*x-2'
+let getX = y.includes('x')
+getX == true
+? console.log('This is slope: ' + y[0]): console.log('The slope is 0')
+
+
 
 
 
