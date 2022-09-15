@@ -17,7 +17,9 @@ If you want to learn it with me, don't hesiteiate and join me.
 
 Day 1-	Introduction to JavaScript and learn some beginning stuff
 
-Day 2-	Data Types
+Day 2-	Data Types Exircises
+
+Day 3- Booleans, Operators and Date Exircises
 
 
 
