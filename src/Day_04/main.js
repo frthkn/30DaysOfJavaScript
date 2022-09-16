@@ -174,5 +174,20 @@
 // alert(month)
 // console.log(month)
 
+// function daysInMonth (month, year) {
+//     return new Date(year, month, 0).getDate();
+// }
+
+
+// function getDate(year, month) {
+//     return new Date(year, month, 0).getDate()
+// }
+//  console.log(getDate(10, 2021))
+
+
+
+
+
+
 
 
