@@ -174,23 +174,21 @@
 // alert(month)
 // console.log(month)
 
-let getInput = prompt('Enter a month', ' month name').toString()
+// let getInput = prompt('Enter a month', ' month name')
 
-let months = ["January","February","March","April","May","June","July",
-"August","September","October","November","December"]
+// let months = ["January","February","March","April","May","June","July",
+// "August","September","October","November","December"]
 
-let getNames = months.forEach((item, index, arr) =>{
-    if(getInput == item ) {
-        console.log('The '+getInput+' has '+daysInMonth(index+1,2022)+' days')
-    }
+// let getNames = months.forEach((item, index, arr) =>{
+//     if(getInput == item ) {
+//         console.log('The '+getInput+' has '+daysInMonth(index,2022)+' days')
+//     }
     
-})
+// })
 
-function daysInMonth (month,year) {
-    return new Date(month,year,0).getDate();
-}
-
-
+// function daysInMonth (month,year) {
+//     return new Date(month,year,0).getDate();
+// }
 
 
 
