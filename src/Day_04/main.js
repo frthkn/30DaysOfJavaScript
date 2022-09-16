@@ -186,9 +186,6 @@ let getNames = months.forEach((item, index, arr) =>{
     
 })
 
-
-
-
 function daysInMonth (month,year) {
     return new Date(month,year,0).getDate();
 }
