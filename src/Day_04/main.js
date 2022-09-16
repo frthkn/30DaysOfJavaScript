@@ -174,15 +174,27 @@
 // alert(month)
 // console.log(month)
 
-// function daysInMonth (month, year) {
-//     return new Date(year, month, 0).getDate();
-// }
+let getInput = prompt('Enter a month', ' month name').toString()
+
+let months = ["January","February","March","April","May","June","July",
+"August","September","October","November","December"]
+
+let getNames = months.forEach((item, index, arr) =>{
+    if(getInput == item ) {
+        console.log('The '+getInput+' has '+daysInMonth(index+1,2022)+' days')
+    }
+    
+})
 
 
-// function getDate(year, month) {
-//     return new Date(year, month, 0).getDate()
-// }
-//  console.log(getDate(10, 2021))
+
+
+function daysInMonth (month,year) {
+    return new Date(month,year,0).getDate();
+}
+
+
+
 
 
 
