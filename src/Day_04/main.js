@@ -168,9 +168,10 @@
 //   Enter a month: FEbruary
 //   February has 28 days.
 
-let getMonthDay = prompt('Enter a month: ', 'Month')
+let getMonthDay = prompt('Enter a month: ', 'Month name')
 let date = new Date()
 let month = date.getMonth()+1
+alert(month)
 console.log(month)
 
 
