@@ -186,10 +186,11 @@
     
 // })
 
-// function daysInMonth (month,year) {
-//     return new Date(month,year,0).getDate();
-// }
+const getDaysInMonth = (month) => {
+    return new Date(0, month, 0).getDate();
+};
 
+console.log(getDaysInMonth(2))
 
 
 
