@@ -168,21 +168,17 @@
 //   Enter a month: FEbruary
 //   February has 28 days.
 
-
-
 // const getDaysInMonth = (month) => {
-//     return new Date(0, month, 0).getDate();
-// };
+//     return new Date(0, month, 0).getDate()
+// }
 
 // let getInput = prompt('Enter a month', ' month name')
-
-
 
 // let months = ["January","February","March","April","May","June","July",
 // "August","September","October","November","December"]
 
 // let getNames = months.forEach((item, index, arr) =>{
-//     if(checkInput == item ) {
+//     if(getInput == item ) {
 //         console.log('The '+getInput+' has '+getDaysInMonth(index+1)+' days')
 //     }
     
