@@ -168,25 +168,43 @@
 //   Enter a month: FEbruary
 //   February has 28 days.
 
-const getDaysInMonth = (month) => {
-    return new Date(0, month, 0).getDate()
+// const getDaysInMonth = (month) => {
+//     return new Date(0, month, 0).getDate()
+// }
+
+// let getInput = prompt('Enter a month', ' month name').toString()
+// let regLetter = getInput.slice(0,1).toUpperCase()+getInput.slice(1,).toLowerCase()
+
+// let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+// let result = months.forEach(myFunc)
+// function myFunc(item,index) {
+//     if(regLetter == item){
+//         console.log(item + " has " + getDaysInMonth(index+1) + " days" )
+//     }
+// }
+
+// console.log(result)
+
+
+// 2- Write a program which tells the number of days in a month, now consider leap year.
+
+const getDaysInMonth = (month,year) => {
+    return new Date(year, month, 0).getDate()
 }
 
 let getInput = prompt('Enter a month', ' month name').toString()
+let getYear = prompt("Select year","Like this 2022")
 let regLetter = getInput.slice(0,1).toUpperCase()+getInput.slice(1,).toLowerCase()
 
 let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 let result = months.forEach(myFunc)
 function myFunc(item,index) {
     if(regLetter == item){
-        console.log(item + " has " + getDaysInMonth(index+1) + " days" )
+        console.log(item + " has " + getDaysInMonth(index+1,getYear) + " days in "+ getYear )
     }
 }
 
 console.log(result)
-
-
-
 
 
 
