@@ -21,6 +21,8 @@ Day 2-	Data Types Exircises
 
 Day 3- Booleans, Operators and Date Exircises
 
+Day 4- Conditionals Exircises
+
 
 
 ## Thanks
