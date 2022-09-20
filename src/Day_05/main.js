@@ -265,5 +265,35 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 // 1.3- Find the average age(all items divided by number of items)
 
-// Find the range of the ages(max minus min)
-// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+// let sum = 0
+// for (let number of ages){
+//     sum += number
+
+// }
+// console.log('The average is: '+sum/ages.length)
+
+// 1.4- Find the range of the ages(max minus min)
+
+// let min = Math.min( ...ages)
+// let max = Math.max( ...ages)
+// let range = max-min
+// console.log('The range is: '+ range)
+
+// 1.5 Compare the value of (min - average) and (max - average), use abs() method
+
+// let sum = 0
+// for (let number of ages){
+//     sum += number
+
+// }
+// let average = sum/ages.length
+// let min = Math.min( ...ages)
+// let max = Math.max( ...ages)
+// let minAverage = Math.abs(min-average)
+// let maxAverage = Math.abs(max-average)
+
+// console.log('The compare value min average '+minAverage+' and maz average '+maxAverage)
+
+// 2- Slice the first ten countries from the countries array
+
+
