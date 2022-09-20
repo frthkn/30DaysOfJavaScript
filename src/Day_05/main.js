@@ -143,6 +143,12 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 
 // 21- Remove the middle IT company or companies from the array
 
+let findMiddle = Math.floor(itCompanies.length/2)
+let removeMiddleElement1 = itCompanies.slice(0,3)
+let removeMiddleElement2 = itCompanies.slice(4,)
+let removeMiddleElement = removeMiddleElement1.concat(removeMiddleElement2)
+console.log(removeMiddleElement)
+
 // Remove the last IT company from the array
 // Remove all IT companies
 
