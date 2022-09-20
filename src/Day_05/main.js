@@ -300,3 +300,25 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 // console.log(firstTen)
 
 
+
+// 3- Find the middle country(ies) in the countries array
+
+// let findMiddle = Math.floor(countries.length/2)
+// if ((findMiddle%2)==0){
+//     console.log(countries[findMiddle])
+// }else{
+//     console.log(countries[findMiddle])
+// }
+
+
+// 4- Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+
+let findMiddle = Math.floor(countries.length/2)
+if ((findMiddle%2)==0){
+    console.log(countries[findMiddle])
+}else{
+    console.log(countries[findMiddle])
+}
+
+
+
