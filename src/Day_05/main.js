@@ -175,4 +175,66 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 // console.log(text)
 // console.log('The text has '+text.length+' item')
 
+// 3- In the following shopping cart add, remove, edit items
+
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+
+// 3.1- add 'Meat' in the beginning of your shopping cart if it has not been already added
+
+// shoppingCart.unshift('Meat')
+// console.log(shoppingCart)
+
+// 3.2- add Sugar at the end of you shopping cart if it has not been already added
+
+// shoppingCart.push('Sugar')
+// console.log(shoppingCart)
+
+// 3.3- remove 'Honey' if you are allergic to honey
+
+// shoppingCart.pop()
+// console.log(shoppingCart)
+
+// 3.4- modify Tea to 'Green Tea'
+
+// shoppingCart[2]= 'Green Tea'
+// console.log(shoppingCart)
+
+
+
+// 4- In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+
+// let index = countries.indexOf('Ethiopia')
+// let check = countries.includes('Ethiopia')
+// if (check == 1){
+//     let change = countries[index].toUpperCase()
+//     console.log(change)
+// }else {
+//     console.log(countries.push(Ethiopia))
+
+// }
+
+// 5- In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+
+// let check = webTechs.includes('Sass')
+// if (check == 1){
+//     console.log('Sass is a CSS preprocess')
+// }else {
+//     webTechs.push('Sass')
+//     console.log('There is not Sass into the webTechs, that is why, it added to list.')
+//     console.log(webTechs)
+
+// }
+
+
+// 6- Concatenate the following two variables and store it in a fullStack variable.
+
+// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+// const backEnd = ['Node','Express', 'MongoDB']
+
+// let fullStack = frontEnd.concat(backEnd)
+
+// console.log(fullStack)
+
+
 
