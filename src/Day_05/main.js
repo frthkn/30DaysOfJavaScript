@@ -104,7 +104,11 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 //     }
 // }
 
-// Sort the array using sort() method
+// 15- Sort the array using sort() method
+
+// let shortArr = itCompanies.sort()
+// console.log(shortArr)
+
 // Reverse the array using reverse() method
 // Slice out the first 3 companies from the array
 // Slice out the last 3 companies from the array
