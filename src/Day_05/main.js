@@ -313,12 +313,17 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 // 4- Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
 
-let findMiddle = Math.floor(countries.length/2)
-if ((findMiddle%2)==0){
-    console.log(countries[findMiddle])
-}else{
-    console.log(countries[findMiddle])
-}
+// let findMiddle = Math.floor(countries.length/2)
+// if ((findMiddle%2)==0){
+//     let divideTwoArr1 = countries.slice(0,findMiddle)
+//     let divideTwoArr2 = countries.slice(findMiddle,)
+//     console.log(divideTwoArr1)
+//     console.log(divideTwoArr2)
+// }else{
+//     countries.push('Turkey')
+//     console.log(countries.slice(0,countries.length/2))
+//     console.log(countries.slice(countries.length/2,))
+// }
 
 
 
