@@ -238,3 +238,6 @@ const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
 
 
+// Exercise: Level 3
+
+// 1- The following is an array of 10 students ages:
