@@ -171,7 +171,8 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 
 // 2- First remove all the punctuations and change the string to array and count the number of words in the array
 
-
-let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'.replace(/ /g,',')
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'.match(/\w+/g,'$&,')
+// console.log(text)
+// console.log('The text has '+text.length+' item')
 
 
