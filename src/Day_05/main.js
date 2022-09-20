@@ -255,7 +255,15 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 // 1.2- Find the median age(one middle item or two middle items divided by two)
 
+// let findMedian = Math.floor(ages.length/2)
+// if ((findMedian/2)!=0){
+//     console.log((ages[findMedian]+ages[findMedian-1])/2)
 
-// Find the average age(all items divided by number of items)
+// }else{
+//     console.log(ages[findMedian]/2)
+// }
+
+// 1.3- Find the average age(all items divided by number of items)
+
 // Find the range of the ages(max minus min)
 // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
