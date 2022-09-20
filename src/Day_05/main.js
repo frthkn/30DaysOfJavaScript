@@ -95,7 +95,14 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 
 // 14- Filter out companies which have more than one 'o' without the filter method
 
-let result = itCompanies.forEach()
+// let re = /o?o{2,2}|o.o/gi
+// for(var i = 0; i < itCompanies.length; i++)
+// {
+//     if(itCompanies[i].match(re))
+//     {
+//         console.log(itCompanies[i])
+//     }
+// }
 
 // Sort the array using sort() method
 // Reverse the array using reverse() method
