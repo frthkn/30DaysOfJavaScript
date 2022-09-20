@@ -23,6 +23,8 @@ Day 3- Booleans, Operators and Date Exircises
 
 Day 4- Conditionals Exircises
 
+Day 5- Array Exircises
+
 
 
 ## Thanks
