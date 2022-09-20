@@ -1,5 +1,9 @@
 // Day 5 
 
+import {countries} from './countries.js'
+import {webtechs} from './web_techs.js'
+console.log(countries)
+console.log(webtechs)
 // Exercise: Level 1
 
 // 1- Declare an empty array
@@ -143,17 +147,24 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 
 // 21- Remove the middle IT company or companies from the array
 
-let findMiddle = Math.floor(itCompanies.length/2)
-let removeMiddleElement1 = itCompanies.slice(0,3)
-let removeMiddleElement2 = itCompanies.slice(4,)
-let removeMiddleElement = removeMiddleElement1.concat(removeMiddleElement2)
-console.log(removeMiddleElement)
+// let findMiddle = Math.floor(itCompanies.length/2)
+// let removeMiddleElement1 = itCompanies.slice(0,3)
+// let removeMiddleElement2 = itCompanies.slice(4,)
+// let removeMiddleElement = removeMiddleElement1.concat(removeMiddleElement2)
+// console.log(removeMiddleElement)
 
-// Remove the last IT company from the array
-// Remove all IT companies
+// 22- Remove the last IT company from the array
+
+// let removeLastElement = itCompanies.slice(0,itCompanies.length-1)
+// console.log(removeLastElement)
+
+// 23- Remove all IT companies
+
+// let removeAll = itCompanies.splice(0,)
+// console.log(itCompanies)
 
 // Exercise: Level 2
 
-// Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+// 1- Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
 
 // First remove all the punctuations and change the string to array and count the number of words in the array
