@@ -109,12 +109,40 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 // let shortArr = itCompanies.sort()
 // console.log(shortArr)
 
-// Reverse the array using reverse() method
-// Slice out the first 3 companies from the array
-// Slice out the last 3 companies from the array
-// Slice out the middle IT company or companies from the array
-// Remove the first IT company from the array
-// Remove the middle IT company or companies from the array
+// 16- Reverse the array using reverse() method
+
+// let reverseArr = itCompanies.reverse()
+// console.log(reverseArr)
+
+// 17- Slice out the first 3 companies from the array
+
+// let sliceArr = itCompanies.slice(0,3)
+// console.log(sliceArr)
+
+// 18- Slice out the last 3 companies from the array
+
+// let sliceLastArr = itCompanies.slice(itCompanies.length-3)
+// console.log(sliceLastArr)
+
+// 19- Slice out the middle IT company or companies from the array
+
+// let findMiddle = Math.floor(itCompanies.length/2)
+// let sliceMiddleArr = itCompanies.slice(findMiddle,findMiddle+1)
+// console.log(sliceMiddleArr)
+
+// 20- Remove the first IT company from the array
+// Way 1
+
+// let removeFirstElement = itCompanies.shift()
+// console.log(itCompanies)
+
+// Way 2
+
+//  let removeFirstElement = itCompanies.slice(1,)
+//  console.log(removeFirstElement)
+
+// 21- Remove the middle IT company or companies from the array
+
 // Remove the last IT company from the array
 // Remove all IT companies
 
