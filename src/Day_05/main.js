@@ -237,7 +237,25 @@ const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 // console.log(fullStack)
 
 
-
 // Exercise: Level 3
 
 // 1- The following is an array of 10 students ages:
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+
+// 1.1- Sort the array and find the min and max age
+
+// ages.sort()
+// console.log(ages)
+// let min = Math.min( ...ages)
+// let max = Math.max( ...ages)
+// console.log('The min age is: '+min)
+// console.log('The max age is: '+max)
+
+// 1.2- Find the median age(one middle item or two middle items divided by two)
+
+
+// Find the average age(all items divided by number of items)
+// Find the range of the ages(max minus min)
+// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
