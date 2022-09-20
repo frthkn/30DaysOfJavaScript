@@ -296,4 +296,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 // 2- Slice the first ten countries from the countries array
 
+// let firstTen = countries.slice(0,10)
+// console.log(firstTen)
+
 
