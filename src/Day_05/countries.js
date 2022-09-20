@@ -1,4 +1,4 @@
-const countries = [
+export const countries = [
     'Albania',
     'Bolivia',
     'Canada',
@@ -12,4 +12,4 @@ const countries = [
     'Kenya'
   ]
   
- export default countries
+  

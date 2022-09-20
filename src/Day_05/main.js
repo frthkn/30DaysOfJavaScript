@@ -1,9 +1,10 @@
 // Day 5 
 
 import {countries} from './countries.js'
-import {webtechs} from './web_techs.js'
+import {webTechs} from './web_techs.js'
 console.log(countries)
-console.log(webtechs)
+console.log(webTechs)
+
 // Exercise: Level 1
 
 // 1- Declare an empty array
