@@ -29,11 +29,42 @@
 // } while (i<11);
 
 
-// Iterate 10 to 0 using for loop, do the same using while and do while loop
+// 2- Iterate 10 to 0 using for loop, do the same using while and do while loop
 
-// Iterate 0 to n using for loop
+// For loop
 
-// Write a loop that makes the following pattern using console.log():
+// for(let i = 10;i >=0;i--){
+//     console.log('This is for loop: '+i)
+// }
+
+// While loop
+
+// let i = 10
+// while(i>=0){
+//     console.log('This is while: '+i)
+//     i--
+// }
+
+// Do While Loop
+
+// let i = 10
+
+// do {
+    
+//     console.log('This is Dowhile: '+i)
+//     i--
+// } while (i>=0);
+
+
+// 3- Iterate 0 to n using for loop
+
+// let n = 8
+
+// for (let i=0; i<=n; i++){
+//     console.log(i)
+// }
+
+// 4- Write a loop that makes the following pattern using console.log():
 
 //     #
 //     ##
@@ -43,7 +74,17 @@
 //     ######
 //     #######
 
-// Use loop to print the following pattern:
+// let x;
+// for(let i = 1; i<9; i++){
+//     for(let j = 1; j<i; j++){
+//         x =x+('#')
+//     }
+//     console.log(x)
+//     x ='';
+
+// }
+
+// 5- Use loop to print the following pattern:
 
 // 0 x 0 = 0
 // 1 x 1 = 1
@@ -57,7 +98,11 @@
 // 9 x 9 = 81
 // 10 x 10 = 100
 
-// Using loop print the following pattern
+// for(let i =0; i <11; i++){
+//     console.log(i + ' x ' + i + ' = ' + i*i)
+// }
+
+// 6- Using loop print the following pattern
 
 //  i    i^2   i^3
 //  0    0     0
@@ -72,11 +117,48 @@
 //  9    81    729
 //  10   100   1000
 
-// Use for loop to iterate from 0 to 100 and print only even numbers
+// console.table('i ' +  ' i^2 ' +  'i^3')
+// for(let i =0; i <11; i++){
+    
+//     console.log(i + '  ' + i*i + '  ' + i*i*i)
+// }
 
-// Use for loop to iterate from 0 to 100 and print only odd numbers
+// 7- Use for loop to iterate from 0 to 100 and print only even numbers
 
-// Use for loop to iterate from 0 to 100 and print only prime numbers
+// for(let i =0; i <101; i++){
+//     if ((i%2) == 0){
+//         console.log(i)
+//         continue
+//     }
+
+// }
+
+// 8- Use for loop to iterate from 0 to 100 and print only odd numbers
+
+// for(let i =0; i <100; i++){
+//     if ((i%2) != 0){
+//         console.log(i)
+//         continue
+//     }
+
+// }
+
+
+// 9- Use for loop to iterate from 0 to 100 and print only prime numbers
+
+// let prime
+// for(let i =2; i <101; i++){
+//     prime = 1
+//     for(let j = 2; j<=i/2; j++){
+//         if(i%j == 0){
+//             prime =0
+//             break
+//         }
+//     }
+//     if(prime ==1){
+//         console.log(i)
+//     }
+// }
 
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 
