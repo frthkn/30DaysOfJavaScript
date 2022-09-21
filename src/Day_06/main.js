@@ -172,32 +172,59 @@
 
 // 11- Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
-let sumEvens = 0
-let sumOdds = 0
-for(let i =0; i <100; i++){
-    if ((i%2) != 0){
-        sumEvens += i
-        continue
-    }
+// let sumEvens = 0
+// let sumOdds = 0
+// for(let i =0; i <100; i++){
+//     if ((i%2) != 0){
+//         sumEvens += i
+//         continue
+//     }
 
+// }
+
+// for(let i =0; i <101; i++){
+//     if ((i%2) == 0){
+//         sumOdds += i
+//         continue
+//     }
+
+// }
+
+// console.log('The sum of all evens from 0 to 100 is: ' + sumEvens+ '. And the sum of all odds from 0 to 100 is: ' +sumOdds)
+
+
+// 12- Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+
+// let sumEvens = 0
+// let sumOdds = 0
+// for(let i =0; i <100; i++){
+//     if ((i%2) != 0){
+//         sumEvens += i
+//         continue
+//     }
+
+// }
+
+// for(let i =0; i <101; i++){
+//     if ((i%2) == 0){
+//         sumOdds += i
+//         continue
+//     }
+
+// }
+// let arr =[]
+// arr.push(sumEvens, sumOdds)
+// console.log(arr)
+
+// 13- Develop a small script which generate array of 5 random numbers
+
+let arr = []
+for(let i= 0; i<6;i++){
+    let a = Math.floor(Math.random()*100)
+    arr.push(a)
+    
 }
-
-for(let i =0; i <101; i++){
-    if ((i%2) == 0){
-        sumOdds += i
-        continue
-    }
-
-}
-
-console.log('The sum of all evens from 0 to 100 is: ' + sumEvens+ '. And the sum of all odds from 0 to 100 is: ' +sumOdds)
-// The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
-
-// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
-
-//   [2550, 2500]
-
-// Develop a small script which generate array of 5 random numbers
+console.log(arr)
 
 // Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
