@@ -218,62 +218,75 @@
 
 // 13- Develop a small script which generate array of 5 random numbers
 
-let arr = []
-for(let i= 0; i<6;i++){
-    let a = Math.floor(Math.random()*100)
-    arr.push(a)
+// let arr = []
+// for(let i= 0; i<6;i++){
+//     let a = Math.floor(Math.random()*100)
+//     arr.push(a)
     
-}
-console.log(arr)
+// }
+// console.log(arr)
 
-// Develop a small script which generate array of 5 random numbers and the numbers must be unique
+// 14- Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
-// Develop a small script which generate a six characters random id:
+// let arr = []
+// for(let i= 0; i<6;i++){
+//     let a = Math.floor(Math.random()*Date.now())
+//     arr.push(a)
+    
+// }
+// console.log(arr)
 
-// 5j2khz
+// 15- Develop a small script which generate a six characters random id:
+
+// let id = (new Date()).getTime().toString(26).slice(3)
+// console.log(id)
 
 // Exercises: Level 2
 
-// Develop a small script which generate any number of characters random id:
+// 1- Develop a small script which generate any number of characters random id:
 
-//   fe3jo1gl124g
+// let id = (Math.random()*Date.now()*100000).toString(16)
+// console.log(id)
 
-//   xkqci4utda1lmbelpkm03rba
+//2- Write a script which generates a random hexadecimal number.
 
-// Write a script which generates a random hexadecimal number.
+// let id = Math.floor(Math.random()*Date.now())
+// let hex = '#'+id.toString(36).slice(2)
+// console.log(hex)
 
-// '#ee33df'
+// 3- Write a script which generates a random rgb color number.
 
-// Write a script which generates a random rgb color number.
+// let num1 = Math.floor(Math.random()*256)
+// let num2 = Math.floor(Math.random()*256)
+// let num3 = Math.floor(Math.random()*256)
+// let rgbNum = 'rgb('+num1 +',' + num2 +','+num3+')'
 
-// rgb(240,180,80)
+// console.log(rgbNum)
 
-// Using the above countries array, create the following new array.
+// 4- Using the above countries array, create the following new array.
 
-// ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+ let countries = ['Albania','Bolivia','Canada','Denmark','Ethiopia','Finland','Germany','Hungary','Ireland','Japan','Kenya']
+// let text = countries.toString().toUpperCase()
+// let re = /\w+/g
+// console.log(text.match(re,'&$,'))
 
-// Using the above countries array, create an array for countries length'.
+// 5- Using the above countries array, create an array for countries length'.
 
-// [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
+// let count = []
+// for(let i = 0; i < countries.length; i++){
+//     count.push(countries[i].length)   
+//   }
+// console.log(count)
 
-// Use the countries array to create the following array of arrays:
+// 6- Use the countries array to create the following array of arrays:
 
-//   [
-//   ['Albania', 'ALB', 7],
-//   ['Bolivia', 'BOL', 7],
-//   ['Canada', 'CAN', 6],
-//   ['Denmark', 'DEN', 7],
-//   ['Ethiopia', 'ETH', 8],
-//   ['Finland', 'FIN', 7],
-//   ['Germany', 'GER', 7],
-//   ['Hungary', 'HUN', 7],
-//   ['Ireland', 'IRE', 7],
-//   ['Iceland', 'ICE', 7],
-//   ['Japan', 'JAP', 5],
-//   ['Kenya', 'KEN', 5]
-// ]
+// let newArr = []
+// for(let i = 0; i < countries.length; i++){
+//     newArr.push([[countries[i],countries[i].slice(0,3).toUpperCase(),countries[i].length]])   
+// }
+// console.log(newArr)
 
-// In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+// 7-In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 
 // ['Finland','Ireland', 'Iceland']
 
@@ -318,7 +331,7 @@ console.log(arr)
 
 // Exercises: Level 3
 
-// Copy countries array(Avoid mutation)
+// 1- Copy countries array(Avoid mutation)
 // Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 // Sort the webTechs array and mernStack array
 // Extract all the countries contain the word 'land' from the countries array and print it as array
