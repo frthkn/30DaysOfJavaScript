@@ -25,6 +25,8 @@ Day 4- Conditionals Exircises
 
 Day 5- Array Exircises
 
+Day 6- Loop Exircises
+
 
 
 ## Thanks
