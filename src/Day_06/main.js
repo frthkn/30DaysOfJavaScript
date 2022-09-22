@@ -346,26 +346,24 @@ let mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 // 15- This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
 
-let fruits = ['banana', 'orange', 'mango', 'lemon']
-let newFruitsArr = []
-for(let i =fruits.length-1; i>=0; i--){
-    newFruitsArr.push(fruits[i])
-}
-console.log(newFruitsArr)
-// Print all the elements of array as shown below.
+// let fruits = ['banana', 'orange', 'mango', 'lemon']
+// let newFruitsArr = []
+// for(let i =fruits.length-1; i>=0; i--){
+//     newFruitsArr.push(fruits[i])
+// }
+// console.log(newFruitsArr)
 
-//   const fullStack = [
+// 16- Print all the elements of array as shown below.
+
+// const fullStack = [
 //     ['HTML', 'CSS', 'JS', 'React'],
 //     ['Node', 'Express', 'MongoDB']
 //   ]
 
-//   HTML
-//   CSS
-//   JS
-//   REACT
-//   NODE
-//   EXPRESS
-//   MONGODB
+// let text1 = fullStack[0].toString()
+// let text2 = fullStack[1].toString()
+// let text3 = (text1+','+text2).toUpperCase()
+// console.log(text3.replace(/,/gi,'\n'))
 
 // Exercises: Level 3
 
