@@ -1,5 +1,9 @@
 // Exercises:Day 6
 
+let countries = ['Albania','Bolivia','Canada','Denmark','Ethiopia','Finland','Germany','Hungary','Ireland','Japan','Kenya']
+let webTechs = ['HTML','CSS','JavaScript','React','Redux','Node','MongoDB']
+let mernStack = ['MongoDB', 'Express', 'React', 'Node']
+
 // Exercises: Level 1
 
 // 1-Iterate 0 to 10 using for loop, do the same using while and do while loop
@@ -265,7 +269,6 @@
 
 // 4- Using the above countries array, create the following new array.
 
- let countries = ['Albania','Bolivia','Canada','Denmark','Ethiopia','Finland','Germany','Hungary','Ireland','Japan','Kenya']
 // let text = countries.toString().toUpperCase()
 // let re = /\w+/g
 // console.log(text.match(re,'&$,'))
@@ -292,7 +295,6 @@
 // console.log(arr)
 
 
-
 // 8-In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
 
 // let arr = countries.filter(item => item.includes('ia') == 1)
@@ -301,18 +303,28 @@
 
 // 9- Using the above countries array, find the country containing the biggest number of characters.
 
-// Ethiopia
+// let longest = countries.reduce((a,b) => a.length> b.length ? a:b, '')
+// console.log(longest)
 
 // 10- Using the above countries array, find the country containing only 5 characters.
 
 // let arr = countries.filter(item => item.length == 5)
 // console.log(arr)
 
-// Find the longest word in the webTechs array
+// 11- Find the longest word in the webTechs array
 
-// Use the webTechs array to create the following array of arrays:
+// let longest = webTechs.reduce((a,b) => a.length> b.length ? a:b, '')
+// console.log(longest)
 
-// [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+
+// 12- Use the webTechs array to create the following array of arrays:
+
+// let count = []
+
+// for(let i = 0; i < webTechs.length; i++){
+//     count.push([webTechs[i],webTechs[i].length])  
+//   }
+// console.log(count)
 
 // An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
 
