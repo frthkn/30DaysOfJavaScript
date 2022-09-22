@@ -338,8 +338,20 @@ let mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 // 14- Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
 
-// This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+// let arr = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+// for(let newArr of arr){
+//     console.log(newArr)
+// }
 
+
+// 15- This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+
+let fruits = ['banana', 'orange', 'mango', 'lemon']
+let newFruitsArr = []
+for(let i =fruits.length-1; i>=0; i--){
+    newFruitsArr.push(fruits[i])
+}
+console.log(newFruitsArr)
 // Print all the elements of array as shown below.
 
 //   const fullStack = [
