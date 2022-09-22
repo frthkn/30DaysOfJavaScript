@@ -305,8 +305,8 @@
 
 // 10- Using the above countries array, find the country containing only 5 characters.
 
-let arr = countries.filter(item => item.length == 5)
-console.log(arr)
+// let arr = countries.filter(item => item.length == 5)
+// console.log(arr)
 
 // Find the longest word in the webTechs array
 
