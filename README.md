@@ -1,12 +1,13 @@
-# 30DaysOfJS
+# 30DaysOfJavaScript
 
-30 Days Of JavaScript: Introduction
+## 30 Days Of JavaScript: Introduction
+
+This repo has solutions for 30 Days of JavaScript challenge exercises. Hopefully it benefits your business. Please star and support me
 
 I deciding to participate in 30 days of JavaScript programming challenge. I will try to solve all of exercises in this challenge. 
 
-In this challenge I hope, I would learn everything I need to be a JavaScript programmer, and in general, the whole concept of programming. 
-
-If you want to learn it with me, don't hesiteiate and join me.
+In this challenge I hope, I would learn everything I need to being a JavaScript programmer.  
+If you want to learn it with me, don't hesitate and join me, happy coding :)
 
 
 
