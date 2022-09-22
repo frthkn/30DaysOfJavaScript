@@ -295,10 +295,9 @@
 
 // 8-In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
 
-// let getElement = countries.toString()
-// let words= getElement.match(/.....ia|......ia/gi)
-// console.log(getElement);
-// console.log(words)
+// let arr = countries.filter(item => item.includes('ia') == 1)
+// console.log(arr)
+
 
 // Using the above countries array, find the country containing the biggest number of characters.
 
