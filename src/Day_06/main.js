@@ -326,9 +326,17 @@ let mernStack = ['MongoDB', 'Express', 'React', 'Node']
 //   }
 // console.log(count)
 
-// An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+// 13- An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+//console.log(mernStack[0][0])
 
-// Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+// let arr = ''
+// for(let i = 0; i <mernStack.length; i++){
+//     arr +=mernStack[i][0]
+// }
+// let text = `An application created using MongoDB, Express, React and Node is called a ${arr} stack app.`
+// console.log(text)
+
+// 14- Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
 
 // This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
 
