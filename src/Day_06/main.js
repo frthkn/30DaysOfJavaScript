@@ -299,13 +299,14 @@
 // console.log(arr)
 
 
-// Using the above countries array, find the country containing the biggest number of characters.
+// 9- Using the above countries array, find the country containing the biggest number of characters.
 
 // Ethiopia
 
-// Using the above countries array, find the country containing only 5 characters.
+// 10- Using the above countries array, find the country containing only 5 characters.
 
-// ['Japan', 'Kenya']
+let arr = countries.filter(item => item.length == 5)
+console.log(arr)
 
 // Find the longest word in the webTechs array
 
