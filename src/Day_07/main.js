@@ -4,11 +4,34 @@
 
 // 1- Declare a function fullName and it print out your full name.
 
-// Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+// function fullName(){
+//     return 'Hakan FIRAT'
+// }
+// console.log(fullName())
 
-// Declare a function addNumbers and it takes two two parameters and it returns sum.
+// 2- Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
 
-// An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
+// function fullName(firstName, lastName){
+//     return firstName +' '+ lastName
+// }
+// console.log(fullName('Hakan','FIRAT'))
+
+// 3- Declare a function addNumbers and it takes two two parameters and it returns sum.
+
+// function addNumbers(a,b){
+//     return a+b
+// }
+
+// console.log(addNumbers(5,10))
+
+// 4- An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
+
+function perimeterOfRectangle(length,width){
+    let area = length*width
+    return area
+}
+
+console.log(perimeterOfRectangle(10,8))
 
 // A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
 
