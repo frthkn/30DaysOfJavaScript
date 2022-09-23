@@ -214,10 +214,20 @@
 
 // 3- Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
-// Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+// function printArray(...arr){
+//     return arr
+// }
 
-// showDateTime()
-// 08/01/2020 04:08
+// console.log(printArray(1,'a'))
+
+// 4- Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+
+// function showDateTime(){
+//     let d = new Date()
+//     let c = `${d.getDate()}/0${d.getMonth()+1}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`
+//     return c
+// }
+// console.log(showDateTime())
 
 // Declare a function name swapValues. This function swaps value of x to y.
 
