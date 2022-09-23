@@ -229,21 +229,40 @@
 // }
 // console.log(showDateTime())
 
-// Declare a function name swapValues. This function swaps value of x to y.
+// 5- Declare a function name swapValues. This function swaps value of x to y.
 
-// swapValues(3, 4) // x => 4, y=>3
-// swapValues(4, 5) // x = 5, y = 4
+// function swapValues(a,b){
+//     [a,b] = [b,a]
+//     return `a = ${a}, b = ${b}`
+// }
+// console.log(swapValues(10,20))
+// console.log(swapValues('string',true))
 
-// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
-// console.log(reverseArray([1, 2, 3, 4, 5]))
-// //[5, 4, 3, 2, 1]
-// console.log(reverseArray(['A', 'B', 'C']))
-// //['C', 'B', 'A']
+// 6- a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
-// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+// let reverseArray = ([1, 2, 3, 4, 5]).reduceRight(function(first,end) {
+//     first.push(end)
+//     return first
+// }, []);
 
-// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+// console.log(reverseArray)
+
+// 7- Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+
+// function capitalizeArray(){
+//     let arr = ['a','red','home']
+//     let newArr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(arr[i].toUpperCase())
+//     }
+//     return newArr
+// }
+// console.log(capitalizeArray())
+
+// 8- Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+
+
 
 // Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
 
