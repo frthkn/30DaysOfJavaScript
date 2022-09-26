@@ -399,13 +399,22 @@
 //  console.log(randomMacAddress())
  
  
-// Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+// 17- Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 
-// console.log(randomHexaNumberGenerator());
-// '#ee33df'
+// function randomHexaNumberGenerator(){
+//     let chr1 = Math.random().toString(16)
+   
+//     return `#${chr1.slice(2,8)}`
+// }
+//  console.log(randomHexaNumberGenerator())
 
-// Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+// 18- Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
 
-// console.log(userIdGenerator());
-// 41XTDbE
+// function userIdGenerator(){
+//     let chr1 = Math.random().toString(36)
+   
+//     return `${chr1.slice(2,9)}`
+// }
+//  console.log(userIdGenerator())
+
 
