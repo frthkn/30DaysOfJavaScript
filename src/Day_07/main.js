@@ -262,28 +262,118 @@
 
 // 8- Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
+// function addItem(...arg){
+//     return arg 
+// }
+
+// console.log(addItem(8,9,10,11))
+// console.log(addItem('Hakan'))
+// console.log(addItem('JS'))
+
+// 9- Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+
+// function removeItem(index){
+//     let arr = []
+//     arr.pop(index)
+//     return arr
+// }
+
+// console.log(removeItem(5,7,8,9,10))
+
+// 10- Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+
+// function sumOfNumbers(a){
+//     let sum = 0
+
+//     if (a === 0){
+//         console.log('the number has to ve great than zero(0)')
+//     }else if(a>0){
+//         for(let i=0; i<=a; i++){
+//             sum +=i
+//         }
+//     }
+//     return sum
+// }
+
+// console.log(sumOfNumbers(0)) 
+// console.log(sumOfNumbers(15))
+// console.log(sumOfNumbers(10))
+
+// 11- Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+
+// function sumOfOdds(n){
+//     let sum = 0
+//     if((n%2) == 0){
+//         let total = n/2
+//         sum =total*total 
+//     }else if((n%2) != 0){
+//         let total = (n+1)/2
+//         sum =total*total
+//     }
+//     return sum
+// }
+// console.log(sumOfOdds(9)) 
+// console.log(sumOfOdds(10)) 
 
 
-// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+// 12- Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
 
-// Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+// function sumOfEven(n){
+//     let sum = 0
+//     if((n%2) == 0){
+//         let total = (n/2)*((n/2)+1)
+//         sum =total 
+//     }else if((n%2) != 0){
+//         let total = ((n-1)/2)*(((n-1)/2)+1) 
+//         sum =total
+//     }
+//     return sum
+// }
+  
+// console.log(sumOfEven(6))
+// console.log(sumOfEven(7)) 
+ 
+// 13- Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
 
-// Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+// function evensAndOdds(n){
+//     let sumOfEven = 0
+//     let sumOfOdds = 0
+//     if((n%2) == 0){
+//         let total1 = (n/2)
+//         let total2 = (n/2)
+//         sumOfOdds = total1
+//         sumOfEven =  total2+1
+//     }else if((n%2) != 0){
+//         let total1 = (n+1)/2
+//         let total2 = (n+1)/2
+//         sumOfOdds = total1
+//         sumOfEven = total2
+//     }
+//     return `The number of odds are ${sumOfOdds} \nThe number of evens are ${sumOfEven}`
+// }
+  
+// console.log(evensAndOdds(100))
 
-// Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+// 14- Write a function which takes any number of arguments and return the sum of the arguments
 
-// Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+// function sumOfArgs(...args){
+//     let sum = 0
+//     for(let i =0; i<args.length; i++){
+//         sum += args[i]
+//     }
+//     return sum
 
-// evensAndOdds(100);
-// The number of odds are 50.
-// The number of evens are 51.
+// }
 
-// Write a function which takes any number of arguments and return the sum of the arguments
+// console.log(sumOfArgs(1,2,3))
+// console.log(sumOfArgs(1,2,3,4))
 
-// sum(1, 2, 3) // -> 6
-// sum(1, 2, 3, 4) // -> 10
+// 15- Write a function which generates a randomUserIp.
 
-// Writ a function which generates a randomUserIp.
+// function randomUserIp(){
+//     return `${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}`
+// }
+//  console.log(randomUserIp())
 
 // Write a function which generates a randomMacAddress
 
@@ -296,3 +386,4 @@
 
 // console.log(userIdGenerator());
 // 41XTDbE
+
