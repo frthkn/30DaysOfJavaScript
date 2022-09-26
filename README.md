@@ -28,6 +28,8 @@ Day 5- Array Exircises
 
 Day 6- Loop Exircises
 
+Day 7- Function Exircises
+
 
 
 ## Thanks
