@@ -375,8 +375,30 @@
 // }
 //  console.log(randomUserIp())
 
-// Write a function which generates a randomMacAddress
+// 16- Write a function which generates a randomMacAddress
 
+// function randomMacAddress(){
+    
+//     let min = 1
+//     let max = 10
+//     let chr1 = Math.random().toString(16)
+//     let num1 = Math.floor(Math.random()*(max-min)+min)
+//     let chr2 = Math.random().toString(16)
+//     let num2 = Math.floor(Math.random()*(max-min)+min)
+//     let chr3 = Math.random().toString(16)
+//     let num3 = Math.floor(Math.random()*(max-min)+min)
+//     let chr4 = Math.random().toString(16)
+//     let num4 = Math.floor(Math.random()*(max-min)+min)
+//     let chr5 = Math.random().toString(16)
+//     let num5 = Math.floor(Math.random()*(max-min)+min)
+//     let chr6 = Math.random().toString(16)
+//     let num6 = Math.floor(Math.random()*(max-min)+min)
+
+//     return `${num1}${chr1.slice(2,3)}:${num2}${chr2.slice(2,3)}:${num3}${chr3.slice(2,3)}:${num4}${chr4.slice(2,3)}:${num5}${chr5.slice(2,3)}:${num6}${chr6.slice(2,3)}`
+// }
+//  console.log(randomMacAddress())
+ 
+ 
 // Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 
 // console.log(randomHexaNumberGenerator());
