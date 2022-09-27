@@ -451,7 +451,8 @@
 
 // function arrayOfHexaColors(){
 //     let arr = []
-//     for (let i = 1; i <=5; i++) {
+//     let randomNum = Math.floor(Math.random()*10)+1
+//     for (let i = 1; i <=randomNum; i++) {
 //         let hexNum = Math.random().toString(16).slice(2,8)
 //         arr.push('#'+hexNum)
 //     }
@@ -461,20 +462,24 @@
 
 // 4- Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 
-// function arrayOfRgbColors(){
-//     let arr = []
-//     for (let i = 1; i <=5; i++) {
-//         let rgbNum1 = Math.floor(Math.random()*256)
-//         let rgbNum2 = Math.floor(Math.random()*256)
-//         let rgbNum3 = Math.floor(Math.random()*256)
-//         arr.push('rgb('+rgbNum1+','+rgbNum2+','+rgbNum3+')')
-//     }
-//     return arr
-// }
-//  console.log(arrayOfRgbColors())
+function arrayOfRgbColors(){
+    let arr = []
+    let randomNum = Math.floor(Math.random()*10)+1
+    for (let i = 1; i <=randomNum; i++) {
+        let rgbNum1 = Math.floor(Math.random()*256)
+        let rgbNum2 = Math.floor(Math.random()*256)
+        let rgbNum3 = Math.floor(Math.random()*256)
+        arr.push('rgb('+rgbNum1+','+rgbNum2+','+rgbNum3+')')
+    }
+    return arr
+}
+ console.log(arrayOfRgbColors())
+ 
 
 
-// Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+// 5- Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+
+
 
 // Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
