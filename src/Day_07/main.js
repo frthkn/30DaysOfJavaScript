@@ -479,20 +479,21 @@
 
 // 5- Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
+function convertHexaToRgb(){
+    let hexNumber = '#ffffff'
 
+}
 
 // 6- Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
-// function convertRgbToHexa(){
-//     let getHexnumber1 = 255
-//     let getHexnumber2 = 255
-//     let getHexnumber3 = 255
-//     let arr = []
-//     arr.push('#'+getHexnumber1.toString(16)+getHexnumber2.toString(16)+getHexnumber3.toString(16))
+function convertRgbToHexa(){
+    let getHexnumber1 = 255
+    let getHexnumber2 = 255
+    let getHexnumber3 = 255
     
-//     return arr
-// }
-//  console.log(convertRgbToHexa())
+    return `#${getHexnumber1.toString(16)}${getHexnumber2.toString(16)}${getHexnumber3.toString(16)}`
+}
+ console.log(convertRgbToHexa())
 
 // Write a function generateColors which can generate any number of hexa or rgb colors.
 
