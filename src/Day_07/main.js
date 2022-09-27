@@ -421,20 +421,19 @@
 
 // 1- Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
 
-// userIdGeneratedByUser()
-// 'kcsy2
-// SMFYb
-// bWmeq
-// ZXOYh
-// 2Rgxf
-// '
-// userIdGeneratedByUser()
-// '1GCSgPLMaBAVQZ26
-// YD7eFwNQKNs7qXaT
-// ycArC5yrRupyG00S
-// UbGxOFI7UXSWAyKN
-// dIV0SSUTgAdKwStr
-// '
+// function userIdGeneratedByUser(){
+//     let howManyId = prompt('','How many has to be ID')
+//     let numChr = prompt('','How many character has to be ID')
+    
+//     for (let i = 0; i < howManyId; i++) {
+//         let num = Math.floor(Math.random()*10000001).toString(36).slice(2)+Math.floor(Math.random()*1000001*100000001)+Math.floor(Math.random()*1000001*100000001)+Math.floor(Math.random()*10000001).toString(16).slice(2)+Math.floor(Math.random()*1000001*100000001)
+//         console.log(num.slice(0,numChr))    
+        
+//     }
+//     return `Generated ${howManyId} ID with ${numChr} characters`
+// }
+//  console.log(userIdGeneratedByUser())
+
 
 // 2- Write a function name rgbColorGenerator and it generates rgb colors.
 
