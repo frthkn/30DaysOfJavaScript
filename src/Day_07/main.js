@@ -500,12 +500,31 @@
 // }
 //  console.log(convertRgbToHexa())
 
-// Write a function generateColors which can generate any number of hexa or rgb colors.
+// 7- Write a function generateColors which can generate any number of hexa or rgb colors.
 
-// console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
-// console.log(generateColors('hexa', 1)) // '#b334ef'
-// console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
-// console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
+// function generateColors(string,num){
+//     let arr = []
+//     if (string == 'hexa'){
+//             let getHexnumber1 = Math.floor(Math.random()*256)
+//             let getHexnumber2 = Math.floor(Math.random()*256)
+//             let getHexnumber3 = Math.floor(Math.random()*256)
+//             for (let index = 1; index <=num; index++) {
+//                 arr.push('#'+getHexnumber1.toString(16)+getHexnumber2.toString(16)+getHexnumber3.toString(16))
+                
+//             }
+//     }else if(string == 'rgb'){
+//         for (let i = 1; i <=num; i++) {
+//             let rgbNum1 = Math.floor(Math.random()*256)
+//             let rgbNum2 = Math.floor(Math.random()*256)
+//             let rgbNum3 = Math.floor(Math.random()*256)
+//             arr.push('rgb('+rgbNum1+','+rgbNum2+','+rgbNum3+')')
+//         }
+
+//     }
+//     return arr
+// }
+// console.log(generateColors('hexa',3))
+// console.log(generateColors('rgb',2))
 
 // Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 
