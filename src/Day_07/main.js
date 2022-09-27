@@ -526,17 +526,71 @@
 // console.log(generateColors('hexa',3))
 // console.log(generateColors('rgb',2))
 
-// Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+// 8- Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 
-// Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+// function shuffleArray(arr){
+//     arr = [1,2,3,4,5].sort(() => Math.random() - 0.5)
+//     return arr
+// }
+// console.log(shuffleArray())
 
-// Call your function isEmpty, it takes a parameter and it checks if it is empty or not
 
-// Call your function sum, it takes any number of arguments and it returns the sum.
 
-// Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
+// 9- Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 
-// Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+// function factorial(n){
+//     if(n==0){
+//         return 1
+//     }
+//     return (n != 1) ? n *factorial(n - 1) : 1
+// }
+// console.log(factorial(5))
+
+// 10- Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+
+//  function isEmpty(check){
+//    if(check == ''||check == null ||check == undefined){
+//     console.log('it is empty')
+//    }else{
+//     console.log('it is not empty')
+//    }
+//    return check
+//  }
+// console.log(isEmpty())
+// console.log(isEmpty(1))
+
+// 11- Call your function sum, it takes any number of arguments and it returns the sum.
+
+// function sum(...args){
+//     let sum = 0
+    // for (let index = 0; index < args.length; index++) {
+    //     sum += args[index];
+    // }
+//     return sum
+// }
+
+// console.log(sum(74,3,7,8))
+
+// 12- Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+// function sum(...args){
+//     let sum = 0
+//     let arr = []
+//     for (let i = 0; i < args.length; i++) {
+//         if(typeof args[i]== 'number'){
+//             arr.push(args[i])
+//             sum +=arr[i]
+//         }else{
+//             console.log('the element has to be a number')
+//         }
+//     }
+//    return sum
+// }
+// console.log(sum(1,2,3,4,20))
+
+// 13- Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+
 
 // Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 
