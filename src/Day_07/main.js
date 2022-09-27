@@ -449,17 +449,18 @@
 
 // 3- Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
 
-// function arrayOfHexaColors(num){
+// function arrayOfHexaColors(){
 //     let arr = []
-//     for (let i = 1; i <=num; i++) {
+//     for (let i = 1; i <=5; i++) {
 //         let hexNum = Math.random().toString(16).slice(2,8)
 //         arr.push('#'+hexNum)
 //     }
 //     return arr
 // }
-//  console.log(arrayOfHexaColors(5))
+//  console.log(arrayOfHexaColors())
 
-// Write a function arrayOfRgbColors which return any number of RGB colors in an array.
+// 4- Write a function arrayOfRgbColors which return any number of RGB colors in an array.
+
 
 // Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
