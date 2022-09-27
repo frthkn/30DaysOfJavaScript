@@ -437,10 +437,15 @@
 
 // 2- Write a function name rgbColorGenerator and it generates rgb colors.
 
-// rgbColorGenerator()
-// rgb(125,244,255)
+// function rgbColorGenerator(){
+//     let num1, num2,num3
+//     num1 = Math.floor(Math.random()*256)
+//     num2 = Math.floor(Math.random()*256)
+//     num3 = Math.floor(Math.random()*256)
+//     return `rgb(${num1},${num2},${num3})`
+// }
 
-
+// console.log(rgbColorGenerator())
 
 // Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
 
