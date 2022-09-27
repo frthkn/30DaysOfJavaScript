@@ -462,24 +462,33 @@
 
 // 4- Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 
-function arrayOfRgbColors(){
-    let arr = []
-    let randomNum = Math.floor(Math.random()*10)+1
-    for (let i = 1; i <=randomNum; i++) {
-        let rgbNum1 = Math.floor(Math.random()*256)
-        let rgbNum2 = Math.floor(Math.random()*256)
-        let rgbNum3 = Math.floor(Math.random()*256)
-        arr.push('rgb('+rgbNum1+','+rgbNum2+','+rgbNum3+')')
-    }
-    return arr
-}
- console.log(arrayOfRgbColors())
+// function arrayOfRgbColors(){
+//     let arr = []
+//     let randomNum = Math.floor(Math.random()*10)+1
+//     for (let i = 1; i <=randomNum; i++) {
+//         let rgbNum1 = Math.floor(Math.random()*256)
+//         let rgbNum2 = Math.floor(Math.random()*256)
+//         let rgbNum3 = Math.floor(Math.random()*256)
+//         arr.push('rgb('+rgbNum1+','+rgbNum2+','+rgbNum3+')')
+//     }
+//     return arr
+// }
+//  console.log(arrayOfRgbColors())
  
 
 
 // 5- Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
-
+// function convertHexaToRgb(){
+//     let getHexnumber1 = 255
+//     let getHexnumber2 = 255
+//     let getHexnumber3 = 255
+//     let arr = []
+//     arr.push('#'+getHexnumber1.toString(16)+getHexnumber2.toString(16)+getHexnumber3.toString(16))
+    
+//     return arr
+// }
+//  console.log(convertHexaToRgb())
 
 // Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
