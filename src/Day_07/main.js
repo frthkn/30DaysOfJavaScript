@@ -447,7 +447,17 @@
 
 // console.log(rgbColorGenerator())
 
-// Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+// 3- Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+
+// function arrayOfHexaColors(num){
+//     let arr = []
+//     for (let i = 1; i <=num; i++) {
+//         let hexNum = Math.random().toString(16).slice(2,8)
+//         arr.push('#'+hexNum)
+//     }
+//     return arr
+// }
+//  console.log(arrayOfHexaColors(5))
 
 // Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 
