@@ -590,9 +590,26 @@
 
 // 13- Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
 
+// function average(...args){
+//     let average = 0
+//     let sum = 0
+//     let arr = []
+//     for (let i = 0; i < args.length; i++) {
+//         if(typeof args[i]== 'number'){
+//             arr.push(args[i])
+//             sum +=arr[i]
+//             average = (sum/args.length).toFixed(1)
+//         }else{
+//             console.log('the element has to be a number')
+//         }
+//     }
+//    return average
+// }
+// console.log(average(1,2,3,4,20,23,'a',35,45,{},[]))
+// console.log(average(1,2,3,4,20,23))
 
+// 14- Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 
-// Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 
 // console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
 
