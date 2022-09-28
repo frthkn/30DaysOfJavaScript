@@ -610,18 +610,21 @@
 
 // 14- Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 
+// const modifyArray = args => {
+//     let arr = [...new Set(args)]
+//     let check = arr.length
+//     if(check>=5){
+//         arr[4] = arr[4].toUpperCase()
+//     }else if(check<5){
+//         return 'item not found'
+//     }
 
-// console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
+//     return arr 
+// }
 
-// ['Avocado', 'Tomato', 'Potato','Mango', 'LEMON', 'Carrot']
-
-// console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']);
-
-// ['Google', 'Facebook','Apple', 'Amazon','MICROSOFT',  'IBM']
-
-// console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon']);
-
-//   'Not Found'
+// console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
+// console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon']))
+// console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']))
 
 // Write a function called isPrime, which checks if a number is prime number.
 
