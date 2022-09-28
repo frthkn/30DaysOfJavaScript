@@ -655,7 +655,20 @@
 
 // console.log(isPrime(5))
 
-// Write a functions which checks if all items are unique in the array.
+// 16- Write a functions which checks if all items are unique in the array.
+
+// function unique(...args){
+//     let arr = []
+//     arr = args
+//     for (const iterator of arr) {
+//         if(iterator == iterator){
+//             return 'items are not unique'
+//         }
+//     }
+//     return arr
+// }
+// console.log(unique(1,2,3,1,5,6,2))
+
 
 // Write a function which checks if all the items of the array are the same data type.
 
