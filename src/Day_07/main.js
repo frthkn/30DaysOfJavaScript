@@ -645,8 +645,15 @@
 // 15- Write a function called isPrime, which checks if a number is prime number.
 
 // function isPrime(n){
-//     return n
+//     let sqrt = Math.sqrt(n)
+//     if( n <= 1) return 'n can not less than 2'
+//     for (let index = 2; index <= sqrt; index++){
+//         if( n%index == 0) return `${n} is not a prime number`
+//     }
+//     return `${n} is a prime number`
 // }
+
+// console.log(isPrime(5))
 
 // Write a functions which checks if all items are unique in the array.
 
