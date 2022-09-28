@@ -670,9 +670,19 @@
 // console.log(unique(1,2,3,1,5,6,2))
 
 
-// Write a function which checks if all the items of the array are the same data type.
+// 17- Write a function which checks if all the items of the array are the same data type.
 
-// JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+// function dataType(...args){
+
+//     return new Set(args.map( item => typeof item )).size <= 1  
+// }
+
+// console.log(dataType(1,2,3))
+// console.log(dataType('a',[], true,))
+
+// 18- JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+
+
 
 // Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
