@@ -682,21 +682,21 @@
 
 // 18- JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
-function isValidVariable(){
-    let regex = '^([a-zA-Z_$][a-zA-Z\d_$]*)$'
-    let check = prompt('','Define a variable name')
-    if(check == ''|| check == 'null'){
-        return "The variable name can't be empty or null"
-    }else{
-        if(check.match(regex)) {
-            return `The '${check}' is can be a variable name`
-        }else{
-            return `The '${check}' is can not be a variable name`
-        }
-    }
+// function isValidVariable(){
+//     let regex = '^([a-zA-Z_$][a-zA-Z\d_$]*)$'
+//     let check = prompt('','Define a variable name')
+//     if(check == ''|| check == 'null'){
+//         return "The variable name can't be empty or null"
+//     }else{
+//         if(check.match(regex)) {
+//             return `The '${check}' is can be a variable name`
+//         }else{
+//             return `The '${check}' is can not be a variable name`
+//         }
+//     }
     
-}
-console.log(isValidVariable())
+// }
+// console.log(isValidVariable())
 
 // 19- Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
