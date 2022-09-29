@@ -682,11 +682,19 @@
 
 // 18- JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
+// function isValidVariable(){
+//     let check 
+// }
 
+// 19- Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
-// Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+// function sevenRandomNumbers(){
+//     let arr = [0,1,2,3,4,5,6,7,8,9].sort(() => Math.random() - 0.5)
+//     let newArr = arr.slice(0,7)
+//     return newArr   
+   
+// }
 
-// sevenRandomNumbers()
-// [(1, 4, 5, 7, 9, 8, 0)]
+// console.log(sevenRandomNumbers())
 
 // Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
