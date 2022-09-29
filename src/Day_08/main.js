@@ -1,6 +1,6 @@
 // Day 8
 
-const users = {
+let users = {
     Alex: {
       email: 'alex@alex.com',
       skills: ['HTML', 'CSS', 'JavaScript'],
@@ -91,5 +91,18 @@ const users = {
 // Exercises: Level 2
 
 // 1- Find the person who has many skills in the users object.
+
+for(let key in users){
+  let arr = [key]
+  if(users[key] instanceof Object){
+    for (const keya in users) {
+      if (users.hasOwnProperty.call(users, keya)) {
+        const element = users[keya];
+        
+      }
+    }
+  }
+ }
+ 
 
 // Count logged in users, count users having greater than equal to 50 points from the following object.
