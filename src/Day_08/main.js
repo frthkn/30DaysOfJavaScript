@@ -209,3 +209,31 @@ let users = {
 // Exercises: Level 3
 
 
+// 1- Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
+
+// const personAccount = {
+//   firstName: 'Hakan',
+//   lastName: 'FIRAT',
+//   incomes: {
+//     accountInfo: 'incomes',
+//     addIncome: 500,
+//     totalIncome: 500
+
+//   },
+//   expenses:{
+//     accountInfo :'expenses',
+//     addExpense : 300,
+//     totalExpense : 300
+    
+// },
+//   accountBalance: totalIncome-totalExpense
+// }
+
+// 2- **** Questions:2, 3 and 4 are based on the following two arrays:users and products (). Imagine you are getting the above users collection from a MongoDB database. 
+
+// 2.a - Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.
+
+// 2.b - Create a function called signIn which allows user to sign in to the application
+
+
+
