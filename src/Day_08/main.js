@@ -1,57 +1,129 @@
 // Day 8
 
-let users = {
-    Alex: {
-      email: 'alex@alex.com',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-      age: 20,
-      isLoggedIn: false,
-      points: 30
-    },
-    Asab: {
-      email: 'asab@asab.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-      age: 25,
-      isLoggedIn: false,
-      points: 50
-    },
-    Brook: {
-      email: 'daniel@daniel.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
-      age: 30,
-      isLoggedIn: true,
-      points: 50
-    },
-    Daniel: {
-      email: 'daniel@alex.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
-    },
-    John: {
-      email: 'john@john.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
-      age: 20,
-      isLoggedIn: true,
-      points: 50
-    },
-    Thomas: {
-      email: 'thomas@thomas.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
-    },
-    Paul: {
-      email: 'paul@paul.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
-    }
-  }
+// let users = {
+//     Alex: {
+//       email: 'alex@alex.com',
+//       skills: ['HTML', 'CSS', 'JavaScript'],
+//       age: 20,
+//       isLoggedIn: false,
+//       points: 30
+//     },
+//     Asab: {
+//       email: 'asab@asab.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+//       age: 25,
+//       isLoggedIn: false,
+//       points: 50
+//     },
+//     Brook: {
+//       email: 'daniel@daniel.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+//       age: 30,
+//       isLoggedIn: true,
+//       points: 50
+//     },
+//     Daniel: {
+//       email: 'daniel@alex.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+//       age: 20,
+//       isLoggedIn: false,
+//       points: 40
+//     },
+//     John: {
+//       email: 'john@john.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+//       age: 20,
+//       isLoggedIn: true,
+//       points: 50
+//     },
+//     Thomas: {
+//       email: 'thomas@thomas.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+//       age: 20,
+//       isLoggedIn: false,
+//       points: 40
+//     },
+//     Paul: {
+//       email: 'paul@paul.com',
+//       skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+//       age: 20,
+//       isLoggedIn: false,
+//       points: 40
+//     }
+//   }
   
+const users = [
+  {
+      _id: 'ab12ex',
+      username: 'Alex',
+      email: 'alex@alex.com',
+      password: '123123',
+      createdAt:'08/01/2020 9:00 AM',
+      isLoggedIn: false
+  },
+  {
+      _id: 'fg12cy',
+      username: 'Asab',
+      email: 'asab@asab.com',
+      password: '123456',
+      createdAt:'08/01/2020 9:30 AM',
+      isLoggedIn: true
+  },
+  {
+      _id: 'zwf8md',
+      username: 'Brook',
+      email: 'brook@brook.com',
+      password: '123111',
+      createdAt:'08/01/2020 9:45 AM',
+      isLoggedIn: true
+  },
+  {
+      _id: 'eefamr',
+      username: 'Martha',
+      email: 'martha@martha.com',
+      password: '123222',
+      createdAt:'08/01/2020 9:50 AM',
+      isLoggedIn: false
+  },
+  {
+      _id: 'ghderc',
+      username: 'Thomas',
+      email: 'thomas@thomas.com',
+      password: '123333',
+      createdAt:'08/01/2020 10:00 AM',
+      isLoggedIn: false
+  }
+  ];
+
+  const products = [
+{
+  _id: 'eedfcf',
+  name: 'mobile phone',
+  description: 'Huawei Honor',
+  price: 200,
+  ratings: [
+    { userId: 'fg12cy', rate: 5 },
+    { userId: 'zwf8md', rate: 4.5 }
+  ],
+  likes: []
+},
+{
+  _id: 'aegfal',
+  name: 'Laptop',
+  description: 'MacPro: System Darwin',
+  price: 2500,
+  ratings: [],
+  likes: ['fg12cy']
+},
+{
+  _id: 'hedfcg',
+  name: 'TV',
+  description: 'Smart TV:Procaster',
+  price: 400,
+  ratings: [{ userId: 'fg12cy', rate: 5 }],
+  likes: ['fg12cy']
+}
+]
 
 // Exercises: Level 1
 
@@ -233,7 +305,55 @@ let users = {
 
 // 2.a - Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.
 
+// function signUp(input){
+//   for (const key in users) {
+//     const element = users[key];
+//     if(input == element.username){
+//       return `You have already an account`
+//     }else{
+//       users[7] = {_id : Math.floor(Math.random()*(1000001*1000001)).toString(36).slice(2),
+//         username : (input).toString(),
+//         email : input+'@'+input+'.com',
+//         password : (input).toString(),
+//         createdAt : '30/09/2022',
+//         isLoggedIn : false 
+//       }
+    
+//     }
+//   }
+  
+// }
+
+// console.log(signUp('Hakan'))
+
+// console.log(Object.values(users))
+
+
 // 2.b - Create a function called signIn which allows user to sign in to the application
+
+
+// function signUp(input){
+//   for (const key in users) {
+//     const element = users[key];
+//     if(input == element.username){
+//       return `You have already an account`
+//     }else{
+//       users[7] = {_id : Math.floor(Math.random()*(1000001*1000001)).toString(36).slice(2),
+//         username : (input).toString(),
+//         email : input+'@'+input+'.com',
+//         password : (input).toString(),
+//         createdAt : '30/09/2022',
+//         isLoggedIn : false 
+//       }
+    
+//     }
+//   }
+  
+// }
+
+// console.log(signUp('Hakan'))
+
+// console.log(Object.values(users))
 
 
 
