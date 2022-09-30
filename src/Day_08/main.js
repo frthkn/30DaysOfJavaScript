@@ -147,10 +147,63 @@ let users = {
 // }
 // console.log(arr)
 
-// Set your name in the users object without modifying the original users object
+// 4- Set your name in the users object without modifying the original users object
 
-// Get all keys or properties of users object
+// users.Hakan =  {
+//   email: 'hakan@hakan.com',
+//   skills: ['HTML', 'CSS', 'JavaScript'],
+//   age: 34,
+//   isLoggedIn: false,
+//   points: 40
+// }
 
-// Get all the values of users object
+// console.log(users)
 
-// Use the countries object to print a country name, capital, populations and languages.
+// 5- Get all keys or properties of users object
+
+// Way 1
+
+// console.log(Object.keys(users))
+// 
+
+// Way 2
+
+// let keys = Object.keys(users)
+// 
+// console.log(keys)
+
+
+// 6- Get all the values of users object
+
+// Way 1
+
+// let values = Object.values(users)
+// console.log(values)
+
+// Way 2
+
+// console.log(Object.values(users))
+
+// 7- Use the countries object to print a country name, capital, populations and languages.
+
+// const countries = {
+//   Turkey: {
+//     capital: 'Ankara',
+//     population: 85,
+//     language:'Turkish'
+//   },
+//   Greece: {
+//     capital: 'Athens',
+//     population: 10,
+//     language: 'Greek'
+//   },
+//   Italy: {
+//     capital: 'Rome',
+//     population: 60,
+//     language:'Italian'
+//   }
+// }
+
+// console.log(countries)
+
+
