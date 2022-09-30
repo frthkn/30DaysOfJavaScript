@@ -130,3 +130,27 @@ let users = {
 // }
 
 // console.log(arr + ' and count: '+ arr.length)
+
+
+
+// 3- Find people who are MERN stack developer from the users object
+
+// let mern1 = 'MongoDB'
+// let mern2 = 'Express'
+// let mern3 = 'React' 
+// let mern4 = 'Node'
+// let arr = []
+// for (const property in users) {
+//   if (users[property].skills.includes(mern1)&& users[property].skills.includes(mern2) &&users[property].skills.includes(mern3)&&users[property].skills.includes(mern4)){
+//     arr.push(property)
+//   }
+// }
+// console.log(arr)
+
+// Set your name in the users object without modifying the original users object
+
+// Get all keys or properties of users object
+
+// Get all the values of users object
+
+// Use the countries object to print a country name, capital, populations and languages.
