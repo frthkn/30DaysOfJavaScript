@@ -92,17 +92,17 @@ let users = {
 
 // 1- Find the person who has many skills in the users object.
 
-for(let key in users){
-  let arr = [key]
-  if(users[key] instanceof Object){
-    for (const keya in users) {
-      if (users.hasOwnProperty.call(users, keya)) {
-        const element = users[keya];
-        
-      }
-    }
-  }
- }
- 
+// let a = Object.values(users)
+// let names = Object.keys(users)
+// let skillsNum = []
+// let result = []
+// for (let i= 0; i <a.length; i++){
+//   skillsNum.push(a[i].skills.length)
+//   result.push([names[i],skillsNum[i]])
+
+// }
+// let max = Math.max(...skillsNum)
+// let index = skillsNum.indexOf(max)
+// console.log(result[index])
 
 // Count logged in users, count users having greater than equal to 50 points from the following object.
