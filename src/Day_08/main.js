@@ -334,7 +334,7 @@ const users = [
 
 // function signUp(n,p){
 //   for(let i = 0; i < users.length; i++){
-//     if((users[i].username == n) || (users[i].password == p )) {
+//     if((users[i].username == n) && (users[i].password == p )) {
 //       return users[i]
     
 //     }else{
@@ -347,6 +347,8 @@ const users = [
 // }
 
 // console.log(signUp('Alex','123123'))
+
+
 
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
