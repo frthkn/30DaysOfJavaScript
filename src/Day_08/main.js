@@ -347,7 +347,6 @@
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
 
-
 function rateProduct(){
   let arr = []
   arr.push(products[0].ratings[0].rate)
@@ -357,9 +356,6 @@ function rateProduct(){
 }
 
 console.log(rateProduct())
-
-
-
 
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
