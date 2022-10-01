@@ -88,7 +88,7 @@ const users = [
   {
       _id: 'ghderc',
       username: 'Thomas',
-      email: 'thomas@console.log(Object.values(users))thomas.com',
+      email: 'thomas@thomas.com',
       password: '123333',
       createdAt:'08/01/2020 10:00 AM',
       isLoggedIn: false
@@ -305,28 +305,26 @@ const users = [
 
 // 2.a - Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.
 
-// function signUp(input){
-//   for (const key in users) {
-//     const element = users[key];
-//     if(input == element.username){
-//       return `You have already an account`
-//     }else{
-//       users[7] = {_id : Math.floor(Math.random()*(1000001*1000001)).toString(36).slice(2),
-//         username : (input).toString(),
-//         email : input+'@'+input+'.com',
-//         password : (input).toString(),
-//         createdAt : '30/09/2022',
-//         isLoggedIn : false 
-//       }
-    
+// const checkUser = () => {
+//   let input = prompt('','name')
+//   for (const i in users) {
+//     if(users[i].username === input) {
+//       return `You already have an account`
 //     }
 //   }
+//     users[users.length] ={_id : Math.floor(Math.random()*(1000001*1000001)).toString(36).slice(2),
+//     username : (input).toString(),
+//     email : input.toLowerCase()+'@'+input.toLowerCase()+'.com',
+//     password : (input).toString().toLowerCase(),
+//     createdAt : '30/09/2022',
+//     isLoggedIn : false
+//   }
+//   console.log(users)
+//   return `${input} added to object` 
   
 // }
 
-// console.log(signUp('Hakan'))
-
-// console.log(Object.values(users))
+// console.log(checkUser())
 
 
 // 2.b - Create a function called signIn which allows user to sign in to the application
@@ -349,10 +347,11 @@ const users = [
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
 
+
+
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
 // 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
-
 
 
 
