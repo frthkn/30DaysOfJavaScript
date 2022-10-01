@@ -52,48 +52,48 @@
 //     }
 //   }
   
-// const users = [
-//   {
-//       _id: 'ab12ex',
-//       username: 'Alex',
-//       email: 'alex@alex.com',
-//       password: '123123',
-//       createdAt:'08/01/2020 9:00 AM',
-//       isLoggedIn: false
-//   },
-//   {
-//       _id: 'fg12cy',
-//       username: 'Asab',
-//       email: 'asab@asab.com',
-//       password: '123456',
-//       createdAt:'08/01/2020 9:30 AM',
-//       isLoggedIn: true
-//   },
-//   {
-//       _id: 'zwf8md',
-//       username: 'Brook',
-//       email: 'brook@brook.com',
-//       password: '123111',
-//       createdAt:'08/01/2020 9:45 AM',
-//       isLoggedIn: true
-//   },
-//   {
-//       _id: 'eefamr',
-//       username: 'Martha',
-//       email: 'martha@martha.com',
-//       password: '123222',
-//       createdAt:'08/01/2020 9:50 AM',
-//       isLoggedIn: false
-//   },
-//   {
-//       _id: 'ghderc',
-//       username: 'Thomas',
-//       email: 'thomas@console.log(Object.values(users))thomas.com',
-//       password: '123333',
-//       createdAt:'08/01/2020 10:00 AM',
-//       isLoggedIn: false
-//   }
-//   ];
+const users = [
+  {
+      _id: 'ab12ex',
+      username: 'Alex',
+      email: 'alex@alex.com',
+      password: '123123',
+      createdAt:'08/01/2020 9:00 AM',
+      isLoggedIn: false
+  },
+  {
+      _id: 'fg12cy',
+      username: 'Asab',
+      email: 'asab@asab.com',
+      password: '123456',
+      createdAt:'08/01/2020 9:30 AM',
+      isLoggedIn: true
+  },
+  {
+      _id: 'zwf8md',
+      username: 'Brook',
+      email: 'brook@brook.com',
+      password: '123111',
+      createdAt:'08/01/2020 9:45 AM',
+      isLoggedIn: true
+  },
+  {
+      _id: 'eefamr',
+      username: 'Martha',
+      email: 'martha@martha.com',
+      password: '123222',
+      createdAt:'08/01/2020 9:50 AM',
+      isLoggedIn: false
+  },
+  {
+      _id: 'ghderc',
+      username: 'Thomas',
+      email: 'thomas@console.log(Object.values(users))thomas.com',
+      password: '123333',
+      createdAt:'08/01/2020 10:00 AM',
+      isLoggedIn: false
+  }
+  ];
 
   const products = [
 {
@@ -332,23 +332,21 @@
 // 2.b - Create a function called signIn which allows user to sign in to the application
 
 
-// function signUp(name,pass){
-//   for (const key in users) {
-//     const element = users[key];
-//     //console.log(element)
-//     if(name == element.username && pass == element.password){
-//       return `Login successful`
-//     }else{
-//       return `Username or password is wrong, try again please`
+// function signUp(n,p){
+//   for(let i = 0; i < users.length; i++){
+//     if((users[i].username == n) || (users[i].password == p )) {
+//       return users[i]
     
+//     }else{
+//         return `Try again`
+      
 //     }
+     
 //   }
-  
+
 // }
 
-// console.log(signUp('Alex', '123123'))
-
-
+// console.log(signUp('Alex','123123'))
 
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
