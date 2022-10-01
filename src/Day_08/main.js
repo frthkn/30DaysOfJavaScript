@@ -331,24 +331,20 @@ const users = [
 
 // 2.b - Create a function called signIn which allows user to sign in to the application
 
-
-// function signUp(n,p){
-//   for(let i = 0; i < users.length; i++){
-//     if((users[i].username == n) && (users[i].password == p )) {
-//       return users[i]
-    
-//     }else{
+// function signIn(){
+//   let n = prompt('','name')
+//   let p = prompt('','pass')
+//   for (const key in users) {
+//       if((users[key].username == n) && (users[key].password == p )) {
+//         return users[key]
+//       }else if(!(users[key].username == n) && (users[key].password == p )){
 //         return `Try again`
-      
-//     }
-     
+//       }
 //   }
-
+//   return `Try again`
 // }
 
-// console.log(signUp('Alex','123123'))
-
-
+// console.log(signIn())
 
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
