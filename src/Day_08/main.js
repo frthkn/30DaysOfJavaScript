@@ -348,34 +348,32 @@
 // 3.a - Create a function called rateProduct which rates the product 
 
 // function rateProduct(){
-//   let arr1 = []
-//   let arr2 = []
-//   for (let i = 0; i<products.length; i++) {
-//     for (let j = 0; j<products.length; j++){
-//       arr1.push([products[j].name, products[j].ratings])
-    
-//       }   
+//   for (const key in products) {
+//     if (Object.hasOwnProperty.call(products, key)) {
+//       const element = products[key];
+//       console.log(element.name, [element.ratings])
+//     }
 //   }
-//   arr2 = arr1.slice(0,3)
-
-//   return arr2
+//   return true
 // }
 
 // console.log(rateProduct())
 
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
-// 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+// function averageRating(){
+//   let sum,average = 0
+//   for (const key in products) {
+//     if (Object.hasOwnProperty.call(products, key)) {
+//       const element = products[key];
+//       console.log(element.name, element.ratings)
+      
+//     }
+//   }
+//   return sum, average
 
-// let arr1 = []
-// let arr2 = []
-// for (let i = 0; i<products.length; i++) {
-//   for (let j = 0; j<=i; j++){
-//     arr1.push([products[j].name, products[j].ratings])
-   
-//     }   
 // }
-// arr2 = arr1.slice(3,6)
-// console.log(arr1)
-// console.log(arr2)
+// console.log(averageRating())
+
+// 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
