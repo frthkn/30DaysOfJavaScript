@@ -347,21 +347,35 @@
 // 3- The products array has three elements and each of them has six properties. 
 // 3.a - Create a function called rateProduct which rates the product 
 
-function rateProduct(){
-  let arr = []
-  arr.push(products[0].ratings[0].rate)
-  arr.push(products[0].ratings[1].rate)
+// function rateProduct(){
+//   let arr1 = []
+//   let arr2 = []
+//   for (let i = 0; i<products.length; i++) {
+//     for (let j = 0; j<products.length; j++){
+//       arr1.push([products[j].name, products[j].ratings])
+    
+//       }   
+//   }
+//   arr2 = arr1.slice(0,3)
 
-  return arr
-}
+//   return arr2
+// }
 
-console.log(rateProduct())
+// console.log(rateProduct())
 
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
 // 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
-
-
-
+// let arr1 = []
+// let arr2 = []
+// for (let i = 0; i<products.length; i++) {
+//   for (let j = 0; j<=i; j++){
+//     arr1.push([products[j].name, products[j].ratings])
+   
+//     }   
+// }
+// arr2 = arr1.slice(3,6)
+// console.log(arr1)
+// console.log(arr2)
 
