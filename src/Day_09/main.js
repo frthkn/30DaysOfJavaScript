@@ -45,14 +45,34 @@ const callback = (n) => {
 
 // 6- Use map to create a new array by changing each country to uppercase in the countries array.
 
-// let uppercase = countries.map((country => console.log(country.toUpperCase())))
-// console.log(uppercase)
+// let uppercaseCountry = countries.map((country => console.log(country.toUpperCase())))
+// console.log(uppercaseCountry)
 
-// Use map to create an array of countries length from countries array.
-// Use map to create a new array by changing each number to square in the numbers array
-// Use map to change to each name to uppercase in the names array
-// Use map to map the products array to its corresponding prices.
-// Use filter to filter out countries containing land.
+// 7- Use map to create an array of countries length from countries array.
+
+// let create = countries.map((item => Array(item.length)))
+// console.log(create)
+
+// 8- Use map to create a new array by changing each number to square in the numbers array
+
+// let square = numbers.map((item => item*item))
+// console.log(square)
+
+// 9- Use map to change to each name to uppercase in the names array
+
+// let uppercaseName = names.map((name => console.log(name.toUpperCase())))
+// console.log(uppercaseName)
+
+// 10- Use map to map the products array to its corresponding prices.
+
+// let correspondingPrices = products.map((item) => { return `${item.product}: ${item.price}`})
+// console.log(correspondingPrices)
+
+// 11- Use filter to filter out countries containing land.
+
+// let filterLand = countries.filter((item) => item.match(/land/gi))
+// console.log(filterLand)
+
 // Use filter to filter out countries having six character.
 // Use filter to filter out countries containing six letters and more in the country array.
 // Use filter to filter out country start with 'E';
