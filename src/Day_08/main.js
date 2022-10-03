@@ -407,35 +407,3 @@ console.log(averageRating('Mobile PHone'))
 //   return 1 // Just I don't wanna get undefined
 // }
 // console.log(likeProduct())
-
-
-// ####################################################################
-
-
-// function averageRating(name){
-//   let n = name.toLowerCase()
-//   let arr = [0]
-//   let sum = 0
-//   let average = 0
-//   for (const key in products) {
-//     let element = products[key]
-//     if (n == element.name.toLowerCase()) {
-//       for (const i in element.ratings) {
-//         arr.push(element.ratings[i].rate)
-//       }
-//     }
-//    }
-//    if (arr.length ==1) {
-//     return 0
-    
-//    }else{
-//     for (const i of arr) {
-//       sum +=i
-//      }
-//      let num =  arr.length-1
-//      average = sum/num
-//    }
-   
-//    return average
-// }
-// console.log(averageRating('Mobile PHone'))
