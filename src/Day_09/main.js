@@ -90,13 +90,28 @@ const callback = (n) => {
 
 // 15- Use filter to filter out only prices with values.
 
-// let onlyPricesWithValue = products.filter((item =>  item.price))
-// let onlyPricesWithValue = products.filter((item => { return `${item.product}: ${item.price}`}))
+// let onlyPricesWithValue = products.filter((item =>  (item.price != ' ') && (item.price != '') ))
 // console.log(onlyPricesWithValue)
 
-// Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-// Use reduce to sum all the numbers in the numbers array.
-// Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+// 16- Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+// function getStringLists(...arr){
+//   return arr
+
+// }
+// console.log(getStringLists(1,2,3,4))
+// console.log(getStringLists('Hakan',2,3,4))
+// console.log(getStringLists('Hakan','Fırat','Turkey'))
+
+// 17- Use reduce to sum all the numbers in the numbers array.
+
+// let sum = numbers.reduce((i ,j) => {return i+j})
+// console.log(sum)
+
+// 18- Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
+
+
 // Explain the difference between some and every
 // Use some to check if some names' length greater than seven in names array
 // Use every to check if all the countries contain the word land
