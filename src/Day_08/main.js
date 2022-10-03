@@ -362,30 +362,33 @@
 
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
-// function averageRating(name){
-
-//   let average1,sum1,average2,sum2,average3,sum3 = 0
-//   if(name == products[0].name){
-//     if(products[0].hasOwnProperty('ratings') && products[0].ratings.length != 0){
-//      sum1 = products[0].ratings[0].rate + products[0].ratings[1].rate
-//      return average1 = sum1/products[0].ratings.length
-//     }
-//   }else if(name == products[1].name){
-//     if(products[1].hasOwnProperty('ratings') && products[1].ratings.length != 0){
-//       sum2 = products[1].ratings[0].rate
-//       return average2 = sum2/products[1].ratings.length
-//      }else{
-//       return 0
-//      }
-//   }else if(name == products[2].name){
-//     if(products[2].hasOwnProperty('ratings') && products[2].ratings.length != 0){
-//       sum3 = products[2].ratings[0].rate
-//       return average3 = sum3/products[2].ratings.length
-//     }
-//   }
-// }
-// console.log(averageRating('Laptop'))
-
+function averageRating(name){
+  let n = name.toLowerCase()
+  let arr = [0]
+  let sum = 0
+  let average = 0
+  for (const key in products) {
+    let element = products[key]
+    if (n == element.name.toLowerCase()) {
+      for (const i in element.ratings) {
+        arr.push(element.ratings[i].rate)
+      }
+    }
+   }
+   if (arr.length ==1) {
+    return 0
+    
+   }else{
+    for (const i of arr) {
+      sum +=i
+     }
+     let num =  arr.length-1
+     average = sum/num
+   }
+   
+   return average
+}
+console.log(averageRating('Mobile PHone'))
 
 // 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
@@ -405,3 +408,34 @@
 // }
 // console.log(likeProduct())
 
+
+// ####################################################################
+
+
+// function averageRating(name){
+//   let n = name.toLowerCase()
+//   let arr = [0]
+//   let sum = 0
+//   let average = 0
+//   for (const key in products) {
+//     let element = products[key]
+//     if (n == element.name.toLowerCase()) {
+//       for (const i in element.ratings) {
+//         arr.push(element.ratings[i].rate)
+//       }
+//     }
+//    }
+//    if (arr.length ==1) {
+//     return 0
+    
+//    }else{
+//     for (const i of arr) {
+//       sum +=i
+//      }
+//      let num =  arr.length-1
+//      average = sum/num
+//    }
+   
+//    return average
+// }
+// console.log(averageRating('Mobile PHone'))
