@@ -2,8 +2,8 @@
 
 // Exercises: Level 1
 
-const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand', 'Turkey']
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook', 'Hakan']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const products = [
   { product: 'banana', price: 3 },
@@ -15,12 +15,39 @@ const products = [
 ]
 
 
-// Explain the difference between forEach, map, filter, and reduce.
-// Define a callback function before you use it in forEach, map, filter or reduce.
-// Use forEach to console.log each country in the countries array.
-// Use forEach to console.log each name in the names array.
-// Use forEach to console.log each number in the numbers array.
-// Use map to create a new array by changing each country to uppercase in the countries array.
+// 1- Explain the difference between forEach, map, filter, and reduce.
+
+// forEach => this method executes a provided function once for each array element. 
+// map => this method creates a new array populated with the results of calling a provided function on every element in the calling array. 
+// filter =>  this method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+// reduce => easy way to understand this method, it is return the sum of all the elements in an array:
+
+// 2- Define a callback function before you use it in forEach, map, filter or reduce.
+
+const callback = (n) => {
+  return n*n
+}
+
+// 3- Use forEach to console.log each country in the countries array.
+
+//let country = countries.forEach((country => console.log(country)))
+//console.log(country)
+
+// 4- Use forEach to console.log each name in the names array.
+
+// let name = names.forEach((name => console.log(name)))
+// console.log(name)
+
+// 5- Use forEach to console.log each number in the numbers array.
+
+// let number = numbers.forEach((number => console.log(number)))
+// console.log(number)
+
+// 6- Use map to create a new array by changing each country to uppercase in the countries array.
+
+// let uppercase = countries.map((country => console.log(country.toUpperCase())))
+// console.log(uppercase)
+
 // Use map to create an array of countries length from countries array.
 // Use map to create a new array by changing each number to square in the numbers array
 // Use map to change to each name to uppercase in the names array
