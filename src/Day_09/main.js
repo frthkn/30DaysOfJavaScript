@@ -73,8 +73,16 @@ const callback = (n) => {
 // let filterLand = countries.filter((item) => item.match(/land/gi))
 // console.log(filterLand)
 
-// Use filter to filter out countries having six character.
-// Use filter to filter out countries containing six letters and more in the country array.
+// 12- Use filter to filter out countries having six character.
+
+// let sixCharacter = countries.filter((item) => item.length == 6)
+// console.log(sixCharacter)
+
+// 13- Use filter to filter out countries containing six letters and more in the country array.
+
+// let sixCharacterAndMore = countries.filter((item) => item.length >= 6)
+// console.log(sixCharacterAndMore)
+
 // Use filter to filter out country start with 'E';
 // Use filter to filter out only prices with values.
 // Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
