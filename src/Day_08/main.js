@@ -362,33 +362,33 @@
 
 // 3.b- Create a function called averageRating which calculate the average rating of a product
 
-function averageRating(name){
-  let n = name.toLowerCase()
-  let arr = [0]
-  let sum = 0
-  let average = 0
-  for (const key in products) {
-    let element = products[key]
-    if (n == element.name.toLowerCase()) {
-      for (const i in element.ratings) {
-        arr.push(element.ratings[i].rate)
-      }
-    }
-   }
-   if (arr.length ==1) {
-    return 0
+// function averageRating(name){
+//   let n = name.toLowerCase()
+//   let arr = [0]
+//   let sum = 0
+//   let average = 0
+//   for (const key in products) {
+//     let element = products[key]
+//     if (n == element.name.toLowerCase()) {
+//       for (const i in element.ratings) {
+//         arr.push(element.ratings[i].rate)
+//       }
+//     }
+//    }
+//    if (arr.length ==1) {
+//     return 0
     
-   }else{
-    for (const i of arr) {
-      sum +=i
-     }
-     let num =  arr.length-1
-     average = sum/num
-   }
+//    }else{
+//     for (const i of arr) {
+//       sum +=i
+//      }
+//      let num =  arr.length-1
+//      average = sum/num
+//    }
    
-   return average
-}
-console.log(averageRating('Mobile PHone'))
+//    return average
+// }
+// console.log(averageRating('Mobile PHone'))
 
 // 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
