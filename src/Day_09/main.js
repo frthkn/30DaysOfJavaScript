@@ -83,8 +83,17 @@ const callback = (n) => {
 // let sixCharacterAndMore = countries.filter((item) => item.length >= 6)
 // console.log(sixCharacterAndMore)
 
-// Use filter to filter out country start with 'E';
-// Use filter to filter out only prices with values.
+// 14- Use filter to filter out country start with 'E';
+
+// let startWithE = countries.filter((item) => item.startsWith('E',0))
+// console.log(startWithE)
+
+// 15- Use filter to filter out only prices with values.
+
+// let onlyPricesWithValue = products.filter((item =>  item.price))
+// let onlyPricesWithValue = products.filter((item => { return `${item.product}: ${item.price}`}))
+// console.log(onlyPricesWithValue)
+
 // Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 // Use reduce to sum all the numbers in the numbers array.
 // Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
