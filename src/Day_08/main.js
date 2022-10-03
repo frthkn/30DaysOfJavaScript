@@ -389,5 +389,19 @@
 
 // 4- Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
-
+// function likeProduct(){
+//   let element
+//   for (const key in products) {
+//     element = products[key];
+//     if(element.likes.length == 0){
+//       element.likes.push(Math.floor(Math.random()*(1000001*1000001)).toString(36).slice(2))
+//       console.log(element.likes)
+//     }else if(element.likes.length != 0){
+//       element.likes.pop()
+//       console.log(element.likes)
+//     }
+//   }
+//   return 1 // Just I don't wanna get undefined
+// }
+// console.log(likeProduct())
 
