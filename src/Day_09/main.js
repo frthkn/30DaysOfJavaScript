@@ -110,8 +110,10 @@ const callback = (n) => {
 
 // 18- Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
-let concatenateCountry =  countries.reduce((a,b) => a,b )
-console.log(concatenateCountry)
+// const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
+// countries.pop()
+// let concatenateCountry =  countries.reduce(() =>  (console.log('Estonia,',formatter.format(countries),' are north European countries.') ))
+// console.log(concatenateCountry)
 
 // Explain the difference between some and every
 // Use some to check if some names' length greater than seven in names array
