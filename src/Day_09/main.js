@@ -128,18 +128,51 @@ const callback = (n) => {
 
 // 19- Explain the difference between some and every
 
-// Use some to check if some names' length greater than seven in names array
-// Use every to check if all the countries contain the word land
-// Explain the difference between find and findIndex.
-// Use find to find the first country containing only six letters in the countries array
-// Use findIndex to find the position of the first country containing only six letters in the countries array
-// Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
-// Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value. 
+// The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array. 
+
+// 20- Use some to check if some names' length greater than seven in names array
+
+// let nameGreaterThanSeven = names.some((name)=> name.length>=7 ? 1:0)
+// console.log(nameGreaterThanSeven)
+
+// 21- Use every to check if all the countries contain the word land
+
+// let containLand = countries.every((word)=> word.matchAll(/land/g))
+// console.log(containLand)
+
+// 22- Explain the difference between find and findIndex.
+
+// The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned. 
+// The findIndex() method returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned. 
+
+// 23- Use find to find the first country containing only six letters in the countries array
+
+// let firstContainingOnlySixLetters = countries.find((n) => n.length==6)
+// console.log(firstContainingOnlySixLetters)
+
+// 24- Use findIndex to find the position of the first country containing only six letters in the countries array
+
+// let firstPositionContainingOnlySixLetters = countries.findIndex((n) => n.length==6)
+// console.log(firstPositionContainingOnlySixLetters)
+
+// 25- Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
+// let findPositionOfNorway = countries.findIndex((n) => n=='Norway')
+// console.log(findPositionOfNorway)
+
+
+// 26- Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+
+// let findPositionOfRussia = countries.findIndex((n) => n=='Russia')
+// console.log(findPositionOfRussia)
 
 // Exercises: Level 2
 
+// 1- Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 
-// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
+
 // Find the sum of price of products using only reduce reduce(callback))
 // Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 // Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
