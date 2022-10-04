@@ -16,23 +16,24 @@ If you want to learn it with me, don't hesitate and join me, happy coding :)
 ## What I will learn
 ### The topics
 
-Day 1-	Introduction to JavaScript and learn some beginning stuff
+Day 1- Introduction to JavaScript and learn some beginning stuff
 
-Day 2-	Data Types Exircises
+Day 2- Data Type Exercises
 
-Day 3- Booleans, Operators and Date Exircises
+Day 3- Boolean, Operator and Date Exercises
 
-Day 4- Conditionals Exircises
+Day 4- Conditional Exercises
 
-Day 5- Arrays Exircises
+Day 5- Array Exercises
 
-Day 6- Loops Exircises
+Day 6- Loop Exercises
 
-Day 7- Functions Exircises
+Day 7- Function Exercises
 
-Day 8- Objects Exircises
+Day 8- Object Exercises
 
-Day 9- Higher Order Functions
+Day 9- Higher Level Function Exercises
+
 
 ## Author
 
