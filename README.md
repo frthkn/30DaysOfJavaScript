@@ -24,13 +24,19 @@ Day 3- Booleans, Operators and Date Exircises
 
 Day 4- Conditionals Exircises
 
-Day 5- Array Exircises
+Day 5- Arrays Exircises
 
-Day 6- Loop Exircises
+Day 6- Loops Exircises
 
-Day 7- Function Exircises
+Day 7- Functions Exircises
 
+Day 8- Objects Exircises
 
+Day 9- Higher Order Functions
+
+## Author
+
+Hakan FIRAT
 
 ## Thanks
 
