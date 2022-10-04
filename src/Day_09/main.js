@@ -114,14 +114,14 @@ const callback = (n) => {
 
 // countries.unshift('Estonia')
 // const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
-// countries.pop() // Turkyes is not one of north European countries :)
+// countries.pop() // Turkey is not one of north European countries :)
 // let concatenateCountry =  countries.reduce(() =>  (console.log(formatter.format(countries),' are north European countries.') ))
 // console.log(concatenateCountry)
 
 // Way 2
 // If you don't wanna get result and undefined you use this
 
-// countries.pop() // Turkyes is not one of north European countries :)
+// countries.pop() // Turkey is not one of north European countries :)
 // countries.unshift('Estonia')
 // let concatenateCountry =  countries.reduce(() => { return `${countries.slice(0,countries.length-1)} and ${countries.slice(-1)} are north European countries.`}) 
 // console.log(concatenateCountry.replaceAll(',',', '))
