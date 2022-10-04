@@ -110,12 +110,24 @@ const callback = (n) => {
 
 // 18- Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
+// Way 1
+
+// countries.unshift('Estonia')
 // const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
-// countries.pop()
-// let concatenateCountry =  countries.reduce(() =>  (console.log('Estonia,',formatter.format(countries),' are north European countries.') ))
+// countries.pop() // Turkyes is not one of north European countries :)
+// let concatenateCountry =  countries.reduce(() =>  (console.log(formatter.format(countries),' are north European countries.') ))
 // console.log(concatenateCountry)
 
-// Explain the difference between some and every
+// Way 2
+// If you don't wanna get result and undefined you use this
+
+// countries.pop() // Turkyes is not one of north European countries :)
+// countries.unshift('Estonia')
+// let concatenateCountry =  countries.reduce(() => { return `${countries.slice(0,countries.length-1)} and ${countries.slice(-1)} are north European countries.`}) 
+// console.log(concatenateCountry.replaceAll(',',', '))
+
+// 19- Explain the difference between some and every
+
 // Use some to check if some names' length greater than seven in names array
 // Use every to check if all the countries contain the word land
 // Explain the difference between find and findIndex.
