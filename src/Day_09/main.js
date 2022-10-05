@@ -190,21 +190,35 @@ const callback = (n) => {
 
 // 3- Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
-console.log(countries)
+// let arr = [...new Set(countries)]
+// function categorizeCountries(){
+//   let obj = {}
+//   let fiveLength = arr.filter((item => item.length == 5 ))
+//   let containLand = arr.filter((item => item.includes('land')))
+//   let findEndWithA = arr.filter((item => item.endsWith('a')))
+//   obj.fiveLength = fiveLength
+//   obj.containLand = containLand
+//   obj.findEndWithA = findEndWithA
+//   console.log(obj)
+//   return true
+  
+// }
 
-function categorizeCountries(){
-  for (const i in countries) {
-    if(i.length == 7){
-      return i
-    }
-  }
+// console.log(categorizeCountries())
 
-}
+// 4- Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
-console.log(categorizeCountries)
+// let arr = [...new Set(countries)]
+// function callByWordAndNumber(){
+//   const obj = {}
+//   Object.assign(obj, arr.map((item => item.charAt(0))))
+//   return obj
+// }
+// console.log(callByWordAndNumber())
 
-// Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
-// Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+// 5- Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+
+
 // Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 // Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
