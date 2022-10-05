@@ -234,8 +234,6 @@ const callback = (n) => {
 
 // 7- Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
-
-
 // Exercises: Level 3
 
 
