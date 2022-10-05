@@ -234,6 +234,14 @@ const callback = (n) => {
 
 // 7- Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
+// function mostUseWord(letter){  
+//   return countries.filter((item => item.toLowerCase().includes(letter.toLowerCase()))) 
+// }
+// console.log(mostUseWord('ia'))
+// console.log(mostUseWord('A'))
+// console.log(mostUseWord('F'))
+
+
 // Exercises: Level 3
 
 
