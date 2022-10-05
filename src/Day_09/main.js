@@ -208,7 +208,7 @@ const callback = (n) => {
 
 // 4- Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
-// let arr = [...new Set(countries)]
+let arr = [...new Set(countries)]
 // function callByWordAndNumber(){
 //   const obj = {}
 //   Object.assign(obj, arr.map((item => item.charAt(0))))
@@ -218,6 +218,11 @@ const callback = (n) => {
 
 // 5- Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 
+// function getFirstTenCountries(){
+//   return countries.slice(0,10)
+
+// }
+// console.log(getFirstTenCountries())
 
 // Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 // Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
