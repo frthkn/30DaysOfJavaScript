@@ -2,6 +2,8 @@
 // Day 9
 
 import {countries} from './countries.js'
+import {objectOfCountries} from './data.js'
+
 
 // Exercises: Level 1
 
@@ -244,11 +246,48 @@ const callback = (n) => {
 
 // Exercises: Level 3
 
-
-
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
+const countries1 = {}
+let arrCap =  []
+let arrName = []
+let arrPop = []
+let arrLang = []
+
+for (const key in objectOfCountries) {
+  if (Object.hasOwnProperty.call(objectOfCountries, key)) {
+      const element = objectOfCountries[key];
+      arrCap.push(element.capital)
+      arrName.push(element.name)
+      arrPop.push(element.population)
+      arrLang.push(element.languages)
+      
+  }
+}
+
+countries1.name = arrName
+countries1.language = arrLang
+countries1.population =  arrPop
+countries1.capital = arrCap
+
+// function sortCountries(){
+//   let sortByname = countries1.name.sort((a,b)=> a.localeCompare(b))
+//   let sortByCap = countries1.capital.sort((a,b)=> a.localeCompare(b))
+//   let sortByLang = countries1.language.sort((a,b)=> a.localeCompare(b))
+//   let sortByPop = countries1.population.sort((a,b)=> a-b)
+//   console.table(
+//   'Name',sortByname,'\n',
+//   'Capital',sortByCap, '\n',
+//   'Language', sortByLang, '\n',
+//   'Population',sortByPop 
+//   )
+  
+// }
+// console.log(sortCountries())
+
 // 2- *** Find the 10 most spoken languages:
+
+
 
 // Your output should look like this
 
