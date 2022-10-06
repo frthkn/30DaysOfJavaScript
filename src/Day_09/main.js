@@ -2,7 +2,7 @@
 // Day 9
 
 import {countries} from './countries.js'
-import {objectOfCountries} from './data.js'
+import {dataOfCountry} from './data.js'
 
 
 // Exercises: Level 1
@@ -248,51 +248,31 @@ const callback = (n) => {
 
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
-const countries1 = {}
-let arrCap =  []
-let arrName = []
-let arrPop = []
-let arrLang = []
-
-for (const key in objectOfCountries) {
-  if (Object.hasOwnProperty.call(objectOfCountries, key)) {
-      const element = objectOfCountries[key];
-      arrCap.push(element.capital)
-      arrName.push(element.name)
-      arrPop.push(element.population)
-      arrLang.push(element.languages)
-      
-  }
-}
-
-countries1.name = arrName
-countries1.language = arrLang
-countries1.population =  arrPop
-countries1.capital = arrCap
-
-
-//console.log(languageNames.of())
-
 // function sortCountries(){
-//   let sortByname = countries1.name.sort((a,b)=> a.localeCompare(b))
-//   let sortByCap = countries1.capital.sort((a,b)=> a.localeCompare(b))
-//   let sortByLang = countries1.language.sort((a,b)=> a.localeCompare(b))
-//   let sortByPop = countries1.population.sort((a,b)=> a-b)
-//   console.table(
-//   'Name',sortByname,'\n',
-//   'Capital',sortByCap, '\n',
-//   'Language', sortByLang, '\n',
-//   'Population',sortByPop 
-//   )
+//   const names = dataOfCountry.country.sort((a,b) => a.localeCompare(b))
+//   const capital = dataOfCountry.capital.sort((a,b) => a.localeCompare(b))
+//   const language = dataOfCountry.language.sort((a,b) => a[0].localeCompare(b))
+//   const population = dataOfCountry.population.sort((a,b) => a-b)
   
+//   return {
+//     names, capital, population, language
+//   } 
 // }
 // console.log(sortCountries())
 
 // 2- *** Find the 10 most spoken languages:
 
-let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
-let findLang = arrLang.filter((item => item.match('en')))
-console.log(findLang.length)
+//let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
+//console.log(languageNames.of('AF'))
+
+
+
+function mostSpokenLanguages(){
+
+  return 0
+}
+
+console.log(mostSpokenLanguages())
 
 
 
