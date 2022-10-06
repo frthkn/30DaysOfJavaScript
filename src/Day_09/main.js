@@ -270,6 +270,9 @@ countries1.language = arrLang
 countries1.population =  arrPop
 countries1.capital = arrCap
 
+
+//console.log(languageNames.of())
+
 // function sortCountries(){
 //   let sortByname = countries1.name.sort((a,b)=> a.localeCompare(b))
 //   let sortByCap = countries1.capital.sort((a,b)=> a.localeCompare(b))
@@ -286,6 +289,10 @@ countries1.capital = arrCap
 // console.log(sortCountries())
 
 // 2- *** Find the 10 most spoken languages:
+
+let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
+let findLang = arrLang.filter((item => item.match('en')))
+console.log(findLang.length)
 
 
 
