@@ -1,5 +1,5 @@
 
-const dataOfCountryPop = [
+export const dataOfCountryPop = [
     {
         "country": "Afghanistan",
         "population": 37172386
@@ -1957,7 +1957,7 @@ const dataOfCountryCap = [
     }
 ]
 
-const dataOfCountryLang = [
+export const dataOfCountryLang = [
     {
         "country": "Aruba",
         "languages": [
@@ -4136,7 +4136,7 @@ for (const iterator of dataOfCountryCap) {
 for (const key in dataOfCountryPop,dataOfCountryCap,dataOfCountryLang) {
     dataOfCountry.country.push(dataOfCountryCap[key].country)
     dataOfCountry.capital.push(dataOfCountryCap[key].city)
-    dataOfCountry.language.push(dataOfCountryLang[key].languages)
+    dataOfCountry.language.push([dataOfCountryLang[key].languages])
     dataOfCountry.population.push(dataOfCountryPop[key].population)
 }
 

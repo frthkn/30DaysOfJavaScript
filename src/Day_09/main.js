@@ -1,8 +1,7 @@
 
 // Day 9
 
-import {countries} from './countries.js'
-import {dataOfCountry} from './data.js'
+import {dataOfCountry,dataOfCountryLang, dataOfCountryPop} from './data.js'
 
 
 // Exercises: Level 1
@@ -262,19 +261,11 @@ const callback = (n) => {
 
 // 2- *** Find the 10 most spoken languages:
 
-//let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
-//console.log(languageNames.of('AF'))
-
-
-
 function mostSpokenLanguages(){
-
   return 0
 }
 
 console.log(mostSpokenLanguages())
-
-
 
 // Your output should look like this
 
@@ -303,6 +294,12 @@ console.log(mostSpokenLanguages())
 
 // 3- *** Use countries_data.js file create a function which create the ten most populated countries
 
+function mostPopulatedCountries(){
+  const countriesPop = dataOfCountryPop.values().throw(e).sort((a,b)=> b-a)
+  
+  return countriesPop
+}
+console.log(mostPopulatedCountries())
 // console.log(mostPopulatedCountries(countries, 10))
 
 // [
