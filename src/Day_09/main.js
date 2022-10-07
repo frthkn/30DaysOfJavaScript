@@ -265,11 +265,25 @@ const callback = (n) => {
 
 // 2- *** Find the 10 most spoken languages:
 
+const newCountries = countries_data
+for (const key in newCountries) {
+	delete newCountries[key].area
+	delete newCountries[key].flag
+	delete newCountries[key].region
+	delete newCountries[key].capital
+  delete newCountries[key].population
+  delete newCountries[key].name
+}
+
 // function mostSpokenLanguages(){
-//   return 0
+//   let a = newCountries.reduce((item => item.languages,[]))
+//   return a
 // }
 
 // console.log(mostSpokenLanguages())
+
+
+
 
 // Your output should look like this
 
