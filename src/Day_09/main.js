@@ -1,6 +1,7 @@
 
 // Day 9
 
+import {countries} from './countries.js'
 import {dataOfCountry,dataOfCountryLang, dataOfCountryPop} from './data.js'
 
 
