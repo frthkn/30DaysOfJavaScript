@@ -248,26 +248,20 @@ const callback = (n) => {
 
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
+// const newCountries = countries_data
+// for (const key in newCountries) {
+// 	delete newCountries[key].area
+// 	delete newCountries[key].flag
+// 	delete newCountries[key].region
+// 	delete newCountries[key].languages
+// }
+
 // function sortCountries(){
-//   const dataName = []
-//   const dataCapital =[]
-//   const dataPopulation = []
-    
-//   for (const key in countries_data) {
-//     if (Object.hasOwnProperty.call(countries_data, key)) {
-//       dataName.push(countries_data[key].name)
-//       dataCapital.push(countries_data[key].capital)
-//       dataPopulation.push(countries_data[key].population)
-//     }
-//   }
-//   return  {
-//     'Country Name: ':dataName.sort((a,b) => a.localeCompare(b)),
-//     'Capital: ':dataCapital.sort((a,b) => a.localeCompare(b)),
-//     'Population: ':dataPopulation.sort((a,b) => a-b),
-//   }
-  
+
+//   return newCountries.sort((a,b) => a.name.localeCompare(b.name))  
 // }
 // console.log(sortCountries())
+
 
 // 2- *** Find the 10 most spoken languages:
 
