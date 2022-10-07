@@ -2,7 +2,7 @@
 // Day 9
 
 import {countries} from './countries.js'
-import {dataOfCountry,dataOfCountryLang, dataOfCountryPop} from './data.js'
+import {countries_data} from './data.js'
 
 
 // Exercises: Level 1
@@ -249,24 +249,33 @@ const callback = (n) => {
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
 // function sortCountries(){
-//   const names = dataOfCountry.country.sort((a,b) => a.localeCompare(b))
-//   const capital = dataOfCountry.capital.sort((a,b) => a.localeCompare(b))
-//   const language = dataOfCountry.language.sort((a,b) => a[0].localeCompare(b))
-//   const population = dataOfCountry.population.sort((a,b) => a-b)
+//   const dataName = []
+//   const dataCapital =[]
+//   const dataPopulation = []
+    
+//   for (const key in countries_data) {
+//     if (Object.hasOwnProperty.call(countries_data, key)) {
+//       dataName.push(countries_data[key].name)
+//       dataCapital.push(countries_data[key].capital)
+//       dataPopulation.push(countries_data[key].population)
+//     }
+//   }
+//   return  {
+//     'Country Name: ':dataName.sort((a,b) => a.localeCompare(b)),
+//     'Capital: ':dataCapital.sort((a,b) => a.localeCompare(b)),
+//     'Population: ':dataPopulation.sort((a,b) => a-b),
+//   }
   
-//   return {
-//     names, capital, population, language
-//   } 
 // }
 // console.log(sortCountries())
 
 // 2- *** Find the 10 most spoken languages:
 
-function mostSpokenLanguages(){
-  return 0
-}
+// function mostSpokenLanguages(){
+//   return 0
+// }
 
-console.log(mostSpokenLanguages())
+// console.log(mostSpokenLanguages())
 
 // Your output should look like this
 
@@ -295,12 +304,12 @@ console.log(mostSpokenLanguages())
 
 // 3- *** Use countries_data.js file create a function which create the ten most populated countries
 
-function mostPopulatedCountries(){
-  const countriesPop = dataOfCountryPop.values().throw(e).sort((a,b)=> b-a)
+// function mostPopulatedCountries(){
+//   const countriesPop = countries_data sort((a,b)=> b-a)
   
-  return countriesPop
-}
-console.log(mostPopulatedCountries())
+//   return countriesPop
+// }
+// console.log(mostPopulatedCountries())
 // console.log(mostPopulatedCountries(countries, 10))
 
 // [
