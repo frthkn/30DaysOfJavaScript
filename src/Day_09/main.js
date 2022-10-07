@@ -304,34 +304,22 @@ const callback = (n) => {
 
 // 3- *** Use countries_data.js file create a function which create the ten most populated countries
 
-// function mostPopulatedCountries(){
-//   const countriesPop = countries_data sort((a,b)=> b-a)
-  
-//   return countriesPop
+// const newCountries = countries_data
+// for (const key in newCountries) {
+// 	delete newCountries[key].area
+// 	delete newCountries[key].capital
+// 	delete newCountries[key].flag
+// 	delete newCountries[key].region
+// 	delete newCountries[key].languages
+//   }
+
+// function mostPopulatedTenCountries(newCountries,num){
+//   let sorting = newCountries.sort((a,b)=> b.population-a.population)
+//   return sorting.slice(0,num)
 // }
-// console.log(mostPopulatedCountries())
-// console.log(mostPopulatedCountries(countries, 10))
+// console.log(mostPopulatedTenCountries(newCountries,10))
+// console.log(mostPopulatedTenCountries(newCountries,3))
 
-// [
-// {country: 'China', population: 1377422166},
-// {country: 'India', population: 1295210000},
-// {country: 'United States of America', population: 323947000},
-// {country: 'Indonesia', population: 258705000},
-// {country: 'Brazil', population: 206135893},
-// {country: 'Pakistan', population: 194125062},
-// {country: 'Nigeria', population: 186988000},
-// {country: 'Bangladesh', population: 161006790},
-// {country: 'Russian Federation', population: 146599183},
-// {country: 'Japan', population: 126960000}
-// ]
-
-// console.log(mostPopulatedCountries(countries, 3))
-// [
-// {country: 'China', population: 1377422166},
-// {country: 'India', population: 1295210000},
-// {country: 'United States of America', population: 323947000}
-// ]
-// ```
 
 // 4- *** Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
 
