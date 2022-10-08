@@ -314,15 +314,15 @@ const callback = (n) => {
 // const sort = ages.sort((a,b)=> a-b)
 // statistics.Median = sort[Math.floor(sort.length/2)]
 // statistics.Mode = {}
-// const countedNames = ages.reduce((allAges, age) => {
+// const countedAges = ages.reduce((allAges, age) => {
 //   const currCount = allAges[age] ?? 0;
 //   return {
 //     ...allAges,
 //     [age]: currCount + 1,
 //   };
 // }, {});
-// const count = Object.values(countedNames)
-// const mode = Object.keys(countedNames)
+// const count = Object.values(countedAges)
+// const mode = Object.keys(countedAges)
 // statistics.Mode.mode = parseInt(mode[2])
 // statistics.Mode.count = Math.max(...count)
 // let sqrt = ages.map((item => Math.abs(item-statistics.Mean)))
