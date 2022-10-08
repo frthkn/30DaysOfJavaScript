@@ -259,29 +259,49 @@ const callback = (n) => {
 
 // 2- *** Find the 10 most spoken languages:
 
-// Your output should look like this
+for (const i in countries_data) {
+  delete countries_data[i].area
+  delete countries_data[i].capital
+  delete countries_data[i].population
+  delete countries_data[i].region
+  delete countries_data[i].name
+  
+}
 
-// console.log(mostSpokenLanguages(countries, 10))
-// [
-// {country: 'English',count:91},
-// {country: 'French',count:45},
-// {country: 'Arabic',count:25},
-// {country: 'Spanish',count:24},
-// {country:'Russian',count:9},
-// {country:'Portuguese', count:9},
-// {country:'Dutch',count:8},
-// {country:'German',count:7},
-// {country:'Chinese',count:5},
-// {country:'Swahili',count:4}
-// ]
+const sum1 = []
 
-// // Your output should look like this
-// console.log(mostSpokenLanguages(countries, 3))
-// [
-// {country: 'English',count: 91},
-// {country: 'French',count: 45},
-// {country: 'Arabic',count: 25},
-// ]```
+for (const key in countries_data) {
+  if (Object.hasOwnProperty.call(countries_data, key)) {
+    const element = countries_data[key];
+    sum1.push(element.languages)
+  }
+}
+
+const sum2 = sum1.flat()
+const countedNames = sum2.reduce((allNames, name) => {
+  const currCount = allNames[name] ?? 0;
+  return {
+    ...allNames,
+    [name]: currCount + 1,
+  };
+}, {});
+
+
+const countriesLang = [];
+for (const langs in countedNames) {
+  countriesLang.push([langs, countedNames[langs]]);
+}
+
+countriesLang.sort(function(a, b) {
+    return  b[1]- a[1] ;
+});
+//console.log(countriesLang)
+
+function mostSpokenTenLanguages(countries,num){
+  countries = countriesLang
+  return countries.slice(0,num)
+}
+console.log(mostSpokenTenLanguages(countries,10))
 
 
 // 3- *** Use countries_data.js file create a function which create the ten most populated countries

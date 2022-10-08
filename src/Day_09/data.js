@@ -140,7 +140,7 @@ export const countries_data = [
 			"capital": "Oranjestad",
 			"languages": [
 					"Dutch",
-					"(Eastern) Punjabi"
+					"Eastern Punjabi"
 			],
 			"population": 106766,
 			"flag": "https://flagcdn.com/aw.svg",
