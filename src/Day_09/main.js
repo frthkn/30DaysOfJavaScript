@@ -302,68 +302,81 @@ const callback = (n) => {
 
 // 4- *** Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
 
-const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+// const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
 
-const statistics = {}
-statistics.Count = ages.length
-statistics.Sum = ages.reduce((a,b)=> a+b) 
-statistics.Min = Math.min(...ages)
-statistics.Max = Math.max(...ages)
-statistics.Range = statistics.Max-statistics.Min
-statistics.Mean = Math.ceil(statistics.Sum/ages.length)
-const sort = ages.sort((a,b)=> a-b)
-statistics.Median = sort[Math.floor(sort.length/2)]
-statistics.Mode = {}
-const countedNames = ages.reduce((allAges, age) => {
-  const currCount = allAges[age] ?? 0;
-  return {
-    ...allAges,
-    [age]: currCount + 1,
-  };
-}, {});
-const count = Object.values(countedNames)
-const mode = Object.keys(countedNames)
-statistics.Mode.mode = parseInt(mode[2])
-statistics.Mode.count = Math.max(...count)
-let sqrt = ages.map((item => Math.abs(item-statistics.Mean)))
-let sqrtSum =0
-for (const iterator of sqrt) {
-  sqrtSum += (iterator*iterator)
-}
-statistics.Variance = sqrtSum/sqrt.length
-statistics.StdDev = parseFloat(Math.sqrt(statistics.Variance).toFixed(1))
-let sum = []
-for (const iterator of count) {
-  sum.push((iterator*100)/25)
-}
-let parseMode = []
-for (const iterator of mode) {
-  parseMode.push(parseInt(iterator))
+// const statistics = {}
+// statistics.Count = ages.length
+// statistics.Sum = ages.reduce((a,b)=> a+b) 
+// statistics.Min = Math.min(...ages)
+// statistics.Max = Math.max(...ages)
+// statistics.Range = statistics.Max-statistics.Min
+// statistics.Mean = Math.ceil(statistics.Sum/ages.length)
+// const sort = ages.sort((a,b)=> a-b)
+// statistics.Median = sort[Math.floor(sort.length/2)]
+// statistics.Mode = {}
+// const countedNames = ages.reduce((allAges, age) => {
+//   const currCount = allAges[age] ?? 0;
+//   return {
+//     ...allAges,
+//     [age]: currCount + 1,
+//   };
+// }, {});
+// const count = Object.values(countedNames)
+// const mode = Object.keys(countedNames)
+// statistics.Mode.mode = parseInt(mode[2])
+// statistics.Mode.count = Math.max(...count)
+// let sqrt = ages.map((item => Math.abs(item-statistics.Mean)))
+// let sqrtSum =0
+// for (const iterator of sqrt) {
+//   sqrtSum += (iterator*iterator)
+// }
+// statistics.Variance = sqrtSum/sqrt.length
+// statistics.StdDev = parseFloat(Math.sqrt(statistics.Variance).toFixed(1))
+// let sum = []
+// for (const iterator of count) {
+//   sum.push((iterator*100)/25)
+// }
+// let parseMode = []
+// for (const iterator of mode) {
+//   parseMode.push(parseInt(iterator))
   
-}
+// }
 
-let newArr = []
-for (const i in sum,parseMode) {
-  newArr.push([sum[i],parseMode[i]])
+// let newArr = []
+// for (const i in sum,parseMode) {
+//   newArr.push([sum[i],parseMode[i]])
   
-}
+// }
 
-statistics.FreqDis = newArr
+// statistics.FreqDis = newArr
 
-statistics.Describe = function(){
- console.log('Count:', statistics.Count)
- console.log('Sum:', statistics.Sum)
- console.log('Min:', statistics.Min)
- console.log('Max:', statistics.Max)
- console.log('Range:', statistics.Range)
- console.log('Mean:', statistics.Mean)
- console.log('Median:', statistics.Median)
- console.log('Mode:', statistics.Mode)
- console.log('Variance:', statistics.Variance)
- console.log('Standart Deviation:', statistics.StdDev)
- console.log('Frequency Distribution:', statistics.FreqDis)
- return 0
+// statistics.Describe = function(){
+//  console.log('Count:', statistics.Count)
+//  console.log('Sum:', statistics.Sum)
+//  console.log('Min:', statistics.Min)
+//  console.log('Max:', statistics.Max)
+//  console.log('Range:', statistics.Range)
+//  console.log('Mean:', statistics.Mean)
+//  console.log('Median:', statistics.Median)
+//  console.log('Mode:', statistics.Mode)
+//  console.log('Variance:', statistics.Variance)
+//  console.log('Standart Deviation:', statistics.StdDev)
+//  console.log('Frequency Distribution:', statistics.FreqDis)
+//  return 0
 
-}
+// }
 
-console.log(statistics.Describe())
+// console.log('Count:', statistics.Count)
+// console.log('Sum:', statistics.Sum)
+// console.log('Min:', statistics.Min)
+// console.log('Max:', statistics.Max)
+// console.log('Range:', statistics.Range)
+// console.log('Mean:', statistics.Mean)
+// console.log('Median:', statistics.Median)
+// console.log('Mode:', statistics.Mode)
+// console.log('Variance:', statistics.Variance)
+// console.log('Standart Deviation:', statistics.StdDev)
+// console.log('Frequency Distribution:', statistics.FreqDis)
+
+// console.log(statistics.Describe())
+
