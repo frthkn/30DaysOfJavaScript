@@ -302,32 +302,68 @@ const callback = (n) => {
 
 // 4- *** Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
 
-// const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
 
-// console.log('Count:', statistics.count()) // 25
-// console.log('Sum: ', statistics.sum()) // 744
-// console.log('Min: ', statistics.min()) // 24
-// console.log('Max: ', statistics.max()) // 38
-// console.log('Range: ', statistics.range() // 14
-// console.log('Mean: ', statistics.mean()) // 30
-// console.log('Median: ',statistics.median()) // 29
-// console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
-// console.log('Variance: ',statistics.var()) // 17.5
-// console.log('Standard Deviation: ', statistics.std()) // 4.2
-// console.log('Variance: ',statistics.var()) // 17.5
-// console.log('Frequency Distribution: ',statistics.freqDist()) # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+const statistics = {}
+statistics.Count = ages.length
+statistics.Sum = ages.reduce((a,b)=> a+b) 
+statistics.Min = Math.min(...ages)
+statistics.Max = Math.max(...ages)
+statistics.Range = statistics.Max-statistics.Min
+statistics.Mean = Math.ceil(statistics.Sum/ages.length)
+const sort = ages.sort((a,b)=> a-b)
+statistics.Median = sort[Math.floor(sort.length/2)]
+statistics.Mode = {}
+const countedNames = ages.reduce((allAges, age) => {
+  const currCount = allAges[age] ?? 0;
+  return {
+    ...allAges,
+    [age]: currCount + 1,
+  };
+}, {});
+const count = Object.values(countedNames)
+const mode = Object.keys(countedNames)
+statistics.Mode.mode = parseInt(mode[2])
+statistics.Mode.count = Math.max(...count)
+let sqrt = ages.map((item => Math.abs(item-statistics.Mean)))
+let sqrtSum =0
+for (const iterator of sqrt) {
+  sqrtSum += (iterator*iterator)
+}
+statistics.Variance = sqrtSum/sqrt.length
+statistics.StdDev = parseFloat(Math.sqrt(statistics.Variance).toFixed(1))
+let sum = []
+for (const iterator of count) {
+  sum.push((iterator*100)/25)
+}
+let parseMode = []
+for (const iterator of mode) {
+  parseMode.push(parseInt(iterator))
+  
+}
 
-// console.log(statistics.describe())
-// Count: 25
-// Sum:  744
-// Min:  24
-// Max:  38
-// Range:  14
-// Mean:  30
-// Median:  29
-// Mode:  (26, 5)
-// Variance:  17.5
-// Standard Deviation:  4.2
-// Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+let newArr = []
+for (const i in sum,parseMode) {
+  newArr.push([sum[i],parseMode[i]])
+  
+}
 
+statistics.FreqDis = newArr
 
+statistics.Describe = function(){
+ console.log('Count:', statistics.Count)
+ console.log('Sum:', statistics.Sum)
+ console.log('Min:', statistics.Min)
+ console.log('Max:', statistics.Max)
+ console.log('Range:', statistics.Range)
+ console.log('Mean:', statistics.Mean)
+ console.log('Median:', statistics.Median)
+ console.log('Mode:', statistics.Mode)
+ console.log('Variance:', statistics.Variance)
+ console.log('Standart Deviation:', statistics.StdDev)
+ console.log('Frequency Distribution:', statistics.FreqDis)
+ return 0
+
+}
+
+console.log(statistics.Describe())
