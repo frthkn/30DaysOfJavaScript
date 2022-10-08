@@ -249,12 +249,6 @@ const callback = (n) => {
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
 // const newCountries = countries_data
-// for (const key in newCountries) {
-// 	delete newCountries[key].area
-// 	delete newCountries[key].flag
-// 	delete newCountries[key].region
-// 	delete newCountries[key].languages
-// }
 
 // function sortCountries(){
 
@@ -264,26 +258,6 @@ const callback = (n) => {
 
 
 // 2- *** Find the 10 most spoken languages:
-
-const newCountries = countries_data
-for (const key in newCountries) {
-	delete newCountries[key].area
-	delete newCountries[key].flag
-	delete newCountries[key].region
-	delete newCountries[key].capital
-  delete newCountries[key].population
-  delete newCountries[key].name
-}
-
-// function mostSpokenLanguages(){
-//   let a = newCountries.reduce((item => item.languages,[]))
-//   return a
-// }
-
-// console.log(mostSpokenLanguages())
-
-
-
 
 // Your output should look like this
 
@@ -314,10 +288,7 @@ for (const key in newCountries) {
 
 // const newCountries = countries_data
 // for (const key in newCountries) {
-// 	delete newCountries[key].area
 // 	delete newCountries[key].capital
-// 	delete newCountries[key].flag
-// 	delete newCountries[key].region
 // 	delete newCountries[key].languages
 //   }
 
