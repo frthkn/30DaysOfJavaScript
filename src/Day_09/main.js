@@ -385,21 +385,17 @@ const products = [
 
 // 3- Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
-// let arr = [...new Set(countries)]
-// function categorizeCountries(){
-//   let obj = {}
-//   let fiveLength = arr.filter((item => item.length == 5 ))
-//   let containLand = arr.filter((item => item.includes('land')))
-//   let findEndWithA = arr.filter((item => item.endsWith('a')))
-//   obj.fiveLength = fiveLength
-//   obj.containLand = containLand
-//   obj.findEndWithA = findEndWithA
-//   console.log(obj)
-//   return true
-  
-// }
 
-// console.log(categorizeCountries())
+function categorizeCountries(){
+  const obj = {}
+  obj.fiveLength = countries.filter((item => item.length == 5 ))
+  obj.containLand = countries.filter((item => item.includes('land')))
+  obj.findEndWithA = countries.filter((item => item.endsWith('a')))
+  return obj
+  
+}
+
+console.log(categorizeCountries())
 
 // 4- Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
