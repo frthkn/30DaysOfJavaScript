@@ -2864,10 +2864,5 @@ export const countries_data = [
 ]
 
 
- for (const key in countries_data) {
-	delete countries_data[key].area
-	delete countries_data[key].flag
-	delete countries_data[key].region
-	
-}
+
 

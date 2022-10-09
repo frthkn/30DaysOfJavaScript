@@ -1,7 +1,6 @@
 
 // Day 9
 
-import {countries} from './countries.js'
 import {countries_data} from './data.js'
 
 
@@ -29,9 +28,9 @@ const products = [
 
 // 2- Define a callback function before you use it in forEach, map, filter or reduce.
 
-const callback = (n) => {
-  return n*n
-}
+// const callback = (n) => {
+//   return n*n
+// }
 
 // 3- Use forEach to console.log each country in the countries array.
 
@@ -259,49 +258,40 @@ const callback = (n) => {
 
 // 2- *** Find the 10 most spoken languages:
 
-// for (const i in countries_data) {
-//   delete countries_data[i].area
-//   delete countries_data[i].capital
-//   delete countries_data[i].population
-//   delete countries_data[i].region
-//   delete countries_data[i].name
-  
-// }
+// Way 1
 
-// const sum1 = []
-
+// const getlang = []
 // for (const key in countries_data) {
-//   if (Object.hasOwnProperty.call(countries_data, key)) {
-//     const element = countries_data[key];
-//     sum1.push(element.languages)
-//   }
+//   getlang.push(countries_data[key].languages) 
 // }
 
-// const sum2 = sum1.flat()
-// const countedNames = sum2.reduce((allNames, name) => {
-//   const currCount = allNames[name] ?? 0;
+// const countedLang = getlang.flat().reduce((allLang, name) => {
+//   const currCount = allLang[name] ?? 0;
 //   return {
-//     ...allNames,
+//     ...allLang,
 //     [name]: currCount + 1,
 //   };
 // }, {});
 
-
-// const countriesLang = [];
-// for (const langs in countedNames) {
-//   countriesLang.push([langs, countedNames[langs]]);
-// }
-
-// countriesLang.sort(function(a, b) {
-//     return  b[1]- a[1] ;
-// });
-// //console.log(countriesLang)
+// const countries = Object.entries(countedLang).sort((a,b)=> b[1]-a[1]) 
 
 // function mostSpokenTenLanguages(countries,num){
-//   countries = countriesLang
+  
 //   return countries.slice(0,num)
 // }
 // console.log(mostSpokenTenLanguages(countries,10))
+// console.log(mostSpokenTenLanguages(countries,3))
+
+// Way 2
+
+// const mostPopulatedTenCountries = Object.entries(countries_data.reduce((langs,obj)=> {obj.languages.forEach(x => langs.push(x));
+//   return langs
+// },[]).reduce((key,lang)=>{
+//   key[lang] = (key[lang] ?? 0)+1;
+//   return key
+// }, {})).sort((a,b)=> b[1]-a[1]);
+// console.log(mostPopulatedTenCountries.slice(0,10))
+
 
 
 // 3- *** Use countries_data.js file create a function which create the ten most populated countries
