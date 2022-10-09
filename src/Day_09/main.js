@@ -375,13 +375,13 @@ const products = [
 
 // 2- Find the sum of price of products using only reduce reduce(callback))
 
-const totalPriceWithOnlyReduce = products.reduce((item1,item2,a)=> {
-  if((products[a].price == '') || (products[a].price == ' ')){
-    products[a].price = 0
-  }
-})
-const sumPrice = products.reduce((a,b)=> b.price+a,0)
-console.log(sumPrice)
+// const totalPriceWithOnlyReduce = products.reduce((item1,item2,a)=> {
+//   if((products[a].price == '') || (products[a].price == ' ')){
+//     products[a].price = 0
+//   }
+// })
+// const sumPrice = products.reduce((a,b)=> b.price+a,0)
+// console.log(sumPrice)
 
 // 3- Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
