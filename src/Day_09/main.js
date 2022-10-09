@@ -403,13 +403,13 @@ const products = [
 
 // 4- Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
-// let arr = [...new Set(countries)]
-// function callByWordAndNumber(){
-//   const obj = {}
-//   Object.assign(obj, arr.map((item => item.charAt(0))))
-//   return obj
-// }
-// console.log(callByWordAndNumber())
+
+function callByWordAndNumber(){
+  const obj = {}
+  Object.assign(obj, countries.map((item => item.charAt(0))))
+  return obj
+}
+console.log(callByWordAndNumber())
 
 // 5- Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 
