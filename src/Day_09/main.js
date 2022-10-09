@@ -260,18 +260,18 @@ const products = [
 
 // Way 1
 
-// const getlang = []
-// for (const key in countries_data) {
-//   getlang.push(countries_data[key].languages) 
-// }
+const getlang = []
+for (const key in countries_data) {
+  getlang.push(countries_data[key].languages) 
+}
 
-// const countedLang = getlang.flat().reduce((allLang, name) => {
-//   const currCount = allLang[name] ?? 0;
-//   return {
-//     ...allLang,
-//     [name]: currCount + 1,
-//   };
-// }, {});
+const countedLang = getlang.flat().reduce((allLang, name) => {
+  const currCount = allLang[name] ?? 0;
+  return {
+    ...allLang,
+    [name]: currCount + 1,
+  };
+}, {});
 
 // const countries = Object.entries(countedLang).sort((a,b)=> b[1]-a[1]) 
 
