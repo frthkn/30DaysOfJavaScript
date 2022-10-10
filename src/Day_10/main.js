@@ -2,11 +2,6 @@
 
 // Exercises: Level 1
 
-const a = [4, 5, 8, 9]
-const b = [3, 4, 5, 7]
-const countries = ['Finland', 'Sweden', 'Norway']
-
-
 // 1- create an empty set
 
 const emptySet = new Set()
@@ -41,12 +36,30 @@ stringForSet.add('five')
 
 // 6- Create a map of countries and number of characters of a country
 
+const countries = ['Finland', 'Sweden', 'Norway']
+
+const mapOfCountries = new Map()
+for (const c of countries) {
+    mapOfCountries.set(c, c.length)
+  
+}
 
 // Exercises:Level 2
 
-// Find a union b
-// Find a intersection b
-// Find a with b
+const a = [4, 5, 8, 9]
+const b = [3, 4, 5, 7]
+
+// 1- Find a union b
+
+const aUnionB = new Set((a.concat(b)).sort((a,b)=> a-b))
+
+// 2- Find a intersection b
+
+const B = new Set(b)
+const aIntersectionB = a.filter((num)=> B.has(num)) 
+
+
+// 3- Find a with b
 
 // Exercises:Level 3
 
