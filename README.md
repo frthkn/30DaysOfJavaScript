@@ -34,6 +34,8 @@ Day 8- Object Exercises
 
 Day 9- Higher Level Function Exercises
 
+Day 10- Set and Map are Exercises
+
 
 ## Author
 
