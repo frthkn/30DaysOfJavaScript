@@ -1,5 +1,7 @@
 // Day 10
 
+import {countries_data} from './data.js'
+
 // Exercises: Level 1
 
 // 1- create an empty set
