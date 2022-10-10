@@ -484,6 +484,7 @@ const products = [
 //   return key
 // }, {})).sort((a,b)=> b[1]-a[1]);
 // console.log(mostPopulatedTenCountries.slice(0,10))
+// console.log(mostPopulatedTenCountries.slice(0,3))
 
 
 

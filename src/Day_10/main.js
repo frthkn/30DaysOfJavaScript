@@ -71,33 +71,29 @@ const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
 
 // 1- How many languages are there in the countries object file.
 
-const countLangs =  new Map()
-const setLAngs = new Set()
+const flatLang = Object.entries(countries_data).flatMap(num=> num[1].languages)
+//console.log(flatLang)
+//console.log(flatLang.length)
+//const setLang = new Set(flatLang)
+//console.log(setLang)
+//console.log(setLang.size)
 
-console.log(setLAngs)
 
-// *** Use the countries data to find the 10 most spoken languages:
+// 2- *** Use the countries data to find the 10 most spoken languages:
 
-   // Your output should look like this
-//    console.log(mostSpokenLanguages(countries, 10))
-//    [
-//      { English: 91 },
-//      { French: 45 },
-//      { Arabic: 25 },
-//      { Spanish: 24 },
-//      { Russian: 9 },
-//      { Portuguese: 9 },
-//      { Dutch: 8 },
-//      { German: 7 },
-//      { Chinese: 5 },
-//      { Swahili: 4 },
-//      { Serbian: 4 }
-//    ]
+const countLang = flatLang.reduce((allLang, name) => {
+  const currCount = allLang[name] ?? 0;
+  return {
+    ...allLang,
+    [name]: currCount + 1,
+  };
+}, {});
 
-  // Your output should look like this
-//   console.log(mostSpokenLanguages(countries, 3))
-//   [
-//   {English:91},
-//   {French:45},
-//   {Arabic:25}
-//   ]
+const mostSpokenLanguages = Object.entries(countLang).sort((x,y)=> y[1]-x[1]) 
+
+function mostSpokenTenLanguages (mostSpokenLanguages,num){
+  return mostSpokenLanguages.slice(0,num)
+}
+
+console.log(mostSpokenTenLanguages(mostSpokenLanguages,10))
+console.log(mostSpokenTenLanguages(mostSpokenLanguages,3))
