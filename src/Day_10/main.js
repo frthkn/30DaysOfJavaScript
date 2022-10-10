@@ -71,6 +71,11 @@ const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
 
 // 1- How many languages are there in the countries object file.
 
+const countLangs =  new Map()
+const setLAngs = new Set()
+
+console.log(setLAngs)
+
 // *** Use the countries data to find the 10 most spoken languages:
 
    // Your output should look like this
