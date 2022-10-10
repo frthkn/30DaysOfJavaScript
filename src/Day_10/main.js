@@ -60,10 +60,14 @@ const aIntersectionB = a.filter((num)=> B.has(num))
 
 
 // 3- Find a with b
+const A = new Set(a)
+const aWithB = a.filter((num)=> !B.has(num)) // [ 8, 9 ]
+const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
+
 
 // Exercises:Level 3
 
-// How many languages are there in the countries object file.
+// 1- How many languages are there in the countries object file.
 
 // *** Use the countries data to find the 10 most spoken languages:
 
