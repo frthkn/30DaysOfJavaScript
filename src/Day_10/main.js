@@ -72,11 +72,8 @@ const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
 // 1- How many languages are there in the countries object file.
 
 const flatLang = Object.entries(countries_data).flatMap(num=> num[1].languages)
-//console.log(flatLang)
-//console.log(flatLang.length)
-//const setLang = new Set(flatLang)
-//console.log(setLang)
-//console.log(setLang.size)
+const setLang = new Set(flatLang)
+
 
 
 // 2- *** Use the countries data to find the 10 most spoken languages:
