@@ -35,6 +35,7 @@ stringForSet.add('three')
 stringForSet.add('four')
 stringForSet.add('five')
 
+// console.log(stringForSet)
 
 // 6- Create a map of countries and number of characters of a country
 
@@ -45,6 +46,8 @@ for (const c of countries) {
     mapOfCountries.set(c, c.length)
   
 }
+
+// console.log(mapOfCountries)
 
 // Exercises:Level 2
 
