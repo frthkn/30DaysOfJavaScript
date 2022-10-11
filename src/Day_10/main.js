@@ -25,6 +25,7 @@ zeroToTenSet.delete(0)
 // 4- Clear a set
 
 zeroToTenSet.clear()
+// console.log(zeroToTenSet)
 
 // 5- Create a set of 5 string elements from array
 
