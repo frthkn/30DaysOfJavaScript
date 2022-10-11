@@ -36,6 +36,8 @@ Day 9- Higher Level Function Exercises
 
 Day 10- Set and Map are Exercises
 
+Day 11- Destructuring and Spreading are Exercises
+
 
 ## Author
 
