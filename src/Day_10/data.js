@@ -679,7 +679,7 @@ export const countries_data = [
 			"capital": "Willemstad",
 			"languages": [
 					"Dutch",
-					"(Eastern) Punjabi",
+					"Eastern Punjabi",
 					"English"
 			],
 			"population": 155014,
@@ -2865,4 +2865,4 @@ export const countries_data = [
 
 
 
-
+ 

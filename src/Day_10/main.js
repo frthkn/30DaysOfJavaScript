@@ -73,24 +73,30 @@ const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
 
 const flatLang = Object.entries(countries_data).flatMap(num=> num[1].languages)
 const setLang = new Set(flatLang)
+//console.log(setLang.size) // 124
 
 
 
 // 2- *** Use the countries data to find the 10 most spoken languages:
 
-const countLang = flatLang.reduce((allLang, name) => {
-  const currCount = allLang[name] ?? 0;
-  return {
-    ...allLang,
-    [name]: currCount + 1,
-  };
-}, {});
+// const countLang = flatLang.reduce((allLang, name) => {
+//   const currCount = allLang[name] ?? 0;
+//   return {
+//     ...allLang,
+//     [name]: currCount + 1,
+//   };
+// }, {});
 
-const mostSpokenLanguages = Object.entries(countLang).sort((x,y)=> y[1]-x[1]) 
+// const mostSpokenLanguages = Object.entries(countLang).sort((x,y)=> y[1]-x[1]) 
 
-function mostSpokenTenLanguages (mostSpokenLanguages,num){
-  return mostSpokenLanguages.slice(0,num)
-}
+// function mostSpokenTenLanguages (mostSpokenLanguages,num){
+//   return mostSpokenLanguages.slice(0,num)
+// }
 
-console.log(mostSpokenTenLanguages(mostSpokenLanguages,10))
-console.log(mostSpokenTenLanguages(mostSpokenLanguages,3))
+// console.log(mostSpokenTenLanguages(mostSpokenLanguages,10))
+// console.log(mostSpokenTenLanguages(mostSpokenLanguages,3))
+
+const newArr1 = Object.entries(countries_data).flatMap((lang => lang[1].languages)).sort()
+const newArr2 = new Set(newArr1)
+console.log(newArr1)
+
