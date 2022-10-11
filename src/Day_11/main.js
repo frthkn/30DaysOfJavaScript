@@ -68,5 +68,10 @@ const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
 const [fin, est, sw, den, nor] = countries
 // console.log(fin) // Finland
 
-// Destructure the rectangle object by its properties or keys.
+// 3- Destructure the rectangle object by its properties or keys.
 
+const {width: a, height: b, area: c, perimeter: {d = 80}} = rectangle
+
+// console.log(a) // a(width) = 20
+
+// console.log(d) // 80
