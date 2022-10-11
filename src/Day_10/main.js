@@ -92,16 +92,18 @@ const setLang = new Set(flatLang)
 
 // 2- *** Use the countries data to find the 10 most spoken languages:
 
-const count = {}
-flatLang.forEach((el => {
-    count[el] = (count[el] || 0)+1
-}))
+function mostSpokenTenLanguages (num){
 
-const mostSpokenLanguages = Object.entries(count).sort((f,h) => h[1]-f[1])
+    const count = {}
+    const findLang = Object.entries(countries_data).flatMap(num=> num[1].languages).forEach((el => {
+        count[el] = (count[el] || 0)+1
+    }))
 
-function mostSpokenTenLanguages (mostSpokenLanguages,num){
-  return mostSpokenLanguages.slice(0,num)
+    const mostSpokenLanguages = Object.entries(count).sort((f,h) => h[1]-f[1])
+
+    return mostSpokenLanguages.slice(0,num)     
 }
 
-console.log(mostSpokenTenLanguages(mostSpokenLanguages,10))
-console.log(mostSpokenTenLanguages(mostSpokenLanguages,3))
+console.log(mostSpokenTenLanguages(10))
+console.log(mostSpokenTenLanguages(3))
+
