@@ -54,17 +54,22 @@ const b = [3, 4, 5, 7]
 // 1- Find a union b
 
 const aUnionB = new Set((a.concat(b)).sort((a,b)=> a-b))
+// console.log(aUnionB)
 
 // 2- Find a intersection b
 
 const B = new Set(b)
 const aIntersectionB = a.filter((num)=> B.has(num)) 
+//console.log(aIntersectionB)
 
 
 // 3- Find a with b
+
 const A = new Set(a)
-const aWithB = a.filter((num)=> !B.has(num)) // [ 8, 9 ]
-const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
+const aWithB = a.filter((num)=> !B.has(num)) 
+const bWithA = b.filter((num)=> !A.has(num)) 
+// console.log(aWithB) // [ 8, 9 ]
+// console.log(bWithA) // [ 3, 7 ]
 
 
 // Exercises:Level 3
@@ -73,7 +78,7 @@ const bWithA = b.filter((num)=> !A.has(num)) // [ 3, 7 ]
 
 const flatLang = Object.entries(countries_data).flatMap(num=> num[1].languages)
 const setLang = new Set(flatLang)
-//console.log(setLang.size) // 123
+// console.log(setLang.size) // 123
 
 
 
