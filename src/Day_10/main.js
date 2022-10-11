@@ -7,6 +7,7 @@ import {countries_data} from './data.js'
 // 1- create an empty set
 
 const emptySet = new Set()
+// console.log(emptySet)
 
 
 
@@ -18,9 +19,12 @@ for (const i of zeroToTenArr) {
     zeroToTenSet.add(i)
 }
 
+// console.log(zeroToTenSet)
+
 // 3- Remove an element from a set
 
 zeroToTenSet.delete(0)
+// console.log(zeroToTenSet)
 
 // 4- Clear a set
 
