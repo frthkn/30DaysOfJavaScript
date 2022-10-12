@@ -1,5 +1,7 @@
 // Day 11
 
+import {countries_data} from './Data/data.js.js'
+
 // Exercises: Level 1
 
 const constants = [2.72, 3.14, 9.81, 37, 100]
@@ -55,7 +57,7 @@ const users = [
 }
 ]
 
-
+console.log(countries_data)
 
 // 1- Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
 
