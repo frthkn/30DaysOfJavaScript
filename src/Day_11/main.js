@@ -3,7 +3,7 @@
 // Exercises: Level 1
 
 const constants = [2.72, 3.14, 9.81, 37, 100]
-const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+const countries1 = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 const rectangle = {
   width: 20,
   height: 10,
@@ -65,7 +65,7 @@ const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
 
 // 2- Destructure and assign the elements of countries array to fin, est, sw, den, nor
 
-const [fin, est, sw, den, nor] = countries
+const [fin, est, sw, den, nor] = countries1
 // console.log(fin) // Finland
 
 // 3- Destructure the rectangle object by its properties or keys.
@@ -92,11 +92,11 @@ for (const {name:userName, scores: userScores, skills: userSkills, age: userAge}
 const personsHaveLessThanTwoSkills = users.filter((el => el.skills.length < 2))
 //console.log(personsHaveLessThanTwoSkills)
 
-
 // Exercises: Level 3
 
 
 // 1- Destructure the countries object print name, capital, population and languages of all countries
+
 // A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
 
 const students = [
