@@ -82,13 +82,21 @@ const {width: a, height: b, area: c, perimeter: {d = 80}} = rectangle
 
 // 1- Iterate through the users array and get all the keys of the object using destructuring
 
-// Find the persons who have less than two skills
+for (const {name:userName, scores: userScores, skills: userSkills, age: userAge} of users) {
+  //console.log(`userName: ${userName}, userScores: ${userScores}, userSkills: ${userSkills}, userAge: ${userAge}`)
+  
+}
+
+// 2- Find the persons who have less than two skills
+
+const personsHaveLessThanTwoSkills = users.filter((el => el.skills.length < 2))
+//console.log(personsHaveLessThanTwoSkills)
 
 
 // Exercises: Level 3
 
 
-// Destructure the countries object print name, capital, population and languages of all countries
+// 1- Destructure the countries object print name, capital, population and languages of all countries
 // A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
 
 const students = [
@@ -96,7 +104,7 @@ const students = [
     ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
   ]
 
-console.log(convertArrayToObject(students))
+//console.log(convertArrayToObject(students))
 [
   {
     name: 'David',
