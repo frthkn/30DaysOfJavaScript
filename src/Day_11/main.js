@@ -1,6 +1,6 @@
 // Day 11
 
-import {countries_data} from './Data/data.js'
+import {countries_data} from '/src/Data/data.js'
 
 // Exercises: Level 1
 

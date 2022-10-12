@@ -1,7 +1,7 @@
 
 // Day 9
 
-import {countries_data} from './data.js.js'
+import {countries_data} from '/src/Data/data.js'
 
 
 
