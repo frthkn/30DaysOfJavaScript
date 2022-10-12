@@ -1,7 +1,8 @@
 
 // Day 9
 
-import {countries_data} from './data.js'
+import {countries_data} from './data.js.js'
+
 
 
 // Exercises: Level 1
