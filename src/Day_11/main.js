@@ -120,18 +120,27 @@ const students = [
 ]
 
 function convertArrayToObject(arr){
-  const [[name, skills, scores]] = students
-  const obj = students.map(( key, value) => ( {name, skills, scores} ));
+  const obj = []
+  for (const iterator of students) {
+    const [[name, skills, scores]] = [iterator]
+    obj.push({name, skills, scores})
+  }
+  
   return obj
 }
 
-// console.log(convertArrayToObject(students))
+console.log(convertArrayToObject(students))
 
 // 4- Copy the student object to newStudent without mutating the original object. In the new object add the following ?
 
-
+const newStudent = [...students]
+// const [[name, skills, scores]] = newStudent
+// const obj = newStudent.map(( key, value) => ( {name, skills, scores} ));
+// //console.log(obj)
 
 // Add Bootstrap with level 8 to the front end skill sets
+// obj.frontEnd = obj.skills
+// console.log(obj)
 // Add Express with level 9 to the back end skill sets
 // Add SQL with level 8 to the data base skill sets
 // Add SQL without level to the data science skill sets
