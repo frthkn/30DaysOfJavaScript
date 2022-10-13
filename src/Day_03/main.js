@@ -38,7 +38,7 @@ console.log(parseInt(9.8) == 10)
                         isOneNumber = true
 
     // b) Write three JavaScript statement which provide falsy value.
-    let falsyValues =  isTwoNumber = false,
+    let falsyValues =  isTurkeyACity = false,
                         isTodaySunday = false,
                         isLightOn = false
 

@@ -18,3 +18,5 @@ const sortPoints = points.sort((x,y) => {return x-y})
 const distance = Math.abs(sortPoints[0])+sortPoints[sortPoints.length-1]
 console.log(distance)
 
+// 3- Write a pattern which identify if a string is a valid JavaScript variable
+
