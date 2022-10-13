@@ -129,69 +129,52 @@ function convertArrayToObject(arr){
   return obj
 }
 
-console.log(convertArrayToObject(students))
+// console.log(convertArrayToObject(students))
 
-// 4- Copy the student object to newStudent without mutating the original object. In the new object add the following ?
-
-const newStudent = [...students]
-// const [[name, skills, scores]] = newStudent
-// const obj = newStudent.map(( key, value) => ( {name, skills, scores} ));
-// //console.log(obj)
-
-// Add Bootstrap with level 8 to the front end skill sets
-// obj.frontEnd = obj.skills
-// console.log(obj)
-// Add Express with level 9 to the back end skill sets
-// Add SQL with level 8 to the data base skill sets
-// Add SQL without level to the data science skill sets
+// 4- Copy the student object to newStudent without mutating the original object. In the new object add the following
 
 const student = {
-    name: 'David',
-    age: 25,
-    skills: {
-      frontEnd: [
-        { skill: 'HTML', level: 10 },
-        { skill: 'CSS', level: 8 },
-        { skill: 'JS', level: 8 },
-        { skill: 'React', level: 9 }
-      ],
-      backEnd: [
-        { skill: 'Node',level: 7 },
-        { skill: 'GraphQL', level: 8 },
-      ],
-      dataBase:[
-        { skill: 'MongoDB', level: 7.5 },
-      ],
-      dataScience:['Python', 'R', 'D3.js']
-    }
+  name: 'David',
+  age: 25,
+  skills: {
+    frontEnd: [
+      { skill: 'HTML', level: 10 },
+      { skill: 'CSS', level: 8 },
+      { skill: 'JS', level: 8 },
+      { skill: 'React', level: 9 }
+    ],
+    backEnd: [
+      { skill: 'Node',level: 7 },
+      { skill: 'GraphQL', level: 8 },
+    ],
+    dataBase:[
+      { skill: 'MongoDB', level: 7.5 },
+    ],
+    dataScience:['Python', 'R', 'D3.js']
   }
+}
+
+const newStudent = {...student}
+
+// 4.1- Add Bootstrap with level 8 to the front end skill sets
+
+newStudent.skills.frontEnd.push({skill: 'BootStrap',level: 8})
+
+// 4.2- Add Express with level 9 to the back end skill sets
+
+newStudent.skills.backEnd.push({skill: 'Express',level: 9})
+
+// 4.3- Add SQL with level 8 to the data base skill sets
+
+newStudent.skills.dataBase.push({skill: 'SQL',level: 8})
+
+// 4.4- Add SQL without level to the data science skill sets
+
+newStudent.skills.dataScience.push('SQL')
+
+console.log(newStudent)
 
 
-//   The copied object output should look like this:
 
-
-// {
-//     name: 'David',
-//     age: 25,
-//     skills: {
-//       frontEnd: [
-//         {skill: 'HTML',level: 10},
-//         {skill: 'CSS',level: 8},
-//         {skill: 'JS',level: 8},
-//         {skill: 'React',level: 9},
-//         {skill: 'BootStrap',level: 8}
-//       ],
-//       backEnd: [
-//         {skill: 'Node',level: 7},
-//         {skill: 'GraphQL',level: 8},
-//         {skill: 'Express',level: 9}
-//       ],
-//       dataBase: [
-//         { skill: 'MongoDB',level: 7.5},
-//         { skill: 'SQL',level: 8}
-//       ],
-//       dataScience: ['Python','R','D3.js','SQL']
-//     }
-//   }
 
 
