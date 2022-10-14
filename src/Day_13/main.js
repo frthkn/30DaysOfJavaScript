@@ -21,6 +21,14 @@ const countries = [
 
 // 3- Use console.group() to group logs
 
+// console.group('countries')
+// console.log(countries)
 
 // Exercises: Level 2
+
+
+// 10 > 2 * 10 use console.assert()
+// Write a warning message using console.warn()
+// Write an error message using console.error()
+
 
