@@ -13,22 +13,29 @@ const countries = [
     ['Norway', 'Oslo']
   ]
 
-// console.table(countries)
+console.table(countries)
 
 // 2- Display the countries object as a table
 
-//console.table(countries_data)
+console.table(countries_data)
 
 // 3- Use console.group() to group logs
 
-// console.group('countries')
-// console.log(countries)
+console.group('countries')
+console.log(countries)
+console.groupEnd()
 
 // Exercises: Level 2
 
 
-// 10 > 2 * 10 use console.assert()
-// Write a warning message using console.warn()
-// Write an error message using console.error()
+// 1- 10 > 2 * 10 use console.assert()
 
+console.assert(10> 2*10) // Assertion failed
 
+// 2- Write a warning message using console.warn()
+
+console.warn('The "warn" activated')
+
+// 3- Write an error message using console.error()
+
+console.error('This is an error message')
