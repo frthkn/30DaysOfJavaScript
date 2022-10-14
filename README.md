@@ -38,7 +38,7 @@ Day 10- Set and Map are Exercises
 
 Day 11- Destructuring and Spreading are Exercises
 
-Day 12- 
+Day 12- Regular Expression Exercises
 
 Day 13- Console Object Methods Exercises
 
