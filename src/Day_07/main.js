@@ -682,21 +682,34 @@
 
 // 18- JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
-// function isValidVariable(){
-//     let regex = '^([a-zA-Z_$][a-zA-Z\d_$]*)$'
-//     let check = prompt('','Define a variable name')
-//     if(check == ''|| check == 'null'){
-//         return "The variable name can't be empty or null"
-//     }else{
-//         if(check.match(regex)) {
-//             return `The '${check}' is can be a variable name`
-//         }else{
-//             return `The '${check}' is can not be a variable name`
-//         }
-//     }
+function isValidVariable(varName){
+  
+    let regex1 = /^[A-z$]/
+    let regex2 = /[-,?;*:]\b/g
     
-// }
-// console.log(isValidVariable())
+    if(varName == ''|| varName == 'null' || !varName.match(regex1) || varName.match(regex2)){
+        return false
+    }else {
+      
+        return true
+    }
+    
+}
+console.log('first letter is num: ',isValidVariable('1Hakanname'))
+console.log('first letter is space: ',isValidVariable(' Hakanname1'))
+console.log('first letter is punctuation mark: ',isValidVariable('?Hakanname1'))
+console.log('first letter is dashed line: ',isValidVariable('Hakan-name1'))
+console.log('first letter is semicolon: ',isValidVariable(';Hakanname1'))
+console.log('first letter is tag mark: ',isValidVariable('#Hakanname1'))
+console.log('first letter is null: ',isValidVariable('null'))
+console.log('first letter is empty: ',isValidVariable(''))
+console.log(isValidVariable('Hakanname1'))
+console.log(isValidVariable('Hakan_name1'))
+console.log(isValidVariable('HakanName1'))
+console.log(isValidVariable('HakanName'))
+console.log('first letter is underline: ',isValidVariable('_Hakanname1'))
+console.log('first letter is dollar mark: ',isValidVariable('$Hakanname1'))
+
 
 // 19- Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
