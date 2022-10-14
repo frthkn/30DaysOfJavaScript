@@ -39,3 +39,7 @@ console.warn('The "warn" activated')
 // 3- Write an error message using console.error()
 
 console.error('This is an error message')
+
+// Exercises: Level 3
+
+// 1- Check the speed difference among the following loops: while, for, for of, forEach
