@@ -2,11 +2,11 @@
 
 // Exercises Level 1
 
-
 // 1- Create an Animal class. The class will have name, age, color, legs properties and create different methods
 
 class Animal {
     constructor(name, age, color, legs){
+        // console.log(this)
         this.name = name
         this.age = age
         this.color = color
@@ -43,3 +43,7 @@ const dog1 = new Dog('John',5,'white',4)
 const cat1 = new Cat('Sally',2,'black',4)
 // console.log(dog1)
 // console.log(cat1)
+
+// Exercises Level 1
+
+// 1- Override the method you create in Animal class
