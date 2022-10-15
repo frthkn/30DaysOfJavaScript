@@ -122,7 +122,7 @@ class Statistics {
     }
 }
 
-//console.log(Statistics.getValues())
+// console.log(Statistics.getValues())
 
 
 // 2- Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
@@ -134,4 +134,24 @@ class PersonAccount {
         this.incomes = incomes
         this.expenses = expenses
     }
+
+    static totalIncome(){
+
+    }
+    static addIncome(){
+
+    }
+    static totalExpense(){
+
+    }
+    static addExpense(){
+
+    }
+    static accountInfo(){
+
+    }
+    static accountBalance(){
+
+    }
+    
 }
