@@ -7,9 +7,30 @@
 
 class Animal {
     constructor(name, age, color, legs){
-        console.log(this)
+        this.name = name
+        this.age = age
+        this.color = color
+        this.legs = legs
     }
     
 }
 
-// Create a Dog and Cat child class from the Animal Class.
+// 2- Create a Dog and Cat child class from the Animal Class.
+
+class Dog extends Animal {
+    constructor(name, age, color, legs){
+        this.name = name
+        this.age = age
+        this.color = color
+        this.legs = legs
+    }
+}
+
+class Cat extends Animal {
+    constructor(name, age, color, legs){
+        this.name = name
+        this.age = age
+        this.color = color
+        this.legs = legs
+    }
+}
