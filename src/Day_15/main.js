@@ -19,6 +19,7 @@ class Animal {
 
 class Dog extends Animal {
     constructor(name, age, color, legs){
+        super(name, age, color, legs)
         this.name = name
         this.age = age
         this.color = color
@@ -30,6 +31,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
     constructor(name, age, color, legs){
+        super(name, age, color, legs)
         this.name = name
         this.age = age
         this.color = color
