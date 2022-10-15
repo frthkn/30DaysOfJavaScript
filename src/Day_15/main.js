@@ -41,5 +41,5 @@ class Cat extends Animal {
 
 const dog1 = new Dog('John',5,'white',4)
 const cat1 = new Cat('Sally',2,'black',4)
-console.log(dog1)
-console.log(cat1)
+// console.log(dog1)
+// console.log(cat1)
