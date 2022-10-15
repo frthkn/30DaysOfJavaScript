@@ -26,6 +26,8 @@ class Dog extends Animal {
     }
 }
 
+
+
 class Cat extends Animal {
     constructor(name, age, color, legs){
         this.name = name
@@ -34,3 +36,8 @@ class Cat extends Animal {
         this.legs = legs
     }
 }
+
+const dog1 = new Dog('John',5,'white',4)
+const cat1 = new Cat('Sally',2,'black',4)
+console.log(dog1)
+console.log(cat1)
