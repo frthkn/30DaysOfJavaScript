@@ -136,21 +136,28 @@ class PersonAccount {
     }
 
     static totalIncome(){
+        return this.incomes
 
     }
-    static addIncome(){
+    set addIncome(incomes){
+        this.incomes += incomes
 
     }
-    static totalExpense(){
+    get totalExpense(){
 
     }
-    static addExpense(){
+    set addExpense(expenses){
+        this.expenses += expenses
 
     }
-    static accountInfo(){
+    get accountInfo(){
+        
+        return `${this.firstName}, ${this.lastName}`
 
     }
-    static accountBalance(){
+    get accountBalance(){ 
+        const balance =  totalIncome()-totalExpense
+        return balance
 
     }
     
