@@ -133,11 +133,17 @@ const newStudent = JSON.stringify(student,undefined,4)
 
 // Exercises Level 2
 
-// Stringify the students object with only firstName, lastName and skills properties
+// 1- Stringify the students object with only firstName, lastName and skills properties
+
+const stringfyStudent = JSON.stringify(student,['firstName','lastName','skills'],4)
+// console.log(stringfyStudent)
 
 
 // Exercises Level 3
 
 
-// Parse the txt JSON to object.
+// 1- Parse the txt JSON to object.
+
+
+
 // Find the user who has many skills from the variable stored in txt.
