@@ -10,7 +10,7 @@ const student = {
   isMarried:true,
   skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
 }
-const txt = `{
+const txt = {
     "Alex": {
         "email": "alex@alex.com",
         "skills": [
@@ -105,7 +105,7 @@ const txt = `{
         "points": 40
     }
 }
-`
+
 
 // Exercises Level 1
 
@@ -144,7 +144,13 @@ const stringfyStudent = JSON.stringify(student,['firstName','lastName','skills']
 
 // 1- Parse the txt JSON to object.
 
-const parseTxt = JSON.parse(txt,undefined,2)
-// console.log(parseTxt)
+const parseTxt = JSON.stringify(txt, undefined, 4)
+//console.log(parseTxt)
 
 // 3- Find the user who has many skills from the variable stored in txt.
+
+const findSkills = Object.entries(txt).map((el => el[1].skills)).flatMap((el => el.length)).sort((j,k)=> k-j)
+const whoHasManySkills = Object.entries(txt).filter((el => el[1].skills.length == findSkills[0])).flat()
+console.log(whoHasManySkills)
+
+
