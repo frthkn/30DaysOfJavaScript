@@ -145,6 +145,6 @@ const stringfyStudent = JSON.stringify(student,['firstName','lastName','skills']
 // 1- Parse the txt JSON to object.
 
 const parseTxt = JSON.parse(txt,undefined,2)
-console.log(parseTxt)
+// console.log(parseTxt)
 
-// Find the user who has many skills from the variable stored in txt.
+// 3- Find the user who has many skills from the variable stored in txt.
