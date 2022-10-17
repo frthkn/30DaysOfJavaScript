@@ -7,3 +7,9 @@
 // Stringify the age variable
 // Stringify the isMarried variable
 // Stringify the student object
+
+// Exercises Level 2
+
+
+
+// Exercises Level 3
