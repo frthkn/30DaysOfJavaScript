@@ -42,7 +42,7 @@ Day 12- Regular Expression Exercises
 
 Day 13- Console Object Methods Exercises
 
-Day 13- Console Object Methods Exercises
+Day 14- Console Object Methods Exercises
 
 Day 15- Class Exercises
 
