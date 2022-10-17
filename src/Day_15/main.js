@@ -131,34 +131,54 @@ class PersonAccount {
     constructor(firstName, lastName, incomes, expenses){
         this.firstName = firstName
         this.lastName = lastName
-        this.incomes = incomes
-        this.expenses = expenses
+        this.incomes = []
+        this.expenses = []
     }
 
-    static totalIncome(){
-        return this.incomes
+    totalIncome(){
+        const sumIncome = this.incomes.reduce((f,h)=> f+h,0)
+        return `Total income: ${sumIncome}`
 
     }
-    set addIncome(incomes){
-        this.incomes += incomes
+    
+   set addIncome(incomes){
+        this.incomes.push(incomes)
 
     }
-    get totalExpense(){
+    totalExpense(){
+        const sumExpenses = this.expenses.reduce((k,l)=> k+l,0)
+        return `Total income: ${sumExpenses}`
 
     }
+      
     set addExpense(expenses){
-        this.expenses += expenses
+        this.expenses.push(expenses)
 
     }
-    get accountInfo(){
-        
-        return `${this.firstName}, ${this.lastName}`
+    accountInfo(){
+        const fullName = this.firstName+' '+this.lastName
+        return fullName
 
     }
-    get accountBalance(){ 
-        const balance =  totalIncome()-totalExpense
-        return balance
+    accountBalance(){ 
+        const sumIncome =  this.incomes.reduce((k,l)=> k+l,0)
+        const sumExpenses =  this.expenses.reduce((k,l)=> k+l,0)
+        const balance =  sumIncome-sumExpenses
+        return `Account balance : ${balance}`
 
     }
     
 }
+
+
+const person1 =  new PersonAccount('Hakan','Fırat')
+person1.addIncome = 500
+person1.addIncome = 500
+person1.addExpense = 200
+person1.addExpense = 100
+person1.addExpense = 1000
+console.log(person1)
+console.log(person1.accountInfo())
+console.log(person1.totalExpense())
+console.log(person1.totalIncome())
+console.log(person1.accountBalance())
