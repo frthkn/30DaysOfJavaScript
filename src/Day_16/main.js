@@ -116,6 +116,10 @@ const newSkills = JSON.stringify(skills,undefined,2)
 // console.log(newSkills
 
 // 2- Stringify the age variable
+
+const newAge = JSON.stringify(age,undefined,5)
+console.log(newAge)
+
 // Stringify the isMarried variable
 // Stringify the student object
 
