@@ -111,7 +111,11 @@ const txt = `{
 
 
 // 1- Change skills array to JSON using JSON.stringify()
-// Stringify the age variable
+
+const newSkills = JSON.stringify(skills,undefined,2)
+// console.log(newSkills
+
+// 2- Stringify the age variable
 // Stringify the isMarried variable
 // Stringify the student object
 
