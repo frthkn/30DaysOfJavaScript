@@ -135,9 +135,9 @@ class PersonAccount {
         this.expenses = []
     }
 
-    totalIncome(){
+    get totalIncome(){
         const sumIncome = this.incomes.reduce((f,h)=> f+h,0)
-        return `Total income: ${sumIncome}`
+        return `Total incomes: ${sumIncome}`
 
     }
     
@@ -145,9 +145,9 @@ class PersonAccount {
         this.incomes.push(incomes)
 
     }
-    totalExpense(){
+    get totalExpense(){
         const sumExpenses = this.expenses.reduce((k,l)=> k+l,0)
-        return `Total income: ${sumExpenses}`
+        return `Total expenses: ${sumExpenses}`
 
     }
       
@@ -155,12 +155,12 @@ class PersonAccount {
         this.expenses.push(expenses)
 
     }
-    accountInfo(){
+    get accountInfo(){
         const fullName = this.firstName+' '+this.lastName
         return fullName
 
     }
-    accountBalance(){ 
+    get accountBalance(){ 
         const sumIncome =  this.incomes.reduce((k,l)=> k+l,0)
         const sumExpenses =  this.expenses.reduce((k,l)=> k+l,0)
         const balance =  sumIncome-sumExpenses
@@ -177,8 +177,9 @@ person1.addIncome = 500
 person1.addExpense = 200
 person1.addExpense = 100
 person1.addExpense = 1000
-console.log(person1)
-console.log(person1.accountInfo())
-console.log(person1.totalExpense())
-console.log(person1.totalIncome())
-console.log(person1.accountBalance())
+console.log(person1.accountInfo)
+console.log(person1.incomes)
+console.log(person1.expenses)
+console.log(person1.totalExpense)
+console.log(person1.totalIncome)
+console.log(person1.accountBalance)
