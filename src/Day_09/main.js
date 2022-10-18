@@ -441,13 +441,19 @@ const products = [
 
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
-// const newCountries = countries_data
+const newCountries = countries_data
 
-// function sortCountries(){
+// function sortCountriesByName(){
 
 //   return newCountries.sort((a,b) => a.name.localeCompare(b.name))  
 // }
-// console.log(sortCountries())
+// console.log(sortCountriesByName())
+
+function sortCountries(){
+
+  return  
+}
+console.log(sortCountries())
 
 
 // 2- *** Find the 10 most spoken languages:
@@ -571,17 +577,17 @@ statistics.Describe = function(){
 
 }
 
-console.log('Count:', statistics.Count)
-console.log('Sum:', statistics.Sum)
-console.log('Min:', statistics.Min)
-console.log('Max:', statistics.Max)
-console.log('Range:', statistics.Range)
-console.log('Mean:', statistics.Mean)
-console.log('Median:', statistics.Median)
-console.log('Mode:', statistics.Mode)
-console.log('Variance:', statistics.Variance)
-console.log('Standart Deviation:', statistics.StdDev)
-console.log('Frequency Distribution:', statistics.FreqDis)
+// console.log('Count:', statistics.Count)
+// console.log('Sum:', statistics.Sum)
+// console.log('Min:', statistics.Min)
+// console.log('Max:', statistics.Max)
+// console.log('Range:', statistics.Range)
+// console.log('Mean:', statistics.Mean)
+// console.log('Median:', statistics.Median)
+// console.log('Mode:', statistics.Mode)
+// console.log('Variance:', statistics.Variance)
+// console.log('Standart Deviation:', statistics.StdDev)
+// console.log('Frequency Distribution:', statistics.FreqDis)
 
 //console.log(statistics.Describe())
 
