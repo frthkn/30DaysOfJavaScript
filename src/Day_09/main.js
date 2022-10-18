@@ -458,36 +458,36 @@ function sortCountries(){
 
 // Way 1
 
-// const getlang = []
-// for (const key in countries_data) {
-//   getlang.push(countries_data[key].languages) 
-// }
+const getlang = []
+for (const key in countries_data) {
+  getlang.push(countries_data[key].languages) 
+}
 
-// const countedLang = getlang.flat().reduce((allLang, name) => {
-//   const currCount = allLang[name] ?? 0;
-//   return {
-//     ...allLang,
-//     [name]: currCount + 1,
-//   };
-// }, {});
+const countedLang = getlang.flat().reduce((allLang, name) => {
+  const currCount = allLang[name] ?? 0;
+  return {
+    ...allLang,
+    [name]: currCount + 1,
+  };
+}, {});
 
-// const countries = Object.entries(countedLang).sort((a,b)=> b[1]-a[1]) 
+const countries1 = Object.entries(countedLang).sort((a,b)=> b[1]-a[1]) 
 
-// function mostSpokenTenLanguages(countries,num){
+function mostSpokenTenLanguages(countries1,num){
   
-//   return countries.slice(0,num)
-// }
-// console.log(mostSpokenTenLanguages(countries,10))
-// console.log(mostSpokenTenLanguages(countries,3))
+  return countries1.slice(0,num)
+}
+// console.log(mostSpokenTenLanguages(countries1,10))
+// console.log(mostSpokenTenLanguages(countries1,3))
 
 // Way 2
 
-// const mostPopulatedTenCountries = Object.entries(countries_data.reduce((langs,obj)=> {obj.languages.forEach(x => langs.push(x));
-//   return langs
-// },[]).reduce((key,lang)=>{
-//   key[lang] = (key[lang] ?? 0)+1;
-//   return key
-// }, {})).sort((a,b)=> b[1]-a[1]);
+const mostPopulatedTenCountries = Object.entries(countries_data.reduce((langs,obj)=> {obj.languages.forEach(x => langs.push(x));
+  return langs
+},[]).reduce((key,lang)=>{
+  key[lang] = (key[lang] ?? 0)+1;
+  return key
+}, {})).sort((a,b)=> b[1]-a[1]);
 // console.log(mostPopulatedTenCountries.slice(0,10))
 // console.log(mostPopulatedTenCountries.slice(0,3))
 
