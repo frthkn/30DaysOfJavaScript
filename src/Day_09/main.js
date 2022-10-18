@@ -387,35 +387,35 @@ const products = [
 // 3- Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
 
-// function categorizeCountries(){
-//   const obj = {}
-//   obj.fiveLength = countries.filter((item => item.length == 5 ))
-//   obj.containLand = countries.filter((item => item.includes('land')))
-//   obj.findEndWithA = countries.filter((item => item.endsWith('a')))
-//   return obj
+function categorizeCountries(){
+  const obj = {}
+  obj.fiveLength = countries.filter((item => item.length == 5 ))
+  obj.containLand = countries.filter((item => item.includes('land')))
+  obj.findEndWithA = countries.filter((item => item.endsWith('a')))
+  return obj
   
-// }
+}
 // console.log(categorizeCountries())
 
 // 4- Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
 
-// function callByWordAndNumber(){
-//   const letters =  countries.map((item => item.charAt(0))).reduce((old, cur) => {
-//   old[cur] = (old[cur] || 0) +1;
-//   return old;
-// }, {})
-//   return letters
-// }
+function callByWordAndNumber(){
+  const letters =  countries.map((item => item.charAt(0))).reduce((old, cur) => {
+  old[cur] = (old[cur] || 0) +1;
+  return old;
+}, {})
+  return letters
+}
 // console.log(callByWordAndNumber())
 
 
 // 5- Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 
-// function getFirstTenCountries(){
-//   return countries.slice(0,10)
+function getFirstTenCountries(){
+  return countries.slice(0,10)
 
-// }
+}
 // console.log(getFirstTenCountries())
 
 // 6- Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
