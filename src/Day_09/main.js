@@ -441,19 +441,17 @@ const products = [
 
 // 1- Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
-const newCountries = countries_data
-
-// function sortCountriesByName(){
-
-//   return newCountries.sort((a,b) => a.name.localeCompare(b.name))  
-// }
-// console.log(sortCountriesByName())
 
 function sortCountries(){
-
-  return  
+  
+  const sortName = countries_data.map(nam => nam.name ).sort((a,b) => a.localeCompare(b)).forEach(n => console.log(n))  
+  const sortPopulation = countries_data.map(pop => pop.population ).sort((k,l)=> l-k).forEach(p => console.log(p))
+  const sortCapital = countries_data.map(cap => cap.capital ).sort((i,t)=> i.localeCompare(t)).forEach(c => console.log(c)) 
+  return 'end of list'
+  
 }
 console.log(sortCountries())
+
 
 
 // 2- *** Find the 10 most spoken languages:
