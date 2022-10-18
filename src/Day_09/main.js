@@ -229,58 +229,56 @@ const countriesOfShortList = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand
 
 // 2- Define a callback function before you use it in forEach, map, filter or reduce.
 
-// const callback = (n) => {
-//   return n*n
-// }
+const callback = (n) => {
+  return n*n
+}
 
 // 3- Use forEach to console.log each country in the countries array.
 
-//let country = countries.forEach((country => console.log(country)))
-//console.log(country)
+// let country = countries.forEach((country => console.log(country)))
+
 
 // 4- Use forEach to console.log each name in the names array.
 
 // let name = names.forEach((name => console.log(name)))
-// console.log(name)
+
 
 // 5- Use forEach to console.log each number in the numbers array.
 
 // let number = numbers.forEach((number => console.log(number)))
-// console.log(number)
+
 
 // 6- Use map to create a new array by changing each country to uppercase in the countries array.
 
 // let uppercaseCountry = countries.map((country => console.log(country.toUpperCase())))
-// console.log(uppercaseCountry)
 
 // 7- Use map to create an array of countries length from countries array.
 
-// let create = countries.map((item => Array(item.length)))
-// console.log(create)
+let createArr = countries.map((item => item.length))
+// console.log(createArr)
 
 // 8- Use map to create a new array by changing each number to square in the numbers array
 
-// let square = numbers.map((item => item*item))
+let square = numbers.map((item => item*item))
 // console.log(square)
 
 // 9- Use map to change to each name to uppercase in the names array
 
 // let uppercaseName = names.map((name => console.log(name.toUpperCase())))
-// console.log(uppercaseName)
 
 // 10- Use map to map the products array to its corresponding prices.
 
-// let correspondingPrices = products.map((item) => { return `${item.product}: ${item.price}`})
+let correspondingPrices = products.map((item) => { return `${item.product}: ${item.price}`})
 // console.log(correspondingPrices)
 
 // 11- Use filter to filter out countries containing land.
 
-// let filterLand = countries.filter((item) => item.match(/land/gi))
+let filterLand = countries.filter((item) => item.match(/land/gi))
 // console.log(filterLand)
 
 // 12- Use filter to filter out countries having six character.
 
-// let sixCharacter = countries.filter((item) => item.length == 6)
+let sixCharacter = countries.filter((item) => item.length == 6)
 // console.log(sixCharacter)
 
 // 13- Use filter to filter out countries containing six letters and more in the country array.
