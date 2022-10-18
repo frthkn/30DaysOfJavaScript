@@ -370,18 +370,18 @@ const products = [
 
 // 1- Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 
-// let assingZeroToEmptyPrice = products.filter((a)=> {if((a.price == '') || (a.price == ' ')){a.price =0}})
-// let totalPrice = products.map((item => item.price)).reduce((first, end) => (first+end))
+let assingZeroToEmptyPrice = products.filter((a)=> {if((a.price == '') || (a.price == ' ')){a.price =0}})
+let totalPrice = products.map((item => item.price)).reduce((first, end) => (first+end))
 // console.log(totalPrice)
 
 // 2- Find the sum of price of products using only reduce reduce(callback))
 
-// const totalPriceWithOnlyReduce = products.reduce((item1,item2,a)=> {
-//   if((products[a].price == '') || (products[a].price == ' ')){
-//     products[a].price = 0
-//   }
-// })
-// const sumPrice = products.reduce((a,b)=> b.price+a,0)
+const totalPriceWithOnlyReduce = products.reduce((item1,item2,a)=> {
+  if((products[a].price == '') || (products[a].price == ' ')){
+    products[a].price = 0
+  }
+})
+const sumPrice = products.reduce((a,b)=> b.price+a,0)
 // console.log(sumPrice)
 
 // 3- Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
