@@ -204,6 +204,7 @@ const countries = [
 ]
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook', 'Hakan']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 const products = [
   { product: 'banana', price: 3 },
   { product: 'mango', price: 6 },
@@ -212,6 +213,11 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+
+
+const countriesOfShortList = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+
 
 
 // 1- Explain the difference between forEach, map, filter, and reduce.
@@ -279,51 +285,49 @@ const products = [
 
 // 13- Use filter to filter out countries containing six letters and more in the country array.
 
-// let sixCharacterAndMore = countries.filter((item) => item.length >= 6)
+let sixCharacterAndMore = countries.filter((item) => item.length >= 6)
 // console.log(sixCharacterAndMore)
 
 // 14- Use filter to filter out country start with 'E';
 
-// let startWithE = countries.filter((item) => item.startsWith('E',0))
+let startWithE = countries.filter((item) => item.startsWith('E',0))
 // console.log(startWithE)
 
 // 15- Use filter to filter out only prices with values.
 
-// let onlyPricesWithValue = products.filter((item =>  (item.price != ' ') && (item.price != '') ))
+let onlyPricesWithValue = products.filter((item =>  (item.price != ' ') && (item.price != '') ))
 // console.log(onlyPricesWithValue)
 
 // 16- Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 
-// function getStringLists(...arr){
-//   return arr
+function getStringLists(...arr){
+  return arr
 
-// }
+}
 // console.log(getStringLists(1,2,3,4))
 // console.log(getStringLists('Hakan',2,3,4))
 // console.log(getStringLists('Hakan','Fırat','Turkey'))
 
 // 17- Use reduce to sum all the numbers in the numbers array.
 
-// let sum = numbers.reduce((i ,j) => {return i+j})
-// console.log(sum)
+let sumAllNum = numbers.reduce((i ,j) => {return i+j})
+// console.log(sumAllNum)
 
 // 18- Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
 // Way 1
 
-// countries.unshift('Estonia')
-// const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
-// countries.pop() // Turkey is not one of north European countries :)
-// let concatenateCountry =  countries.reduce(() =>  (console.log(formatter.format(countries),' are north European countries.') ))
-// console.log(concatenateCountry)
+countriesOfShortList.unshift('Estonia')
+const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
+// let concatenateCountry1 =  countriesOfShortList.reduce(() =>  (console.log(formatter.format(countriesOfShortList),' are north European countries.') ))
+
 
 // Way 2
 // If you don't wanna get result and undefined you use this
 
-// countries.pop() // Turkey is not one of north European countries :)
-// countries.unshift('Estonia')
-// let concatenateCountry =  countries.reduce(() => { return `${countries.slice(0,countries.length-1)} and ${countries.slice(-1)} are north European countries.`}) 
-// console.log(concatenateCountry.replaceAll(',',', '))
+countriesOfShortList.unshift('Estonia')
+let concatenateCountry2 =  countriesOfShortList.reduce(() => { return `${countriesOfShortList.slice(0,countriesOfShortList.length-1)} and ${countriesOfShortList.slice(-1)} are north European countries.`}) 
+// console.log(concatenateCountry2.replaceAll(',',', '))
 
 // 19- Explain the difference between some and every
 
@@ -332,12 +336,12 @@ const products = [
 
 // 20- Use some to check if some names' length greater than seven in names array
 
-// let nameGreaterThanSeven = names.some((name)=> name.length>=7 ? 1:0)
+let nameGreaterThanSeven = names.some((name)=> name.length>=7 ? 1:0)
 // console.log(nameGreaterThanSeven)
 
 // 21- Use every to check if all the countries contain the word land
 
-// let containLand = countries.every((word)=> word.matchAll(/land/g))
+let containLand = countries.every((word)=> word.matchAll(/land/g))
 // console.log(containLand)
 
 // 22- Explain the difference between find and findIndex.
@@ -347,17 +351,17 @@ const products = [
 
 // 23- Use find to find the first country containing only six letters in the countries array
 
-// let firstContainingOnlySixLetters = countries.find((n) => n.length==6)
+let firstContainingOnlySixLetters = countries.find((n) => n.length==6)
 // console.log(firstContainingOnlySixLetters)
 
 // 24- Use findIndex to find the position of the first country containing only six letters in the countries array
 
-// let firstPositionContainingOnlySixLetters = countries.findIndex((n) => n.length==6)
+let firstPositionContainingOnlySixLetters = countries.findIndex((n) => n.length==6)
 // console.log(firstPositionContainingOnlySixLetters)
 
 // 25- Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
 
-// let findPositionOfNorway = countries.findIndex((n) => n=='Norway')
+let findPositionOfNorway = countries.findIndex((n) => n=='Norway')
 // console.log(findPositionOfNorway)
 
 
