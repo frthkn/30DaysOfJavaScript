@@ -363,7 +363,7 @@ const products = [
 
 // 26- Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
 
-// let findPositionOfRussia = countries.findIndex((n) => n=='Russia')
+let findPositionOfRussia = countries.findIndex((n) => n=='Russia')
 // console.log(findPositionOfRussia)
 
 // Exercises: Level 2
