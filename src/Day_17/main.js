@@ -25,7 +25,7 @@ const student = {
 console.log(student)
 localStorage.setItem('student',JSON.stringify(student))
 let studentParse = JSON.parse(localStorage.getItem('student'), undefined,4)
-console.log(studentParse)
+// console.log(studentParse)
 
 // Exercises: Level 3
 
