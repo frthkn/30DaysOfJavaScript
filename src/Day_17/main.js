@@ -35,6 +35,25 @@ const personAccount = {
     firstName : 'Hakan',
     lastName : 'Fırat',
     incomes : [500,100,45000],
-    expenses: [1000,300,200,700]
+    expenses: [1000,300,200,700],
+    totalIncome : function(){
+        return incomes.reduce((i,n)=> i+n,0)
+    }, 
+    totalExpense :function(){
+        return expenses.reduce((i,n)=> i+n,0)
+    },     
+    addIncome: function(incomes){
+        return incomes.push(incomes)
+    }, addExpense: function(expenses){
+        return expenses.push(expenses)
+    },
+    accountBalance: function(totalIncome,totalExpense){
+        return totalIncome-totalExpense
+    },
+    accountInfo: function(firstName,lastName,accountBalance){
+        
+        return `Name: ${firstName} Lastname: ${lastName}, Account Balance: ${accountBalance}`
+    },
 }
 
+localStorage.setItem('personAccount', personAccount)
