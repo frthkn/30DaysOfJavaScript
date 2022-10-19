@@ -57,8 +57,8 @@ const personAccount = {
 }
 
 localStorage.setItem('personAccount', JSON.stringify(personAccount))
-const parseObj = JSON.parse(localStorage.getItem('accountInfo'))
-console.log(personAccount.totalExpense())
-console.log(personAccount.totalIncome())
-console.log(personAccount.accountInfo())
-//console.log(parseObj)
+const parseObj = JSON.parse(localStorage.getItem('personAccount'))
+// console.log(personAccount.totalExpense())
+// console.log(personAccount.totalIncome())
+// console.log(personAccount.accountInfo())
+// console.log(parseObj)
