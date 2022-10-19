@@ -37,26 +37,28 @@ const personAccount = {
     incomes : [500,100,45000],
     expenses: [1000,300,200,700],
     totalIncome : function(){
-        return incomes.reduce((i,n)=> i+n,0)
+        return this.incomes.reduce((i,n)=> i+n,0)
     }, 
     totalExpense :function(){
-        return expenses.reduce((i,n)=> i+n,0)
+        return this.expenses.reduce((i,n)=> i+n,0)
     },     
     addIncome: function(){
-        return incomes.push()
+        return this.incomes.push()
     }, addExpense: function(){
-        return expenses.push(expenses)
+        return this.expenses.push(expenses)
     },
-    accountBalance: function(totalIncome,totalExpense){
-        return totalIncome-totalExpense
+    accountBalance: function(){
+        return this.totalIncome()-this.totalExpense()
     },
     accountInfo: function(){
         
-        return `Name: ${this.firstName} Lastname: ${lastName}, Account Balance: ${accountBalance}`
+        return `Account Owner Name: ${this.firstName} ${this.lastName}, Balance: ${this.accountBalance()}`
     },
 }
 
 localStorage.setItem('personAccount', JSON.stringify(personAccount))
 const parseObj = JSON.parse(localStorage.getItem('accountInfo'))
-console.log(personAccount.accountInfo)
-console.log(parseObj)
+console.log(personAccount.totalExpense())
+console.log(personAccount.totalIncome())
+console.log(personAccount.accountInfo())
+//console.log(parseObj)
