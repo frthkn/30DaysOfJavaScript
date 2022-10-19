@@ -22,7 +22,7 @@ const student = {
     country : 'Turkey',
     skills : ['HTML', 'CSS', 'JS'],
 }
-console.log(student)
+// console.log(student)
 localStorage.setItem('student',JSON.stringify(student))
 let studentParse = JSON.parse(localStorage.getItem('student'), undefined,4)
 // console.log(studentParse)
