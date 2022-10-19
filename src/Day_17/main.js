@@ -11,8 +11,6 @@ localStorage.setItem('age', 34),
 localStorage.setItem('country', 'Turkey'),
 localStorage.setItem('city', 'Ankara')
 
-
-
 // Exercises: Level 2
 
 // Create a student object. The student object will have first name, last name, age, skills, country, enrolled keys and values for the keys. Store the student object in your browser localStorage.
