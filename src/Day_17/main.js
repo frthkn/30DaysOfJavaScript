@@ -31,3 +31,10 @@ let studentParse = JSON.parse(localStorage.getItem('student'), undefined,4)
 
 // 1- Create an object called personAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 
+const personAccount = {
+    firstName : 'Hakan',
+    lastName : 'Fırat',
+    incomes : [500,100,45000],
+    expenses: [1000,300,200,700]
+}
+
