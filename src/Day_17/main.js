@@ -42,18 +42,21 @@ const personAccount = {
     totalExpense :function(){
         return expenses.reduce((i,n)=> i+n,0)
     },     
-    addIncome: function(incomes){
-        return incomes.push(incomes)
-    }, addExpense: function(expenses){
+    addIncome: function(){
+        return incomes.push()
+    }, addExpense: function(){
         return expenses.push(expenses)
     },
     accountBalance: function(totalIncome,totalExpense){
         return totalIncome-totalExpense
     },
-    accountInfo: function(firstName,lastName,accountBalance){
+    accountInfo: function(){
         
-        return `Name: ${firstName} Lastname: ${lastName}, Account Balance: ${accountBalance}`
+        return `Name: ${this.firstName} Lastname: ${lastName}, Account Balance: ${accountBalance}`
     },
 }
 
-localStorage.setItem('personAccount', personAccount)
+localStorage.setItem('personAccount', JSON.stringify(personAccount))
+const parseObj = JSON.parse(localStorage.getItem('accountInfo'))
+console.log(personAccount.accountInfo)
+console.log(parseObj)
