@@ -3,6 +3,14 @@
 // Exercises: Level 1
 
 // 1- Store you first name, last name, age, country, city in your browser localStorage.
+// You can assing these variables on your browser 
+localStorage.setItem('firstName', 'Hakan'),
+localStorage.setItem('lastName', 'Fırat'),
+localStorage.setItem('age', 34),
+localStorage.setItem('country', 'Turkey'),
+localStorage.setItem('city', 'Ankara')
+
+
 
 // Exercises: Level 2
 
