@@ -46,6 +46,8 @@ Day 14- Error handling Exercises
 
 Day 15- Class Exercises
 
+Day 16- JSON Exercises
+
 
 
 
