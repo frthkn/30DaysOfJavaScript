@@ -38,7 +38,7 @@ const fetchData = async () => {
 
 // Exercises: Level 2
 
-// 2- Print out all the cat names in to catNames variable.
+// 1- Print out all the cat names in to catNames variable.
 
 const catNames = async () => {
     try {
@@ -59,6 +59,6 @@ const catNames = async () => {
 // Exercises: Level 3
 
 
-// Read the cats api and find the average weight of cat in metric unit.
+// 1- Read the cats api and find the average weight of cat in metric unit.
 // Read the countries api and find out the 10 largest countries
 // Read the countries api and count total number of languages in the world used as officials.
