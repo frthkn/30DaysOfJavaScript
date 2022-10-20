@@ -74,8 +74,26 @@ const catAverageWeight = async () => {
       console.error(err)
     }
   }
-catAverageWeight()
+// catAverageWeight()
 
 
-// Read the countries api and find out the 10 largest countries
+// 2- Read the countries api and find out the 10 largest countries
+
+const tenLargestCountry = async () => {
+    try {
+      const response = await fetch(countriesAPI)
+      const countries = await response.json()
+      const largeCountries = Object.entries(countries).map((el => el[1])).sort((a,b)=> ((b.area)-(a.area)))
+        console.log(largeCountries.slice(0,10))
+        const largeCountries1 = Object.entries(countries).map((el => el[1].area)).sort((a,b)=> b-a)
+        console.log(largeCountries1.slice(0,10))
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  // tenLargestCountry()
+
+
+
 // Read the countries api and count total number of languages in the world used as officials.
