@@ -110,4 +110,4 @@ const numberOfLanguages = async () => {
     }
   }
  
-  numberOfLanguages()
+  // numberOfLanguages()
