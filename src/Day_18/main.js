@@ -15,7 +15,7 @@ fetch(url)
     for (const key in data) {
        dataArr.push(['name',data[key].name, 'capital',data[key].capital, 'languages',data[key].languages, 'population',data[key].population, 'area',data[key].area] )
     }
-    console.log(dataArr)
+    // console.log(dataArr)
   })
   .catch(error => console.error(error))
 
@@ -38,7 +38,22 @@ const fetchData = async () => {
 
 // Exercises: Level 2
 
-// Print out all the cat names in to catNames variable.
+// 2- Print out all the cat names in to catNames variable.
+
+const catNames = async () => {
+    try {
+      const response = await fetch(catsAPI)
+      const cats = await response.json()
+      const catsArr = []
+      for (const key in cats) {
+            catsArr.push(['name',cats[key].name] )
+      }
+        console.log(catsArr)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+catNames()
 
 
 // Exercises: Level 3
