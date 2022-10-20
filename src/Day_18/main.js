@@ -53,7 +53,7 @@ const catNames = async () => {
       console.error(err)
     }
   }
-catNames()
+// catNames()
 
 
 // Exercises: Level 3
