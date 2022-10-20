@@ -96,4 +96,18 @@ const tenLargestCountry = async () => {
 
 
 
-// Read the countries api and count total number of languages in the world used as officials.
+// 3- Read the countries api and count total number of languages in the world used as officials.
+
+const numberOfLanguages = async () => {
+    try {
+      const response = await fetch(countriesAPI)
+      const countries = await response.json()
+      const numOfLanguages = Object.entries(countries).map((el => el[1].languages)).flat().map((i => i.name))
+      const setLangs = new Set(numOfLanguages)
+      console.log('Total number of languages in the world used as officials is:', setLangs.size)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+ 
+  numberOfLanguages()
