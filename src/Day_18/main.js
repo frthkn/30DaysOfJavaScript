@@ -60,5 +60,22 @@ const catNames = async () => {
 
 
 // 1- Read the cats api and find the average weight of cat in metric unit.
+
+const catAverageWeight = async () => {
+    try {
+      const response = await fetch(catsAPI)
+      const cats = await response.json()
+      const catsArr = []
+      for (const key in cats) {
+            catsArr.push([cats[key].weight.metric])
+      }
+        console.log(catsArr)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+catAverageWeight()
+
+
 // Read the countries api and find out the 10 largest countries
 // Read the countries api and count total number of languages in the world used as officials.
