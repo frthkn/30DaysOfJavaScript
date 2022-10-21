@@ -152,5 +152,19 @@ isRaining
  ? console.log('You need a rain coat.')
  : console.log('No need for a rain coat.')
 
+// Classes
 
- 
+ // syntax
+class ClassName {
+    // code goes here
+}
+
+// defining class
+class Person {
+    constructor(firstName, lastName) {
+      console.log(this) // Check the output from here
+      this.firstName = firstName
+      this.lastName = lastName
+    }
+  }
+  
