@@ -90,5 +90,5 @@ function personAccount(itemIncome, itemExpense){
   }
 }
 
-// console.log(personAccount(0,0))
-// console.log(personAccount(100,300))
+console.log(personAccount(0,0))
+console.log(personAccount(100,300))
