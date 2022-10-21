@@ -52,10 +52,10 @@ function outerHasThreeFunc(){
 // It has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance inner functions. 
 // Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 
-function personAccount(){
+function personAccount(itemIncome, itemExpense){
   const firstName ='Hakan'
   const lastName = 'Fırat'
-  const incomes = [100,200,300]
+  const incomes = [100,200,300,400]
   const expenses = [100,200,300]
 
   function totalIncome(){
@@ -70,27 +70,25 @@ function personAccount(){
     return `${firstName} ${lastName}`
   }
   
-  function addExpense(item){
-    return expenses.push(item)
+  function addExpense(){
+    return expenses.push(itemExpense)
   }
 
-  function addIncomes(item){
-    return incomes.push(item)
+  function addIncomes(){
+    return incomes.push(itemIncome)
   }
 
   function accountBalance(){
-    const balance = (totalExpense()-totalIncome())
-    return balance
+    return totalIncome()-totalExpense()
   }
  
   return {
-    totalIncome : totalIncome(), 
-    totalExpense : totalExpense(), 
-    accountInfo : accountInfo(),
-    addIncome : addIncomes(), 
+    addIncomes: addIncomes(),
     addExpense : addExpense(),
-    accountBalance : accountBalance()
+    'Account Info' : accountInfo(),
+    'Account Balance' : accountBalance()
   }
 }
 
-console.log(personAccount())
+console.log(personAccount(0,0))
+console.log(personAccount(100,300))
