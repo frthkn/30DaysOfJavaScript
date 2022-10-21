@@ -52,6 +52,8 @@ Day 17- Web Storage Exercises
 
 Day 18- Promise Exercises
 
+Day 19- Closure Exercises
+
 
 
 
