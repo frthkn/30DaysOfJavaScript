@@ -48,5 +48,49 @@ function outerHasThreeFunc(){
 
 // Exercises: Level 3
 
+// 1-Create a personAccount out function. It has firstname, lastname, incomes, expenses inner variables. 
+// It has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance inner functions. 
+// Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 
+function personAccount(){
+  const firstName ='Hakan'
+  const lastName = 'Fırat'
+  const incomes = [100,200,300]
+  const expenses = [100,200,300]
 
+  function totalIncome(){
+    return incomes.reduce((a,b)=> a+b,0)
+  }
+
+  function totalExpense(){
+    return expenses.reduce((a,b)=> a+b,0)
+  }
+  
+  function accountInfo(){
+    return `${firstName} ${lastName}`
+  }
+  
+  function addExpense(item){
+    return expenses.push(item)
+  }
+
+  function addIncomes(item){
+    return incomes.push(item)
+  }
+
+  function accountBalance(){
+    const balance = (totalExpense()-totalIncome())
+    return balance
+  }
+ 
+  return {
+    totalIncome : totalIncome(), 
+    totalExpense : totalExpense(), 
+    accountInfo : accountInfo(),
+    addIncome : addIncomes(), 
+    addExpense : addExpense(),
+    accountBalance : accountBalance()
+  }
+}
+
+console.log(personAccount())
