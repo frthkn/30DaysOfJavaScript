@@ -4,20 +4,47 @@
 
 // 1- Create a closure which has one inner function
 
-function outerFunc(){
+function outerHasOneFunc(){
   const sayHi = 'Hello'
-  function innerFunc (){
+  function innerOne (){
     return `${sayHi} world!`
   }
 
-  return innerFunc()
+  return innerOne()
 }
 
-console.log(outerFunc())
+// console.log(outerHasOneFunc())
 
 // Exercises: Level 2
 
+// 1- Create a closure which has three inner functions
 
+
+function outerHasThreeFunc(){
+  const sayHi = 'Hello'
+  function innerFuncOne (){
+    return `${sayHi} world!`
+  }
+  function innerFuncTwo(){
+    return `How are you`
+  }
+
+  function innerFuncThree(){
+    return `What is your favorite game`
+  }
+
+  return {
+    funcOne:innerFuncOne(),
+    funcTwo: innerFuncTwo(),
+    funcThree: innerFuncThree()
+  }
+}
+
+// console.table('\n',
+//   outerHasThreeFunc().funcOne,'\n', 
+//   outerHasThreeFunc().funcTwo,'\n',
+//   outerHasThreeFunc().funcThree
+// )
 
 // Exercises: Level 3
 
