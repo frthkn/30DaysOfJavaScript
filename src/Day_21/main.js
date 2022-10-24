@@ -78,20 +78,27 @@ const getTagP1= document.querySelector('p')
 
 document.querySelector('body').style.width ='auto'
 document.querySelector('body').style.height ='auto'
-document.querySelector('span').style.fontSize = '1.5em'
 document.querySelector('body').style.fontSize = '1em'
 document.querySelector('body').style.textAlign = 'center'
 document.querySelector('body').style.margin = '10%'
-document.querySelector('h2').style.borderBottom = 'solid 1px'
-document.querySelector('h2').style.position = 'relative'
-document.querySelector('h2').style.display = 'inline'
+
+document.querySelector('span').style.fontSize = '1.5em'
+
+document.querySelector('h2').style.display = 'inline-block'
+document.querySelector('h2').style.justifyContent = 'center'
+document.querySelector('h2').style.alignItems = 'center'
 document.querySelector('h2').style.padding = '1%'
-document.querySelector('h2').style.margin = '1%'
-document.querySelector('h3').style.display = 'inline'
-document.querySelector('h3').style.padding = '1%'
-document.querySelector('h3').style.margin = '1%'
-document.querySelector('h3').style.position = 'relative'
-document.querySelector('h2').style.justifyContent ='flex'
+document.querySelector('h2').style.margin = '2%'
+document.querySelector('h2').style.borderBottomStyle ='solid'
+
+
+
+document.querySelector('h3').style.display = 'inline-block'
+document.querySelector('h3').style.justifyContent = 'center'
+document.querySelector('h3').style.padding = '2%'
+document.querySelector('h3').style.margin = '2%'
+document.querySelector('h3').style.alignItems = 'center'
+
 
 
 
@@ -101,7 +108,7 @@ document.querySelectorAll('ul>li').forEach(element => element.style.fontSize= '2
 document.querySelectorAll('ul>li').forEach(element => element.style.textAlign = 'left')
 document.querySelectorAll('ul>li').forEach(element => element.style.border ='solid 1em')
 document.querySelectorAll('ul>li').forEach(element => element.style.padding ='2%')
-document.querySelectorAll('ul>li').forEach(element => element.style.margin ='auto')
+document.querySelectorAll('ul>li').forEach(element => element.style.margin ='2%')
 
 //document.querySelector('body').style.fontFamily = 'sans-serif'
 
