@@ -3,7 +3,7 @@
 // Exercise: Level 1
 
 
-// Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
+// 1- Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
 // Get each of the the paragraph using document.querySelector('#id') and by their id
 // Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
 // Loop through the nodeList and get the text content of each paragraph
