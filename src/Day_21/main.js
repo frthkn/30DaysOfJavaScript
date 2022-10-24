@@ -10,9 +10,11 @@ const getTagP1= document.querySelector('p')
 
 // 2- Get each of the the paragraph using document.querySelector('#id') and by their id
 
-const getTagPById= document.querySelectorAll('p')
+const getTagPById= document.querySelectorAll('#p')
 
-console.log(getTagPById)
+getTagPById.forEach(p => console.log(p))
+
+//console.log(getTagPById)
 
 // 3- Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
 
