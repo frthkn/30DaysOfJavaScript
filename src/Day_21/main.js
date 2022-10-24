@@ -23,15 +23,14 @@ const getTagP1= document.querySelector('p')
 
 // 5- Set a text content to paragraph the fourth paragraph,Fourth Paragraph
 
-const getTagFourPContent = document.querySelectorAll('p')
-const setFourPragraph = getTagFourPContent[3].innerHTML = 'Fourth Paragraph'
-// console.log(setFourPragraph)
+// const getTagFourPContent = document.querySelectorAll('p')
+// const setFourPragraph = getTagFourPContent[3].innerHTML = 'Fourth Paragraph'
 
 // 6- Set id and class attribute for all the paragraphs using different attribute setting methods
 
-const setAttributeToAllPTag = document.querySelectorAll('p')
-const setClass = setAttributeToAllPTag.forEach((i => i.setAttribute('class', 'newClass')))
-const setId = setAttributeToAllPTag.forEach((i => i.setAttribute('id', 'newID')))
+// const setAttributeToAllPTag = document.querySelectorAll('p')
+// const setClass = setAttributeToAllPTag.forEach((i => i.setAttribute('class', 'newClass')))
+// const setId = setAttributeToAllPTag.forEach((i => i.setAttribute('id', 'newID')))
 
 // console.log(setAttributeToAllPTag)
 
@@ -45,8 +44,33 @@ const setId = setAttributeToAllPTag.forEach((i => i.setAttribute('id', 'newID'))
 // const changeStyleColor = document.querySelectorAll('p').forEach((c => c.style.color ='blue'))
 // const changeStyleFontFamily = document.querySelectorAll('p').forEach((c => c.style.fontFamily ='cursive'))
 
-// Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
-// Set text content, id and class to each paragraph
+// 2- Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
+
+// const getTagAllP= document.querySelectorAll('p').forEach((p,i) => {
+//   if(i ==0 || i == 2) {
+//     p.style.color = 'green'
+//   }else{
+//     p.style.color = 'red'
+//   }
+// } )
+
+// 3- Set text content, id and class to each paragraph
+
+// const setAttributeToAllPTag = document.querySelectorAll('p')
+// const setClass = setAttributeToAllPTag.forEach((i => i.setAttribute('class', 'lastClass')))
+// const setId = setAttributeToAllPTag.forEach((i => i.setAttribute('id', 'lastID')))
+// const setContent = setAttributeToAllPTag.forEach((p, i) =>{
+//   if (i ==0){
+//     p.innerText ='This P One'
+//   }else if (i ==1){
+//     p.innerText ='This P Two'
+//   }else if (i ==2){
+//     p.innerText ='This P Three'
+//   }else if (i ==3){
+//     p.innerText ='This P Four'
+//   }
+// })
+
 
 
 // Exercise: Level 3
