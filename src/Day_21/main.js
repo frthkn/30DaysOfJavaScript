@@ -81,8 +81,13 @@ const getTagP1= document.querySelector('p')
 // 1- Develop the following application, use the following HTML elements to get started with. You will get the same code on starter folder. Apply all the styles and functionality using JavaScript only.
 
 // 1.1- The year color is changing every 1 second
+const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
+console.log(getColor)
+function setTime(){
+    const changeColorOfYear = document.querySelector('span').style.backgroundColor = getColor
+}
 
-//const changeColorOfYear = document.
+
 
 // 1.2- The date and time background color is changing every on seconds
 // 1.3- Completed challenge has background green
