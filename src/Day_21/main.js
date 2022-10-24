@@ -72,5 +72,4 @@ const getTagP1= document.querySelector('p')
 // })
 
 
-
 // Exercise: Level 3
