@@ -76,13 +76,25 @@ const getTagP1= document.querySelector('p')
 
 // DOM: Mini project 1
 
-document.querySelector('body').style.alignContent = 'center'
+
+document.querySelector('span').style.fontSize = '1.5em'
+document.querySelector('body').style.fontSize = '1em'
+document.querySelector('h2').style.borderBottom = 'solid 1px'
+document.querySelector('h2').style.display = 'inline'
+document.querySelector('h3').style.display = 'grid-inline'
+document.querySelector('body').style.position = 'center'
+
+
+document.querySelectorAll('ul>li').forEach(element => element.style.display= 'grid')
+document.querySelectorAll('ul>li').forEach(element => element.style.fontSize= '20px')
+document.querySelectorAll('ul>li').forEach(element => element.style.border = 'solid')
+
+//document.querySelector('body').style.fontFamily = 'sans-serif'
 
 // 1- Develop the following application, use the following HTML elements to get started with. You will get the same code on starter folder. Apply all the styles and functionality using JavaScript only.
 
 // 1.1- The year color is changing every 1 second
 
-const changeFontSizeOfYear = document.querySelector('span').style.fontSize = '2.5em'
 const changeColorOfYear =  setInterval(() => {
     const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
     const d = new Date()
