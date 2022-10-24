@@ -81,15 +81,34 @@ const getTagP1= document.querySelector('p')
 // 1- Develop the following application, use the following HTML elements to get started with. You will get the same code on starter folder. Apply all the styles and functionality using JavaScript only.
 
 // 1.1- The year color is changing every 1 second
-const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
-console.log(getColor)
-function setTime(){
-    const changeColorOfYear = document.querySelector('span').style.backgroundColor = getColor
-}
 
+const d = new Date()
 
+const getH3 = document.querySelector('h3').innerHTML = 'October '+d.getDate()+','+d.getFullYear()
+
+const changeFontSizeOfYear = document.querySelector('span').style.fontSize = '2.5em'
+const changeColorOfYear =  setInterval(() => {
+    const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
+    const d = new Date()
+    document.querySelector('span').style.backgroundColor = getColor
+    
+    
+}, 1000);
 
 // 1.2- The date and time background color is changing every on seconds
+
+
+
+// const setTimeContent = document.write = <h3>timeNow</h3>
+
+// const getTime = setInterval(() => {
+
+//     const getDate = new Date()
+//     const nowTime =getDate.toLocaleTimeString()
+//     console.log(nowTime)
+    
+// }, 1000);
+
 // 1.3- Completed challenge has background green
 // 1.4- Ongoing challenge has background yellow
 // 1.5- Coming challenges have background red
