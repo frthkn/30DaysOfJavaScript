@@ -10,19 +10,31 @@ const getTagP1= document.querySelector('p')
 
 // 2- Get each of the the paragraph using document.querySelector('#id') and by their id
 
-const getTagPById= document.querySelectorAll('#p')
+// const getTagPById= document.querySelectorAll('#p').forEach(p => console.log(p))
 
-getTagPById.forEach(p => console.log(p))
-
-//console.log(getTagPById)
 
 // 3- Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
 
+//const getTagPByTagName= document.querySelectorAll('p').forEach(p => console.log(p))
 
+// 4- Loop through the nodeList and get the text content of each paragraph
 
-// Loop through the nodeList and get the text content of each paragraph
-// Set a text content to paragraph the fourth paragraph,Fourth Paragraph
-// Set id and class attribute for all the paragraphs using different attribute setting methods
+//const getTagPContent = document.querySelectorAll('p').forEach((i => console.log(i.innerText)))
+
+// 5- Set a text content to paragraph the fourth paragraph,Fourth Paragraph
+
+const getTagFourPContent = document.querySelectorAll('p')
+const setFourPragraph = getTagFourPContent[3].innerHTML = 'Fourth Paragraph'
+// console.log(setFourPragraph)
+
+// 6- Set id and class attribute for all the paragraphs using different attribute setting methods
+
+const setAttributeToAllPTag = document.querySelectorAll('p')
+const setClass = setAttributeToAllPTag.forEach((i => i.setAttribute('class', 'newClass')))
+const setId = setAttributeToAllPTag.forEach((i => i.setAttribute('id', 'newID')))
+
+// console.log(setAttributeToAllPTag)
+
 
 
 // Exercise: Level 2
