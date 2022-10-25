@@ -54,6 +54,10 @@ Day 18- Promise Exercises
 
 Day 19- Closure Exercises
 
+Day 20- Closure Exercises
+
+Day 21- Closure Exercises
+
 
 
 
