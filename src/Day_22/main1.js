@@ -1,5 +1,6 @@
 // Day 22 
 
+
 // Exercises: Level 1
 
 // 1-Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div.
@@ -19,7 +20,7 @@ document.querySelector('h5').style.textDecorationLine = 'underline'
 document.querySelector('body').style.margin = '20px'
 document.querySelector('body').style.padding = '20px'
 document.querySelector('body').style.fontFamily =' sans-serif'
-//document.querySelector('body').style.justifyContent = 'center'
+
 
 // div style
 
@@ -43,9 +44,4 @@ document.querySelectorAll('.nums').forEach((el,i)=> {
     }
 })
  
-
-// Exercises: Level 2
-
-// 1- Use the countries array to display all the countries.
-
 
