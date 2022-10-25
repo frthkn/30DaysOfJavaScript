@@ -54,7 +54,7 @@ Day 18- Promise Exercises
 
 Day 19- Closure Exercises
 
-Day 20- Closure Exercises
+Day 20- Clean Code Exercises
 
 Day 21- Document Object Model(DOM) Exercises
 
