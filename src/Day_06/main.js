@@ -150,19 +150,19 @@ let mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 // 9- Use for loop to iterate from 0 to 100 and print only prime numbers
 
-// let prime
-// for(let i =2; i <101; i++){
-//     prime = 1
-//     for(let j = 2; j<=i/2; j++){
-//         if(i%j == 0){
-//             prime =0
-//             break
-//         }
-//     }
-//     if(prime ==1){
-//         console.log(i)
-//     }
-// }
+let prime
+for(let i =2; i <101; i++){
+    prime = 1
+    for(let j = 2; j<=i/2; j++){
+        if(i%j == 0){
+            prime =0
+            break
+        }
+    }
+    if(prime ==1){
+        console.log(i)
+    }
+}
 
 // 10- Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 

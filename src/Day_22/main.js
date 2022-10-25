@@ -8,37 +8,40 @@
 //   1.2- Odd numbers background is yellow
 //   1.3- Prime numbers background is red
 
-document.querySelector('h3').style.justifyContent ='center'
-document.querySelector('h3').style.justifyItems ='center'
-document.querySelector('h3').style.justifySelf ='center'
-document.querySelector('h3').style.position ='relative'
+document.querySelector('h2').style.textAlign = 'center'
+
+document.querySelector('h3').style.textAlign = 'center'
+document.querySelector('h3').style.textDecorationLine = 'underline'
+
+document.querySelector('h5').style.textAlign = 'center'
+document.querySelector('h5').style.textDecorationLine = 'underline'
 
 document.querySelector('body').style.margin = '20px'
 document.querySelector('body').style.padding = '20px'
 document.querySelector('body').style.fontFamily =' sans-serif'
-document.querySelector('body').style.justifyContent = 'center'
+//document.querySelector('body').style.justifyContent = 'center'
 
 // div style
 
 document.querySelector('div').style.display ='grid'
 document.querySelector('div').style.gap = '8px'
-document.querySelector('div').style.gridTemplateColumns = '80px 80px 80px 80px 80px 80px'
-document.querySelector('div').style.gridTemplateRows = '50px 50px 50px 50px 50px 50px'
+document.querySelector('div').style.gridTemplateColumns = 'repeat(6, 100px)'
+document.querySelector('div').style.gridTemplateRows = 'repeat(17, 100px)'
 document.querySelector('div').style.justifyContent = 'center'
+
 
 document.querySelectorAll('.nums').forEach((el=> el.style.backgroundColor = 'white'))
 document.querySelectorAll('.nums').forEach((el=> el.style.border = 'solid'))
-document.querySelectorAll('.nums').forEach((el=> el.style.justifyContent = 'center'))
-document.querySelectorAll('.nums').forEach((el=> el.style.textAligns = 'center'))
-document.querySelectorAll('.nums').forEach((el=> el.style.padding = '8px'))
+document.querySelectorAll('.nums').forEach((el=> el.style.padding = '35px'))
+document.querySelectorAll('.nums').forEach((el,i)=> {
+    if(i == 2 || i == 3 || i == 5 || i == 7 || i == 11 || i == 13 || i == 17 || i == 19 || i == 23 || i == 29 || i == 31 || i == 37 || i == 41 || i == 43 || i == 47 || i == 53 || i == 59 || i == 61 || i == 67 || i == 71 || i == 73 || i == 79 || i == 83 || i == 89 || i == 97){
+        el.style.backgroundColor ='red'
+    }else if(i%2 == 0){
+        el.style.backgroundColor ='green'
+    }else {
+        el.style.backgroundColor ='yellow'
+    }
+})
+ 
 
 
-
-//{
-
-    
-    // el[i].style.display ='grid'
-    // el[i].style.gridTemplateColums ='80px 80px 80px'
-    // el[i].style.gridTemplateRows ='50px 50px'
-    // el[i].style.backgroundColor ='red'
-//})
