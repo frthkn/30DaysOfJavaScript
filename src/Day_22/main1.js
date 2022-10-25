@@ -23,6 +23,14 @@ document.querySelector('body').style.fontFamily =' sans-serif'
 
 
 // div style
+
+
+document.querySelector('div').style.display ='grid'
+document.querySelector('div').style.gap = '8px'
+document.querySelector('div').style.gridTemplateColumns = 'repeat(6, 100px)'
+document.querySelector('div').style.gridTemplateRows = 'repeat(17, 100px)'
+document.querySelector('div').style.justifyContent = 'center'
+
 let div
 for (let index = 0; index < 102; index++) {
     div = document.createElement('div')
@@ -30,12 +38,6 @@ for (let index = 0; index < 102; index++) {
     div.textContent = index  
     document.querySelector('.pnumbers').appendChild(div)
 }
-
-document.querySelector('div').style.display ='grid'
-document.querySelector('div').style.gap = '8px'
-document.querySelector('div').style.gridTemplateColumns = 'repeat(6, 100px)'
-document.querySelector('div').style.gridTemplateRows = 'repeat(17, 100px)'
-document.querySelector('div').style.justifyContent = 'center'
 
 
 document.querySelectorAll('.nums').forEach((el=> el.style.backgroundColor = 'white'))
