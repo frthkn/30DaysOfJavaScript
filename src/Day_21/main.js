@@ -81,15 +81,16 @@ document.querySelector('body').style.height ='auto'
 document.querySelector('body').style.fontSize = '1em'
 document.querySelector('body').style.textAlign = 'center'
 document.querySelector('body').style.margin = '10%'
+document.querySelector('body').style.rowGap = '5px'
 
 document.querySelector('span').style.fontSize = '1.5em'
 
-document.querySelector('h2').style.display = 'inline-block'
+document.querySelector('h2').style.display = 'grid'
 document.querySelector('h2').style.justifyContent = 'center'
 document.querySelector('h2').style.alignItems = 'center'
 document.querySelector('h2').style.padding = '1%'
 document.querySelector('h2').style.margin = '2%'
-document.querySelector('h2').style.borderBottomStyle ='solid'
+document.querySelector('h2').style.textDecorationLine =' underline'
 
 
 
@@ -106,7 +107,7 @@ document.querySelector('h3').style.alignItems = 'center'
 document.querySelectorAll('ul>li').forEach(element => element.style.display= 'grid')
 document.querySelectorAll('ul>li').forEach(element => element.style.fontSize= '20px')
 document.querySelectorAll('ul>li').forEach(element => element.style.textAlign = 'left')
-document.querySelectorAll('ul>li').forEach(element => element.style.border ='solid 1em')
+document.querySelectorAll('ul>li').forEach(element => element.style.border ='solid 0.2em')
 document.querySelectorAll('ul>li').forEach(element => element.style.padding ='2%')
 document.querySelectorAll('ul>li').forEach(element => element.style.margin ='2%')
 
@@ -138,8 +139,19 @@ const changeColorOfTime =  setInterval(() => {
 
 
 // 1.3- Completed challenge has background green
-
-
-
 // 1.4- Ongoing challenge has background yellow
 // 1.5- Coming challenges have background red
+
+document.querySelectorAll('ul>li').forEach((el, i) => {
+    
+})
+
+document.querySelectorAll('ul>li').forEach((el, i) => {
+    if (i ==0){
+        el.style.backgroundColor ='green'
+    }else if (i ==1){
+        el.style.backgroundColor ='yellow'
+    }else{
+        el.style.backgroundColor ='red'
+    }
+})
