@@ -38,13 +38,27 @@ for (let index = 0; index < 102; index++) {
     div.textContent = index  
     document.querySelector('.pnumbers').appendChild(div)
 }
+let arrPrime = []
+let prime
+for(let i =2; i <101; i++){
+    prime = 1
+    for(let j = 2; j<=i/2; j++){
+        if(i%j == 0){
+            prime =0
+            break
+        }
+    }
+    if(prime ==1){
+        arrPrime.push(i)
+    }
+}
 
 
 document.querySelectorAll('.nums').forEach((el=> el.style.backgroundColor = 'white'))
 document.querySelectorAll('.nums').forEach((el=> el.style.border = 'solid'))
 document.querySelectorAll('.nums').forEach((el=> el.style.padding = '35px'))
 document.querySelectorAll('.nums').forEach((el,i)=> {
-    if(i == 2 || i == 3 || i == 5 || i == 7 || i == 11 || i == 13 || i == 17 || i == 19 || i == 23 || i == 29 || i == 31 || i == 37 || i == 41 || i == 43 || i == 47 || i == 53 || i == 59 || i == 61 || i == 67 || i == 71 || i == 73 || i == 79 || i == 83 || i == 89 || i == 97){
+    if( i == 2 || i == 3 || i == 5 || i == 7 || i == 11 || i == 13 || i == 17 || i == 19 || i == 23 || i == 29 || i == 31 || i == 37 || i == 41 || i == 43 || i == 47 || i == 53 || i == 59 || i == 61 || i == 67 || i == 71 || i == 73 || i == 79 || i == 83 || i == 89 || i == 97){
         el.style.backgroundColor ='red'
     }else if(i%2 == 0){
         el.style.backgroundColor ='green'
