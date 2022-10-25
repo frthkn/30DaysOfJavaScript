@@ -8,6 +8,10 @@
 //   1.2- Odd numbers background is yellow
 //   1.3- Prime numbers background is red
 
+document.querySelector('h3').style.justifyContent ='center'
+document.querySelector('h3').style.justifyItems ='center'
+document.querySelector('h3').style.justifySelf ='center'
+document.querySelector('h3').style.position ='relative'
 
 document.querySelector('body').style.margin = '20px'
 document.querySelector('body').style.padding = '20px'
@@ -25,6 +29,7 @@ document.querySelector('div').style.justifyContent = 'center'
 document.querySelectorAll('.nums').forEach((el=> el.style.backgroundColor = 'white'))
 document.querySelectorAll('.nums').forEach((el=> el.style.border = 'solid'))
 document.querySelectorAll('.nums').forEach((el=> el.style.justifyContent = 'center'))
+document.querySelectorAll('.nums').forEach((el=> el.style.textAligns = 'center'))
 document.querySelectorAll('.nums').forEach((el=> el.style.padding = '8px'))
 
 
