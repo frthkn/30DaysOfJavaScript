@@ -23,6 +23,13 @@ document.querySelector('body').style.fontFamily =' sans-serif'
 
 
 // div style
+let div
+for (let index = 0; index < 102; index++) {
+    div = document.createElement('div')
+    div.className = 'nums'
+    div.textContent = index  
+    document.querySelector('.pnumbers').appendChild(div)
+}
 
 document.querySelector('div').style.display ='grid'
 document.querySelector('div').style.gap = '8px'
