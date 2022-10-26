@@ -12,6 +12,7 @@ const h1 = document.createElement('h1')
 h1.textContent = hknChallenges.description+' in '
 
 const span = document.createElement('span')
+span.className ='spanYear'
 span.textContent = hknChallenges.challengeYear
 h1.appendChild(span)
 
@@ -30,10 +31,11 @@ const changeColorOfYear =  setInterval(() => {
     const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
     const d = new Date()
     const getH3 = document.querySelector('h3').innerHTML = d.toDateString()+' '+ d.toLocaleTimeString()
-    document.querySelector('span').style.backgroundColor = getColor
+    document.querySelector('.spanYear').style.backgroundColor = getColor
     
 }, 1000);
 
+// The date and time background color is changing every on seconds
 
 const changeColorOfTime =  setInterval(() => {
     const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
@@ -98,14 +100,21 @@ function createSelect() {
     select.className = 'slct'
     return select;
 }
+function createOption() {
+    let option = document.createElement('option');
+    return option;
+}
 const arrTopics = []
 hknChallenges.challenges.forEach((el=> arrTopics.push(el.topics)))
+document.querySelectorAll('ul>li').forEach((element,i)=> element.appendChild(createSelect()).setAttribute('id', 'slct'+i))
 
 
-const getLi0 = document.querySelector('#li0')
-getLi0.appendChild(createSelect()).appendChild(Option).textContent = arrTopics[0]
 
-// The date and time background color is changing every on seconds
+for (let index = 0; index < arrTopics[0].length; index++) {
+    document.querySelectorAll('#slct0').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'python'+index))
+    document.querySelectorAll('#python'+index).forEach((element)=> element.textContent = arrTopics[0][index])
+}
+
 
 
 
