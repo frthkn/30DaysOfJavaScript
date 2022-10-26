@@ -97,8 +97,9 @@ document.querySelectorAll('ul>li').forEach(element => element.style.margin ='2%'
 document.querySelectorAll('ul>li').forEach((element,i)=> element.setAttribute('id','li'+i))
 
 
-function createSelect() {
+function createSelect(name) {
     let select = document.createElement('select');
+    select.textContent = name
     select.className = 'slct'
     return select;
 }
@@ -107,6 +108,7 @@ function createOption() {
     return option;
 }
 const arrTopics = []
+
 hknChallenges.challenges.forEach((el=> arrTopics.push(el.topics)))
 document.querySelectorAll('ul>li').forEach((element,i)=> element.appendChild(createSelect()).setAttribute('id', 'slct'+i))
 
