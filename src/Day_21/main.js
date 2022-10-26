@@ -116,7 +116,7 @@ const changeColorOfYear =  setInterval(() => {
     const d = new Date()
     const getH3 = document.querySelector('h3').innerHTML = d.toDateString()+' '+ d.toLocaleTimeString()
     document.querySelector('span').style.backgroundColor = getColor
-    document.querySelector('h3').style.backgroundColor = getColor
+   
     
     
 }, 1000);
