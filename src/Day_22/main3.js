@@ -80,8 +80,10 @@ const ul = document.createElement('ul')
 const div = document.querySelector('div')
 body.appendChild(div)
 div.appendChild(ul)
+
 const arrNameForLi = []
 hknChallenges.challenges.forEach((el => (arrNameForLi.push(el.name))))
+
 for (let index = 0; index < arrNameForLi.length; index++) {
     ul.appendChild(createItem(arrNameForLi[index]))
 }
@@ -108,15 +110,63 @@ const arrTopics = []
 hknChallenges.challenges.forEach((el=> arrTopics.push(el.topics)))
 document.querySelectorAll('ul>li').forEach((element,i)=> element.appendChild(createSelect()).setAttribute('id', 'slct'+i))
 
-
+// Python 
 
 for (let index = 0; index < arrTopics[0].length; index++) {
     document.querySelectorAll('#slct0').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'python'+index))
     document.querySelectorAll('#python'+index).forEach((element)=> element.textContent = arrTopics[0][index])
 }
 
+// javascript 
+
+for (let index = 0; index < arrTopics[1].length; index++) {
+    document.querySelectorAll('#slct1').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'javascript'+index))
+    document.querySelectorAll('#javascript'+index).forEach((element)=> element.textContent = arrTopics[1][index])
+}
 
 
+// HTML & CSS
+
+for (let index = 0; index < arrTopics[2].length; index++) {
+    document.querySelectorAll('#slct2').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'htmlandcss'+index))
+    document.querySelectorAll('#htmlandcss'+index).forEach((element)=> element.textContent = arrTopics[2][index])
+}
+
+// React 
+
+
+for (let index = 0; index < arrTopics[3].length; index++) {
+    document.querySelectorAll('#slct3').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'React'+index))
+    document.querySelectorAll('#React'+index).forEach((element)=> element.textContent = arrTopics[3][index])
+}
+
+// ReactNative
+
+for (let index = 0; index < arrTopics[4].length; index++) {
+    document.querySelectorAll('#slct4').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'ReactNative'+index))
+    document.querySelectorAll('#ReactNative'+index).forEach((element)=> element.textContent = arrTopics[4][index])
+}
+
+// Fullstack
+
+for (let index = 0; index < arrTopics[5].length; index++) {
+    document.querySelectorAll('#slct5').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'Fullstack'+index))
+    document.querySelectorAll('#Fullstack'+index).forEach((element)=> element.textContent = arrTopics[5][index])
+}
+
+// Data Analysis
+
+for (let index = 0; index < arrTopics[6].length; index++) {
+    document.querySelectorAll('#slct6').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'DataAnalysis'+index))
+    document.querySelectorAll('#DataAnalysis'+index).forEach((element)=> element.textContent = arrTopics[6][index])
+}
+
+// Machine Learning
+
+for (let index = 0; index < arrTopics[7].length; index++) {
+    document.querySelectorAll('#slct7').forEach((element)=> element.appendChild(createOption()).setAttribute('id', 'MachineLearning'+index))
+    document.querySelectorAll('#MachineLearning'+index).forEach((element)=> element.textContent = arrTopics[7][index])
+}
 
 document.querySelectorAll('ul>li').forEach((el, i) => {
     if (i ==0){
@@ -127,3 +177,14 @@ document.querySelectorAll('ul>li').forEach((el, i) => {
         el.style.backgroundColor ='red'
     }
 })
+
+document.querySelectorAll('select').forEach((el, i) => {
+    if (i ==0){
+        el.style.backgroundColor ='green'
+    }else if (i ==1){
+        el.style.backgroundColor ='yellow'
+    }else{
+        el.style.backgroundColor ='red'
+    }
+})
+
