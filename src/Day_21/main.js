@@ -92,16 +92,11 @@ document.querySelector('h2').style.padding = '1%'
 document.querySelector('h2').style.margin = '2%'
 document.querySelector('h2').style.textDecorationLine =' underline'
 
-
-
 document.querySelector('h3').style.display = 'inline-block'
 document.querySelector('h3').style.justifyContent = 'center'
 document.querySelector('h3').style.padding = '2%'
 document.querySelector('h3').style.margin = '2%'
 document.querySelector('h3').style.alignItems = 'center'
-
-
-
 
 
 document.querySelectorAll('ul>li').forEach(element => element.style.display= 'grid')
@@ -111,7 +106,6 @@ document.querySelectorAll('ul>li').forEach(element => element.style.border ='sol
 document.querySelectorAll('ul>li').forEach(element => element.style.padding ='2%')
 document.querySelectorAll('ul>li').forEach(element => element.style.margin ='2%')
 
-//document.querySelector('body').style.fontFamily = 'sans-serif'
 
 // 1- Develop the following application, use the following HTML elements to get started with. You will get the same code on starter folder. Apply all the styles and functionality using JavaScript only.
 
@@ -142,9 +136,6 @@ const changeColorOfTime =  setInterval(() => {
 // 1.4- Ongoing challenge has background yellow
 // 1.5- Coming challenges have background red
 
-document.querySelectorAll('ul>li').forEach((el, i) => {
-    
-})
 
 document.querySelectorAll('ul>li').forEach((el, i) => {
     if (i ==0){

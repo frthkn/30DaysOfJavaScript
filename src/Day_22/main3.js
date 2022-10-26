@@ -56,10 +56,6 @@ const changeColorOfTime =  setInterval(() => {
 }, 1000);
 
 document.querySelectorAll('ul>li').forEach((el, i) => {
-    
-})
-
-document.querySelectorAll('ul>li').forEach((el, i) => {
     if (i ==0){
         el.style.backgroundColor ='green'
     }else if (i ==1){
