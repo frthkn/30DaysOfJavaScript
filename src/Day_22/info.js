@@ -1,4 +1,4 @@
-const asabenehChallenges2020 = {
+export const hknChallenges = {
     description: 'Hakan Fırat challenges',
     challengeTitle: 'Hakan Fırat challenges',
     challengeSubtitle: '30DaysOfJavaScript Challenge',

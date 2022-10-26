@@ -2,6 +2,11 @@
 
 // Exercises: Level 3
 
+import {hknChallenges} from '.info.js/'
+
+console.log(hknChallenges)
+
+
 document.querySelector('body').style.width ='auto'
 document.querySelector('body').style.height ='auto'
 document.querySelector('body').style.fontSize = '1em'
