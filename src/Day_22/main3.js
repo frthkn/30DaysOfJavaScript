@@ -2,16 +2,46 @@
 
 // Exercises: Level 3
 
-import {hknChallenges} from '.info.js/'
+import {hknChallenges} from './info.js'
 
-console.log(hknChallenges)
+const body = document.querySelector('body')
+
+// create h1,h2, h3 span and add body
+
+const h1 = document.createElement('h1')
+h1.textContent = hknChallenges.description+' in '
+
+const span = document.createElement('span')
+span.textContent = hknChallenges.challengeYear
+h1.appendChild(span)
+
+const h2 = document.createElement('h2')
+h2.textContent = hknChallenges.challengeSubtitle
+
+const h3 = document.createElement('h3')
+
+body.appendChild(h1)
+body.appendChild(h2)
+body.appendChild(h3)
+
+// The year color is changing every 1 second
+
+const changeColorOfYear =  setInterval(() => {
+    const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
+    const d = new Date()
+    const getH3 = document.querySelector('h3').innerHTML = d.toDateString()+' '+ d.toLocaleTimeString()
+    document.querySelector('span').style.backgroundColor = getColor
+    document.querySelector('h3').style.backgroundColor = getColor
+    
+    
+}, 1000);
 
 
 document.querySelector('body').style.width ='auto'
 document.querySelector('body').style.height ='auto'
 document.querySelector('body').style.fontSize = '1em'
 document.querySelector('body').style.textAlign = 'center'
-document.querySelector('body').style.margin = '10%'
+document.querySelector('body').style.margin = '5%'
 document.querySelector('body').style.rowGap = '5px'
 
 document.querySelector('span').style.fontSize = '1.5em'
@@ -38,17 +68,7 @@ document.querySelectorAll('ul>li').forEach(element => element.style.padding ='2%
 document.querySelectorAll('ul>li').forEach(element => element.style.margin ='2%')
 
 
-// The year color is changing every 1 second
 
-const changeColorOfYear =  setInterval(() => {
-    const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
-    const d = new Date()
-    const getH3 = document.querySelector('h3').innerHTML = d.toDateString()+' '+ d.toLocaleTimeString()
-    document.querySelector('span').style.backgroundColor = getColor
-    document.querySelector('h3').style.backgroundColor = getColor
-    
-    
-}, 1000);
 
 // The date and time background color is changing every on seconds
 
