@@ -2,7 +2,7 @@ const asabenehChallenges2020 = {
     description: 'Hakan Fırat challenges',
     challengeTitle: 'Hakan Fırat challenges',
     challengeSubtitle: '30DaysOfJavaScript Challenge',
-    challengeYear: 2020,
+    challengeYear: 2022,
     keywords: [
       'HTML',
       'HTML5',
@@ -41,13 +41,13 @@ const asabenehChallenges2020 = {
       'D3.js'
     ],
     author: {
-      firstName: 'Asabeneh',
-      lastName: 'Yetayeh',
+      firstName: 'Hakan',
+      lastName: 'FIRAT',
       titles: [
-        ['🌱', 'Educator'],
+        ['🌱', 'Student'],
         ['💻', 'Programmer'],
         ['🌐', 'Developer'],
-        ['🔥', 'Motivator'],
+        ['🔥', 'Programmer'],
         ['📔', 'Content Creator']
       ],
       qualifications: [
@@ -59,24 +59,20 @@ const asabenehChallenges2020 = {
       socialLinks: [
         {
           social: 'LinkedIn',
-          url: 'https://www.linkedin.com/in/asabeneh/',
+          url: 'https://www.linkedin.com/in/hakanfirat/',
           fontawesomeIcon: '<i class="fab fa-linkedin">'
         },
         {
           social: 'Twitter',
-          url: 'https://twitter.com/Asabeneh',
+          url: 'https://twitter.com/hknfrtt',
           fontawesomeIcon: '<i class="fab fa-twitter-square"></i>'
         },
         {
           social: 'Github',
-          fontawesomeIcon: '<i class="fab fa-github-square"></i>',
-          url: 'https://github.com/Asabeneh'
+          url: 'https://github.com/frthkn',
+          fontawesomeIcon: '<i class="fab fa-github-square"></i>'
+          
         },
-        {
-          social: 'DEV.to',
-          fontawesomeIcon: '',
-          url: 'https://dev.to/asabeneh'
-        }
       ],
       skills: [
         'Web Development',
@@ -87,7 +83,7 @@ const asabenehChallenges2020 = {
         'Developing API'
       ],
       bio:
-        'I am an educator, developer, motivator and content creator. I am a life-long learner. If you like to know more about me checkout my LinkedIn or Github profile. Thank you so much for joining in my quest of changing everyone to developer.'
+        'I am an student, developer, programmer and content creator. I am a self learner. If you like to know more about me checkout my LinkedIn or Github profile. Thank you so much for joining in my quest of changing everyone to developer.'
     },
     challenges: [
       {
