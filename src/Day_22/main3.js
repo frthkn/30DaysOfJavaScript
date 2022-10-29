@@ -22,6 +22,12 @@ hknChallenges.challenges.forEach((el => arrTopic.push(el.topics)))
 hknChallenges.challenges.forEach((el => arrNameForLi.push(el.name)))
 hknChallenges.challenges.forEach((el => arrStatus.push(el.status)))
 
+const arrTitles0 = []
+const arrTitles1 = []
+hknChallenges.author.titles.forEach((el => arrTitles0.push(el[0])))
+hknChallenges.author.titles.forEach((el => arrTitles1.push(el[1])))
+
+
 // Create Elements
 
 const h2 = document.createElement('h2')
@@ -378,10 +384,10 @@ div07.style.gridTemplateColumns ='repeat(3, 1fr)'
 
 
 
-// div for info
+// div author
 
 
-const divInfo = document.createElement('div')
+const divAuthor = document.createElement('div')
 const h2ForInfo = document.createElement('h2')
 const btn1 = document.createElement('button')
 const i1 = document.createElement('i')
@@ -438,20 +444,18 @@ btn3.style.borderRadius = '4px'
 
 
 
-divInfo.style.textAlign ='center'
+divAuthor.style.textAlign ='center'
 
-divInfo.appendChild(h2ForInfo)
+divAuthor.appendChild(h2ForInfo)
 btn1.appendChild(a1)
 btn2.appendChild(a2)
 btn3.appendChild(a3)
-divInfo.appendChild(btn1)
-divInfo.appendChild(btn2)
-divInfo.appendChild(btn3)
-divInfo.appendChild(pInfo)
-div.appendChild(divInfo)
+divAuthor.appendChild(btn1)
+divAuthor.appendChild(btn2)
+divAuthor.appendChild(btn3)
+divAuthor.appendChild(pInfo)
+div.appendChild(divAuthor)
 
 
-
-
-
+// div titles-skills-qualifications
 
