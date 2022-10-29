@@ -59,8 +59,11 @@ const changeColorOfTime =  setInterval(() => {
     
 }, 1000);
 
-h5.style.display ='inline'
-h5.style.right ='50px'
+//h5.style.display ='inline'
+h5.style.textAlign='center'
+h5.style.left ='500px'
+
+
 
 h5.className ='title3'
 h5.style.margin = '3%'
@@ -94,7 +97,6 @@ body.appendChild(div)
 
 
 // body style
-body.style.display = 'block'
 body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
