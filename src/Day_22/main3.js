@@ -428,6 +428,15 @@ btn1.style.margin = '5px'
 btn2.style.margin = '5px'
 btn3.style.margin = '5px'
 
+btn1.style.border = 'none'
+btn2.style.border = 'none'
+btn3.style.border = 'none'
+
+btn1.style.borderRadius = '4px'
+btn2.style.borderRadius = '4px'
+btn3.style.borderRadius = '4px'
+
+
 
 divInfo.style.textAlign ='center'
 
