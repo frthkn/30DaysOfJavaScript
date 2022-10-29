@@ -40,12 +40,14 @@ const span = document.createElement('span')
 
 h2.textContent = hknChallenges.challengeTitle+' in '
 h2.className ='title1'
+h2.style.textAlign ='center'
 
 // Set Attribute h4
 
 h4.textContent = hknChallenges.challengeSubtitle
 h4.style.textDecorationLine ='underline'
 h4.className ='title2'
+h4.style.textAlign ='center'
 
 // Set Attribute h6
 
@@ -57,13 +59,15 @@ const changeColorOfTime =  setInterval(() => {
     
 }, 1000);
 
-h5.textContent = changeColorOfTime
 h5.style.display ='inline'
-h5.style.gridColumn ='1'
+h5.style.right ='50px'
+
 h5.className ='title3'
 h5.style.margin = '3%'
 h5.style.padding = '1%'
-h5.style.fontSize = '16px'
+h5.style.fontSize = '20px'
+
+
 
 // Set Attribute span
 
@@ -95,15 +99,15 @@ body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
 body.style.fontFamily = 'fangsong'
-body.style.textAlign = 'center'
 body.style.margin = 'auto'
 body.style.padding = 'auto'
 
 
 // main div style
 div.style.display ='grid'
-div.style.gap ='2px'
-div.style.padding ='50px'
+div.style.gap ='3px'
+div.style.marginTop ='40px'
+
 
 
 // create divs
@@ -458,4 +462,65 @@ div.appendChild(divAuthor)
 
 
 // div titles-skills-qualifications
+const divMainInfo = document.createElement('div')
+const labTitles = document.createElement('label')
+const labSkills = document.createElement('label')
+const labQualifications = document.createElement('label')
+const dlTitles = document.createElement('dl')
+const dlSkills = document.createElement('dl')
+const dlQualifications = document.createElement('dl')
 
+dlTitles.appendChild(labTitles)
+dlSkills.appendChild(labSkills)
+dlQualifications.appendChild(labQualifications)
+
+let optTitles
+for (let index = 0; index < arrTitles0.length; index++) {
+    optTitles = document.createElement('dt')
+    optTitles.textContent = arrTitles0[index] +' '+arrTitles1[index]
+    dlTitles.appendChild(optTitles)
+    
+}
+
+let optSkills
+for (let index = 0; index < hknChallenges.author.skills.length; index++) {
+    optSkills = document.createElement('dt')
+    optSkills.textContent = hknChallenges.author.skills[index]
+    dlSkills.appendChild(optSkills)
+    
+}
+
+let optQualifications
+for (let index = 0; index < hknChallenges.author.qualifications.length; index++) {
+    optQualifications = document.createElement('dt')
+    optQualifications.textContent = hknChallenges.author.qualifications[index]
+    dlQualifications.appendChild(optQualifications)
+    
+}
+
+
+
+labTitles.textContent ='Titles'
+labSkills.textContent ='Skills'
+labQualifications.textContent ='Qualifications'
+
+
+
+
+
+divMainInfo.appendChild(dlTitles)
+divMainInfo.appendChild(dlSkills)
+divMainInfo.appendChild(dlQualifications)
+div.appendChild(divMainInfo)
+
+dlTitles.style.border = 'solid'
+dlSkills.style.border = 'solid'
+dlQualifications.style.border = 'solid'
+
+dlTitles.style.padding ='5px'
+
+
+
+divMainInfo.style.display ='grid'
+divMainInfo.style.alignItems ='left'
+divMainInfo.style.gridTemplateColumns ='repeat(3, 1fr)'
