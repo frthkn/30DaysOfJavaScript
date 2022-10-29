@@ -4,7 +4,7 @@
 
 // Day 22
 
-import {hknChallenges} from 'info.js'
+import {hknChallenges} from './info.js'
 
 // Get body and div
 
