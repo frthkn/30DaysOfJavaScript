@@ -1,9 +1,5 @@
 // Day 22
 
-// Exercises: Level 3
-
-// Day 22
-
 import {hknChallenges} from './Day_22/info.js'
 
 // Get body and div
