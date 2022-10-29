@@ -389,26 +389,38 @@ const btn2 = document.createElement('button')
 const i2 = document.createElement('i')
 const btn3 = document.createElement('button')
 const i3 = document.createElement('i')
+const pInfo = document.createElement('p')
 h2ForInfo.textContent = hknChallenges.author.firstName+' '+hknChallenges.author.lastName
+pInfo.textContent = hknChallenges.author.bio
+
+
 
 i1.className = 'fa fa-linkedin'
-btn1.className = 'btn'
 i2.className = 'fa fa-twitter'
-btn2.className = 'btn'
 i3.className = 'fa fa-github'
-btn3.className = 'btn'
+
+btn1.style.fontSize ='20px'
+btn2.style.fontSize ='20px'
+btn3.style.fontSize ='20px'
+btn1.style.backgroundColor = '#000000'
+btn1.style.color = '#FFFFFF'
+btn2.style.backgroundColor = '#000000'
+btn2.style.color = '#FFFFFF'
+btn3.style.backgroundColor = '#000000'
+btn3.style.color = '#FFFFFF'
 
 
+divInfo.appendChild(h2ForInfo)
 btn1.appendChild(i1)
 btn2.appendChild(i2)
 btn3.appendChild(i3)
-divInfo.appendChild(h2ForInfo)
 divInfo.appendChild(btn1)
 divInfo.appendChild(btn2)
 divInfo.appendChild(btn3)
+divInfo.appendChild(pInfo)
 div.appendChild(divInfo)
 
-divInfo.style.fontSize ='40px'
+
 
 
 
