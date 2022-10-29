@@ -374,7 +374,11 @@ div07.style.gridTemplateColumns ='repeat(3, 1fr)'
 
 
 
+// div for info
 
 
+const divInfo = document.createElement('div')
+divInfo.textContent = hknChallenges.author.firstName+' '+hknChallenges.author.lastName
+div.appendChild(divInfo)
 
 
