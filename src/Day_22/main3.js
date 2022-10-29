@@ -390,10 +390,17 @@ const i2 = document.createElement('i')
 const btn3 = document.createElement('button')
 const i3 = document.createElement('i')
 const pInfo = document.createElement('p')
+const a1 = document.createElement('a')
+const a2 = document.createElement('a')
+const a3 = document.createElement('a')
 h2ForInfo.textContent = hknChallenges.author.firstName+' '+hknChallenges.author.lastName
 pInfo.textContent = hknChallenges.author.bio
-
-
+a1.setAttribute('href', 'https://www.linkedin.com/in/hakanfirat')
+a1.appendChild(i1)
+a2.setAttribute('href', 'https://twitter.com/hknfrtt')
+a2.appendChild(i2)
+a3.setAttribute('href', 'https://github.com/frthkn')
+a3.appendChild(i3)
 
 i1.className = 'fa fa-linkedin'
 i2.className = 'fa fa-twitter'
@@ -402,6 +409,13 @@ i3.className = 'fa fa-github'
 btn1.style.fontSize ='30px'
 btn2.style.fontSize ='30px'
 btn3.style.fontSize ='30px'
+
+a1.style.backgroundColor = '#000000'
+a1.style.color = '#FFFFFF'
+a2.style.backgroundColor = '#000000'
+a2.style.color = '#FFFFFF'
+a3.style.backgroundColor = '#000000'
+a3.style.color = '#FFFFFF'
 
 btn1.style.backgroundColor = '#000000'
 btn1.style.color = '#FFFFFF'
@@ -418,9 +432,9 @@ btn3.style.margin = '5px'
 divInfo.style.textAlign ='center'
 
 divInfo.appendChild(h2ForInfo)
-btn1.appendChild(i1)
-btn2.appendChild(i2)
-btn3.appendChild(i3)
+btn1.appendChild(a1)
+btn2.appendChild(a2)
+btn3.appendChild(a3)
 divInfo.appendChild(btn1)
 divInfo.appendChild(btn2)
 divInfo.appendChild(btn3)
