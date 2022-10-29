@@ -382,8 +382,33 @@ div07.style.gridTemplateColumns ='repeat(3, 1fr)'
 
 
 const divInfo = document.createElement('div')
-divInfo.textContent = hknChallenges.author.firstName+' '+hknChallenges.author.lastName
+const h2ForInfo = document.createElement('h2')
+const btn1 = document.createElement('button')
+const i1 = document.createElement('i')
+const btn2 = document.createElement('button')
+const i2 = document.createElement('i')
+const btn3 = document.createElement('button')
+const i3 = document.createElement('i')
+h2ForInfo.textContent = hknChallenges.author.firstName+' '+hknChallenges.author.lastName
+
+i1.className = 'fa fa-linkedin'
+btn1.className = 'btn'
+i2.className = 'fa fa-twitter'
+btn2.className = 'btn'
+i3.className = 'fa fa-github'
+btn3.className = 'btn'
+
+
+btn1.appendChild(i1)
+btn2.appendChild(i2)
+btn3.appendChild(i3)
+divInfo.appendChild(h2ForInfo)
+divInfo.appendChild(btn1)
+divInfo.appendChild(btn2)
+divInfo.appendChild(btn3)
 div.appendChild(divInfo)
+
+divInfo.style.fontSize ='40px'
 
 
 
