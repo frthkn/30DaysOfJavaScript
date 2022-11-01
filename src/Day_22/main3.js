@@ -146,6 +146,7 @@ div00.style.margin ='3px'
 div00.style.backgroundColor ='green'
 div00.style.alignItems ='center'
 div00.style.gridTemplateColumns ='repeat(3, 1fr)'
+div00.style.lineHeight ='100px'
 
 
 // div 1
@@ -182,6 +183,7 @@ div01.style.margin ='3px'
 div01.style.backgroundColor ='yellow'
 div01.style.alignItems ='center'
 div01.style.gridTemplateColumns ='repeat(3, 1fr)'
+div01.style.lineHeight ='100px'
 
 
 
