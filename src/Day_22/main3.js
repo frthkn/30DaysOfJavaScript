@@ -504,11 +504,10 @@ const labTitles = document.createElement('label')
 const labSkills = document.createElement('label')
 const labQualifications = document.createElement('label')
 const dlTitles = document.createElement('dl')
-const dlSkills = document.createElement('dl')
+const aSkills = document.createElement('a')
 const dlQualifications = document.createElement('dl')
 
 dlTitles.appendChild(labTitles)
-dlSkills.appendChild(labSkills)
 dlQualifications.appendChild(labQualifications)
 
 let optTitles
@@ -519,19 +518,19 @@ for (let index = 0; index < arrTitles0.length; index++) {
     
 }
 
-let optSkills, iSkills
+let iSkills, optionSkills
+
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
-    optSkills = document.createElement('dt')
     iSkills = document.createElement('i')
-    iSkills.setAttribute('class', 'fas fa-check-square')
-    dlSkills.appendChild(iSkills)   
-    optSkills.textContent = hknChallenges.author.skills[index]
-    dlSkills.appendChild(iSkills)
-    dlSkills.appendChild(optSkills)
-    dlSkills.appendChild(iSkills) 
+    optionSkills = document.createElement('option')
+    iSkills.className = 'fa fa-check'
+    optionSkills.appendChild(iSkills)
+    iSkills.textContent =hknChallenges.author.skills[index]
+    aSkills.appendChild(optionSkills)
     
 }
-console.log(iSkills)
+
+
 let optQualifications
 for (let index = 0; index < hknChallenges.author.qualifications.length; index++) {
     optQualifications = document.createElement('dt')
@@ -554,10 +553,12 @@ boldQualifications.textContent ='Qualifications'
 labTitles.appendChild(boldTitles)
 labSkills.appendChild(boldSkills)
 labQualifications.appendChild(boldQualifications)
+labSkills.appendChild(aSkills)
 divMainInfo.appendChild(dlTitles)
-divMainInfo.appendChild(dlSkills)
+divMainInfo.appendChild(labSkills)
 divMainInfo.appendChild(dlQualifications)
 div.appendChild(divMainInfo)
+
 
 
 divMainInfo.style.display ='grid'
@@ -589,6 +590,26 @@ for (let index = 0; index < arrKeywords.length; index++) {
 }
 divKeywords.style.lineHeight ='20px'
 divKeywords.style.flexWrap ='wrap'
+divKeywords.style.margin ='15px 0 50px 0'
 divKeywords.style.display ='inline flex'
       
 div.appendChild(divKeywords)
+
+
+///
+// const ls = document.createElement('label')
+// const as = document.createElement('a')
+
+// for (let index = 0; index < hknChallenges.author.skills.length; index++) {
+//     const is = document.createElement('i')
+//     const os = document.createElement('option')
+//     is.className = 'fa fa-check'
+//     os.appendChild(is)
+//     is.textContent =' ' +hknChallenges.author.skills[index]
+//     as.appendChild(os)
+    
+// }
+
+// ls.textContent ='Skills'
+// div.appendChild(ls)
+// div.appendChild(as)
