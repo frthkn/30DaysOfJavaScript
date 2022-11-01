@@ -32,7 +32,7 @@ hknChallenges.author.titles.forEach((el => arrTitles1.push(el[1])))
 
 const h2 = document.createElement('h2')
 const h4 = document.createElement('h4')
-const h5 = document.createElement('h5')
+const labelDate = document.createElement('label')
 const span = document.createElement('span')
 
 
@@ -54,22 +54,19 @@ h4.style.textAlign ='center'
 const changeColorOfTime =  setInterval(() => {
     const getColor = '#'+(Math.random()*11).toString(16).slice(2,8)
     const d = new Date()
-    const getH5 = document.querySelector('h5').innerHTML = d.toDateString()+' '+ d.toLocaleTimeString()
-    document.querySelector('h5').style.backgroundColor = getColor
+    let options = { year: 'numeric', month: 'long', day: 'numeric', hour12: false }
+    labelDate.textContent= new Intl.DateTimeFormat('en-US', options).format(d)+' '+d.toLocaleTimeString()
+    labelDate.style.backgroundColor = getColor
     
 }, 1000);
 
-//h5.style.display ='inline'
-h5.style.textAlign='center'
-h5.style.left ='500px'
 
-
-
-h5.className ='title3'
-h5.style.margin = '3%'
-h5.style.padding = '1%'
-h5.style.fontSize = '20px'
-
+const divDate = document.createElement('div')
+labelDate.style.display ='inline'
+labelDate.style.fontSize ='18px'
+labelDate.style.fontFamily ='cursive'
+divDate.style.textAlign ='center'
+divDate.appendChild(labelDate)
 
 
 // Set Attribute span
@@ -91,9 +88,10 @@ span.className = 'span-year'
 
 body.appendChild(h2)
 body.appendChild(h4)
-body.appendChild(h5)
 h2.appendChild(span)
+body.appendChild(divDate)
 body.appendChild(div)
+
 
 
 // body style
@@ -106,9 +104,9 @@ body.style.padding = 'auto'
 
 
 // main div style
-div.style.display ='grid'
-div.style.gap ='3px'
-div.style.marginTop ='40px'
+
+div.style.fontSize ='16px'
+div.style.paddingBlock ='50px'
 
 
 
@@ -143,6 +141,8 @@ div00.appendChild(label03)
 div.appendChild(div00)
 
 div00.style.display ='grid'
+div00.style.gap ='10%'
+div00.style.margin ='3px'
 div00.style.backgroundColor ='green'
 div00.style.alignItems ='center'
 div00.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -177,6 +177,8 @@ div01.appendChild(label13)
 div.appendChild(div01)
 
 div01.style.display ='grid'
+div01.style.gap ='10%'
+div01.style.margin ='3px'
 div01.style.backgroundColor ='yellow'
 div01.style.alignItems ='center'
 div01.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -213,10 +215,11 @@ div02.appendChild(label23)
 div.appendChild(div02)
 
 div02.style.display ='grid'
+div02.style.columnGap ='10%'
+div02.style.margin ='3px'
 div02.style.backgroundColor ='red'
 div02.style.alignItems ='center'
 div02.style.gridTemplateColumns ='repeat(3, 1fr)'
-
 
 // div 3
 
@@ -247,6 +250,8 @@ div03.appendChild(label33)
 div.appendChild(div03)
 
 div03.style.display ='grid'
+div03.style.gap ='10%'
+div03.style.margin ='3px'
 div03.style.backgroundColor ='red'
 div03.style.alignItems ='center'
 div03.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -282,6 +287,8 @@ div04.appendChild(label43)
 div.appendChild(div04)
 
 div04.style.display ='grid'
+div04.style.gap ='10%'
+div04.style.margin ='3px'
 div04.style.backgroundColor ='red'
 div04.style.alignItems ='center'
 div04.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -316,6 +323,8 @@ div05.appendChild(label53)
 div.appendChild(div05)
 
 div05.style.display ='grid'
+div05.style.gap ='10%'
+div05.style.margin ='3px'
 div05.style.backgroundColor ='red'
 div05.style.alignItems ='center'
 div05.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -350,6 +359,8 @@ div06.appendChild(label63)
 div.appendChild(div06)
 
 div06.style.display ='grid'
+div06.style.gap ='10%'
+div06.style.margin ='3px'
 div06.style.backgroundColor ='red'
 div06.style.alignItems ='center'
 div06.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -384,6 +395,8 @@ div07.appendChild(label73)
 div.appendChild(div07)
 
 div07.style.display ='grid'
+div07.style.gap ='10%'
+div07.style.margin = '3px'
 div07.style.backgroundColor ='red'
 div07.style.alignItems ='center'
 div07.style.gridTemplateColumns ='repeat(3, 1fr)'
@@ -484,10 +497,13 @@ for (let index = 0; index < arrTitles0.length; index++) {
     
 }
 
-let optSkills
+let optSkills,iSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
     optSkills = document.createElement('dt')
-    optSkills.textContent = hknChallenges.author.skills[index]
+    iSkills = document.createElement('i')
+    iSkills.setAttribute('class','fa solid fa check square fill')
+    optSkills.textContent = iSkills+' '+hknChallenges.author.skills[index]
+    dlSkills.appendChild(iSkills)
     dlSkills.appendChild(optSkills)
     
 }
@@ -500,29 +516,54 @@ for (let index = 0; index < hknChallenges.author.qualifications.length; index++)
     
 }
 
+const boldTitles = document.createElement('b')
+const boldSkills = document.createElement('b')
+const boldQualifications = document.createElement('b')
+
+boldTitles.textContent ='Titles'
+boldSkills.textContent ='Skills'
+boldQualifications.textContent ='Qualifications'
 
 
-labTitles.textContent ='Titles'
-labSkills.textContent ='Skills'
-labQualifications.textContent ='Qualifications'
 
 
-
-
-
+labTitles.appendChild(boldTitles)
+labSkills.appendChild(boldSkills)
+labQualifications.appendChild(boldQualifications)
 divMainInfo.appendChild(dlTitles)
 divMainInfo.appendChild(dlSkills)
 divMainInfo.appendChild(dlQualifications)
 div.appendChild(divMainInfo)
 
-dlTitles.style.border = 'solid'
-dlSkills.style.border = 'solid'
-dlQualifications.style.border = 'solid'
-
-dlTitles.style.padding ='5px'
-
-
 
 divMainInfo.style.display ='grid'
 divMainInfo.style.alignItems ='left'
 divMainInfo.style.gridTemplateColumns ='repeat(3, 1fr)'
+
+// keywords
+
+const divKeywords = document.createElement('div')
+const labelKeywords = document.createElement('label')
+labelKeywords.textContent ='Keywords'
+labelKeywords.style.fontWeight ='bold'
+labelKeywords.style.display='inline block'
+labelKeywords.style.margin ='20px 900px 10px 0'
+
+divKeywords.appendChild(labelKeywords)
+const arrKeywords = []
+hknChallenges.keywords.flatMap((el => arrKeywords.push(el)))
+let spanKeywords
+for (let index = 0; index < arrKeywords.length; index++) {
+    spanKeywords = document.createElement('span')
+    spanKeywords.textContent = '  #'+arrKeywords[index]+' '
+    spanKeywords.style.backgroundColor = '#'+(Math.random()*11).toString(16).slice(2,8)
+    spanKeywords.style.alignItems ='center'
+    spanKeywords.style.margin = '5px 0 0 13px'
+    spanKeywords.style.padding = '15px'
+    spanKeywords.style.borderRadius = '15px'     
+    divKeywords.appendChild(spanKeywords)
+}
+divKeywords.style.flexWrap ='wrap'
+divKeywords.style.display ='inline flex'
+      
+div.appendChild(divKeywords)
