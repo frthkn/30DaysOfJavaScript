@@ -364,6 +364,7 @@ div06.style.margin ='3px'
 div06.style.backgroundColor ='red'
 div06.style.alignItems ='center'
 div06.style.gridTemplateColumns ='repeat(3, 1fr)'
+div06.style.lineHeight ='100px'
 
 
 // div 7
@@ -400,6 +401,7 @@ div07.style.margin = '3px'
 div07.style.backgroundColor ='red'
 div07.style.alignItems ='center'
 div07.style.gridTemplateColumns ='repeat(3, 1fr)'
+div07.style.lineHeight ='100px'
 
 
 
@@ -557,12 +559,12 @@ for (let index = 0; index < arrKeywords.length; index++) {
     spanKeywords = document.createElement('span')
     spanKeywords.textContent = '  #'+arrKeywords[index]+' '
     spanKeywords.style.backgroundColor = '#'+(Math.random()*11).toString(16).slice(2,8)
-    spanKeywords.style.alignItems ='center'
     spanKeywords.style.margin = '5px 0 0 13px'
     spanKeywords.style.padding = '15px'
     spanKeywords.style.borderRadius = '15px'     
     divKeywords.appendChild(spanKeywords)
 }
+divKeywords.style.lineHeight ='20px'
 divKeywords.style.flexWrap ='wrap'
 divKeywords.style.display ='inline flex'
       
