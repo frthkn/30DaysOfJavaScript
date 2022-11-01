@@ -100,12 +100,14 @@ body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
 body.style.margin = 'auto'
 body.style.padding = 'auto'
+body.style.fontFamily ='Sans serif'
 
 
 // main div style
 
 div.style.fontSize ='16px'
-div.style.fontFamily='Sans serif'
+div.style.margin = '40px 0 0 0'
+
 
 
 
@@ -190,6 +192,7 @@ label11.appendChild(aforLabel11)
 label11.style.textDecoration ='underline'
 
 div01.style.display ='grid'
+div01.style.placeItems ='center'
 div01.style.gap ='10%'
 div01.style.margin ='3px'
 div01.style.backgroundColor ='yellow'
@@ -483,6 +486,7 @@ btn3.style.borderRadius = '4px'
 
 
 divAuthor.style.textAlign ='center'
+divAuthor.style.margin ='50px 0 50px 0'
 
 divAuthor.appendChild(h2ForInfo)
 btn1.appendChild(a1)
@@ -520,10 +524,12 @@ let optSkills, iSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
     optSkills = document.createElement('dt')
     iSkills = document.createElement('i')
-    iSkills.setAttribute('class', 'fas fa-check-square')   
-    optSkills.textContent = iSkills+' '+hknChallenges.author.skills[index]
+    iSkills.setAttribute('class', 'fas fa-check-square')
+    dlSkills.appendChild(iSkills)   
+    optSkills.textContent = hknChallenges.author.skills[index]
     dlSkills.appendChild(iSkills)
     dlSkills.appendChild(optSkills)
+    dlSkills.appendChild(iSkills) 
     
 }
 console.log(iSkills)
@@ -558,6 +564,7 @@ div.appendChild(divMainInfo)
 divMainInfo.style.display ='grid'
 divMainInfo.style.alignItems ='left'
 divMainInfo.style.gridTemplateColumns ='repeat(3, 1fr)'
+divMainInfo.style.margin ='50px 0 50px 0'
 
 // keywords
 
