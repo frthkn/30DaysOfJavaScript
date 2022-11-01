@@ -292,7 +292,7 @@ div04.style.margin ='3px'
 div04.style.backgroundColor ='red'
 div04.style.alignItems ='center'
 div04.style.gridTemplateColumns ='repeat(3, 1fr)'
-
+div04.style.lineHeight ='100px'
 
 // div 5
 
