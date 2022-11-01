@@ -220,6 +220,7 @@ div02.style.margin ='3px'
 div02.style.backgroundColor ='red'
 div02.style.alignItems ='center'
 div02.style.gridTemplateColumns ='repeat(3, 1fr)'
+div02.style.lineHeight ='100px'
 
 // div 3
 
