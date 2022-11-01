@@ -98,7 +98,6 @@ body.appendChild(div)
 body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
-body.style.fontFamily = 'fangsong'
 body.style.margin = 'auto'
 body.style.padding = 'auto'
 
@@ -106,7 +105,7 @@ body.style.padding = 'auto'
 // main div style
 
 div.style.fontSize ='16px'
-div.style.paddingBlock ='50px'
+div.style.fontFamily='Sans serif'
 
 
 
@@ -120,6 +119,7 @@ const label02 = document.createElement('label')
 const label03 = document.createElement('label')
 const detail00 = document.createElement('details')
 const summary00 = document.createElement('summary')
+const aforLabel01 = document.createElement('a')
 let option00
 for (let index = 0; index < arrTopic[0].length; index++) {
     option00 = document.createElement('option')
@@ -128,9 +128,9 @@ for (let index = 0; index < arrTopic[0].length; index++) {
     detail00.appendChild(option00)
 
 }
-
+aforLabel01.setAttribute('href','#')
 summary00.textContent = arrNameForDetail[0]
-label01.textContent = arrNameForLi[0]
+aforLabel01.textContent = arrNameForLi[0]
 label03.textContent = arrStatus[0]
 
 detail00.appendChild(summary00)
@@ -139,7 +139,7 @@ div00.appendChild(label01)
 div00.appendChild(label02)
 div00.appendChild(label03)
 div.appendChild(div00)
-
+label01.appendChild(aforLabel01)
 label01.style.textDecoration ='underline'
 
 div00.style.display ='grid'
@@ -159,6 +159,7 @@ const label12 = document.createElement('label')
 const label13 = document.createElement('label')
 const detail01 = document.createElement('details')
 const summary01 = document.createElement('summary')
+const aforLabel11 = document.createElement('a')
 let option01
 for (let index = 0; index < arrTopic[1].length; index++) {
     option01 = document.createElement('option')
@@ -168,8 +169,10 @@ for (let index = 0; index < arrTopic[1].length; index++) {
 
 }
 
+aforLabel11.setAttribute('href','#')
+
 summary01.textContent = arrNameForDetail[1]
-label11.textContent = arrNameForLi[1]
+aforLabel11.textContent = arrNameForLi[1]
 label13.textContent = arrStatus[1]
 
 detail01.appendChild(summary01)
@@ -178,6 +181,11 @@ div01.appendChild(label11)
 div01.appendChild(label12)
 div01.appendChild(label13)
 div.appendChild(div01)
+
+
+
+
+label11.appendChild(aforLabel11)
 
 label11.style.textDecoration ='underline'
 
