@@ -255,6 +255,7 @@ div03.style.margin ='3px'
 div03.style.backgroundColor ='red'
 div03.style.alignItems ='center'
 div03.style.gridTemplateColumns ='repeat(3, 1fr)'
+div03.style.lineHeight ='100px'
 
 
 
