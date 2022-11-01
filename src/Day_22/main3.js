@@ -328,6 +328,7 @@ div05.style.margin ='3px'
 div05.style.backgroundColor ='red'
 div05.style.alignItems ='center'
 div05.style.gridTemplateColumns ='repeat(3, 1fr)'
+div05.style.lineHeight ='100px'
 
 
 // div 6
