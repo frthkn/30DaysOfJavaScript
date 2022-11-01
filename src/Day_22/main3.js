@@ -516,17 +516,17 @@ for (let index = 0; index < arrTitles0.length; index++) {
     
 }
 
-let optSkills,iSkills
+let optSkills, iSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
     optSkills = document.createElement('dt')
     iSkills = document.createElement('i')
-    iSkills.setAttribute('class','fa solid fa check square fill')
+    iSkills.setAttribute('class', 'fas fa-check-square')   
     optSkills.textContent = iSkills+' '+hknChallenges.author.skills[index]
     dlSkills.appendChild(iSkills)
     dlSkills.appendChild(optSkills)
     
 }
-
+console.log(iSkills)
 let optQualifications
 for (let index = 0; index < hknChallenges.author.qualifications.length; index++) {
     optQualifications = document.createElement('dt')
