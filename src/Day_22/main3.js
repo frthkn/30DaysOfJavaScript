@@ -140,6 +140,8 @@ div00.appendChild(label02)
 div00.appendChild(label03)
 div.appendChild(div00)
 
+label01.style.textDecoration ='underline'
+
 div00.style.display ='grid'
 div00.style.gap ='10%'
 div00.style.margin ='3px'
@@ -176,6 +178,8 @@ div01.appendChild(label11)
 div01.appendChild(label12)
 div01.appendChild(label13)
 div.appendChild(div01)
+
+label11.style.textDecoration ='underline'
 
 div01.style.display ='grid'
 div01.style.gap ='10%'
