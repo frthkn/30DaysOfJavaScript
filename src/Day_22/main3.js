@@ -99,7 +99,7 @@ body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
 body.style.margin = 'auto'
-body.style.paddingBottom = '30px'
+
 
 
 // main div style
