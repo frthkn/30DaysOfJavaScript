@@ -516,7 +516,7 @@ for (let index = 0; index < arrTitles0.length; index++) {
 }
 
 const boldSkills = document.createElement('b')
-boldSkills.textContent ='Titles'
+boldSkills.textContent ='Skills'
 labSkills.append(boldSkills)
 let optionSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
@@ -526,7 +526,10 @@ for (let index = 0; index < hknChallenges.author.skills.length; index++) {
    
 }
 
-labQualifications.textContent ='Qualifications'
+const boldQualifications = document.createElement('b')
+boldQualifications.textContent ='Qualifications'
+labQualifications.append(boldQualifications)
+
 const emojiListForQualifications =['📖','👨‍🎓','👨‍🎓','👨‍🎓']
 let optQualifications
 for (let index = 0; index < hknChallenges.author.qualifications.length; index++) {
