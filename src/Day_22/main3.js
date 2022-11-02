@@ -509,7 +509,7 @@ let optTitles
 for (let index = 0; index < arrTitles0.length; index++) {
     optTitles = document.createElement('dt')
     optTitles.textContent = arrTitles0[index] +' '+arrTitles1[index]
-    labTitles.appendChild(optTitles)
+    labTitles.append(optTitles)
     
 }
 labSkills.textContent ='Skills'
@@ -564,7 +564,7 @@ hknChallenges.keywords.flatMap((el => arrKeywords.push(el)))
 let spanKeywords
 for (let index = 0; index < arrKeywords.length; index++) {
     spanKeywords = document.createElement('span')
-    spanKeywords.textContent = '  #'+arrKeywords[index]+' '
+    spanKeywords.textContent = '#'+arrKeywords[index]+' '
     spanKeywords.style.backgroundColor = '#'+(Math.random()*11).toString(16).slice(2,8)
     spanKeywords.style.margin = '5px 0 0 10px'
     spanKeywords.style.padding = '13px'
