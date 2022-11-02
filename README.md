@@ -58,6 +58,8 @@ Day 20- Clean Code Exercises
 
 Day 21- Document Object Model(DOM) Exercises
 
+Day 22- Document Object Model(DOM) Projects
+
 
 
 
