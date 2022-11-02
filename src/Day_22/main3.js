@@ -503,7 +503,9 @@ const labTitles = document.createElement('label')
 const labSkills = document.createElement('label')
 const labQualifications = document.createElement('label')
 
-labTitles.textContent = 'Titles'
+const boldTitles = document.createElement('b')
+boldTitles.textContent ='Titles'
+labTitles.append(boldTitles)
 
 let optTitles
 for (let index = 0; index < arrTitles0.length; index++) {
@@ -512,7 +514,10 @@ for (let index = 0; index < arrTitles0.length; index++) {
     labTitles.append(optTitles)
     
 }
-labSkills.textContent ='Skills'
+
+const boldSkills = document.createElement('b')
+boldSkills.textContent ='Titles'
+labSkills.append(boldSkills)
 let optionSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
     optionSkills =document.createElement('option')
@@ -530,11 +535,6 @@ for (let index = 0; index < hknChallenges.author.qualifications.length; index++)
     labQualifications.appendChild(optQualifications)
     
 }
-
-
-
-
-
 
 
 divMainInfo.appendChild(labTitles)
