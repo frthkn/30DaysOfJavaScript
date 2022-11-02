@@ -99,14 +99,13 @@ body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
 body.style.fontSize = '1em'
 body.style.margin = 'auto'
-body.style.padding = 'auto'
-body.style.fontFamily ='Sans serif'
 
 
 // main div style
 
 div.style.fontSize ='16px'
 div.style.margin = '40px 0 0 0'
+
 
 
 
@@ -503,60 +502,44 @@ const divMainInfo = document.createElement('div')
 const labTitles = document.createElement('label')
 const labSkills = document.createElement('label')
 const labQualifications = document.createElement('label')
-const dlTitles = document.createElement('dl')
-const aSkills = document.createElement('a')
-const dlQualifications = document.createElement('dl')
 
-dlTitles.appendChild(labTitles)
-dlQualifications.appendChild(labQualifications)
+labTitles.textContent = 'Titles'
 
 let optTitles
 for (let index = 0; index < arrTitles0.length; index++) {
     optTitles = document.createElement('dt')
     optTitles.textContent = arrTitles0[index] +' '+arrTitles1[index]
-    dlTitles.appendChild(optTitles)
+    labTitles.appendChild(optTitles)
     
 }
-
-let iSkills, optionSkills
-
+labSkills.textContent ='Skills'
+let optionSkills
 for (let index = 0; index < hknChallenges.author.skills.length; index++) {
-    iSkills = document.createElement('i')
-    optionSkills = document.createElement('option')
-    iSkills.className = 'fa fa-check'
-    optionSkills.appendChild(iSkills)
-    iSkills.textContent =hknChallenges.author.skills[index]
-    aSkills.appendChild(optionSkills)
-    
+    optionSkills =document.createElement('option')
+    optionSkills.textContent = '✅ '+hknChallenges.author.skills[index]
+    labSkills.appendChild(optionSkills)
+   
 }
 
-
+labQualifications.textContent ='Qualifications'
+const emojiListForQualifications =['📖','👨‍🎓','👨‍🎓','👨‍🎓']
 let optQualifications
 for (let index = 0; index < hknChallenges.author.qualifications.length; index++) {
-    optQualifications = document.createElement('dt')
-    optQualifications.textContent = hknChallenges.author.qualifications[index]
-    dlQualifications.appendChild(optQualifications)
+    optQualifications = document.createElement('option')
+    optQualifications.textContent = emojiListForQualifications[index]+' '+hknChallenges.author.qualifications[index]
+    labQualifications.appendChild(optQualifications)
     
 }
 
-const boldTitles = document.createElement('b')
-const boldSkills = document.createElement('b')
-const boldQualifications = document.createElement('b')
-
-boldTitles.textContent ='Titles'
-boldSkills.textContent ='Skills'
-boldQualifications.textContent ='Qualifications'
 
 
 
 
-labTitles.appendChild(boldTitles)
-labSkills.appendChild(boldSkills)
-labQualifications.appendChild(boldQualifications)
-labSkills.appendChild(aSkills)
-divMainInfo.appendChild(dlTitles)
+
+
+divMainInfo.appendChild(labTitles)
 divMainInfo.appendChild(labSkills)
-divMainInfo.appendChild(dlQualifications)
+divMainInfo.appendChild(labQualifications)
 div.appendChild(divMainInfo)
 
 
@@ -583,33 +566,19 @@ for (let index = 0; index < arrKeywords.length; index++) {
     spanKeywords = document.createElement('span')
     spanKeywords.textContent = '  #'+arrKeywords[index]+' '
     spanKeywords.style.backgroundColor = '#'+(Math.random()*11).toString(16).slice(2,8)
-    spanKeywords.style.margin = '5px 0 0 13px'
-    spanKeywords.style.padding = '15px'
+    spanKeywords.style.margin = '5px 0 0 10px'
+    spanKeywords.style.padding = '13px'
     spanKeywords.style.borderRadius = '15px'     
     divKeywords.appendChild(spanKeywords)
 }
-divKeywords.style.lineHeight ='20px'
+
 divKeywords.style.flexWrap ='wrap'
-divKeywords.style.margin ='15px 0 50px 0'
-divKeywords.style.display ='inline flex'
+divKeywords.style.display ='flex'
+divKeywords.style.margin ='auto'
+divKeywords.style.padding ='25px'
+divKeywords.style.justifyContent ='space-around'
       
 div.appendChild(divKeywords)
 
 
-///
-// const ls = document.createElement('label')
-// const as = document.createElement('a')
 
-// for (let index = 0; index < hknChallenges.author.skills.length; index++) {
-//     const is = document.createElement('i')
-//     const os = document.createElement('option')
-//     is.className = 'fa fa-check'
-//     os.appendChild(is)
-//     is.textContent =' ' +hknChallenges.author.skills[index]
-//     as.appendChild(os)
-    
-// }
-
-// ls.textContent ='Skills'
-// div.appendChild(ls)
-// div.appendChild(as)
