@@ -93,7 +93,6 @@ body.appendChild(divDate)
 body.appendChild(div)
 
 
-
 // body style
 body.style.maxWidth = '960px'
 body.style.maxHeight = '960px'
@@ -101,14 +100,10 @@ body.style.fontSize = '1em'
 body.style.margin = 'auto'
 
 
-
 // main div style
 
 div.style.fontSize ='16px'
 div.style.margin = '40px 0 0 0'
-
-
-
 
 
 // create divs
