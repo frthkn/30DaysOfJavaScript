@@ -141,6 +141,7 @@ div00.appendChild(label02)
 div00.appendChild(label03)
 div.appendChild(div00)
 label01.appendChild(aforLabel01)
+
 label01.style.textDecoration ='underline'
 
 div00.style.display ='grid'
