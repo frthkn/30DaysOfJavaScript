@@ -1,39 +1,21 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Document Object Model</title>
-  </head>
-
-  <body>
-    <button type="button" onclick="clickMe()">Click Me</button>
-
-    <script>
-      const clickMe =() => {
-        alert('Hey! You! What are you doing')
-      }
-     
-    </script>
-  </body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document Object Model</title>
+    <title>Document Object Model:30 Days Of JavaScript</title>
   </head>
 
   <body>
-    <button>Click Me</button>
+    <h1>Data Binding using input or change event</h1>
+
+    <input type="text" placeholder="say something" />
+    <p></p>
+
     <script>
-      const button = document.querySelector('button')
-      button.addEventListener('mouseenter', e => {
-        console.log('e gives the event listener object:', e)
-        console.log('e.target gives the selected element: ', e.target)
-        console.log(
-          'e.target.textContent gives content of selected element: ',
-          e.target.textContent
-        )
+      const input = document.querySelector('input')
+      const p = document.querySelector('p')
+
+      input.addEventListener('input', e => {
+        p.textContent = e.target.value
       })
     </script>
   </body>
