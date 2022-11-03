@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Document Object Model:30 Days Of JavaScript</title>
-  </head>
+</head>
 
-  <body>
-    <h1>Data Binding using input or change event</h1>
+<body>
+    <h1>Giving feedback using blur event</h1>
 
-    <input type="text" placeholder="say something" />
+    <input type="text" id="mass" placeholder="say something" />
     <p></p>
 
     <script>
-      const input = document.querySelector('input')
-      const p = document.querySelector('p')
+        const input = document.querySelector('input')
+        const p = document.querySelector('p')
 
-      input.addEventListener('input', e => {
-        p.textContent = e.target.value
-      })
+        input.addEventListener('blur', (e) => {
+            p.textContent = 'Field is required'
+            p.style.color = 'red'
+
+        })
     </script>
-  </body>
+</body>
+
 </html>
