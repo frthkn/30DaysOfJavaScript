@@ -3,5 +3,12 @@
 // Exercise 2
 
 
-const h1 = document.querySelector('h1')
-h1.style.textAlign ='center'
+const body = document.querySelector('body')
+
+
+h1 = document.addEventListener('keydown' ,e => {
+    e.preventDefault()
+    h1.textContent = 'You pressed '+e.key 
+    span.textContent = e.code.codePointAt()
+    
+})
