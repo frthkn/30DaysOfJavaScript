@@ -5,18 +5,13 @@
   </head>
 
   <body>
-    <button>Click Me</button>
+    <button type="button" onclick="clickMe()">Click Me</button>
 
     <script>
-      const button = document.querySelector('button')
-      button.addEventListener('click', e => {
-        console.log('e gives the event listener object:', e)
-        console.log('e.target gives the selected element: ', e.target)
-        console.log(
-          'e.target.textContent gives content of selected element: ',
-          e.target.textContent
-        )
-      })
+      const clickMe =() => {
+        alert('Hey What are you doing')
+      }
+     
     </script>
   </body>
 </html>
