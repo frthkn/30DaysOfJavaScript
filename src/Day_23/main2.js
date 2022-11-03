@@ -3,13 +3,15 @@
 // Exercise 2
 
 
-const body = document.querySelector('body')
+const divKey = document.querySelector('#key')
+const divKeyCode = document.querySelector('#keyCode')
+const span = document.querySelector('span')
 
-const label = document.querySelector('.showKeyCode')
-label.textContent = 'Press any keyboard key'
-label = document.addEventListener('keydown' ,e => {
+divKey.textContent = 'You pressed '
+
+document.addEventListener('keydown' ,e => {
     e.preventDefault()
-    h1.textContent = 'You pressed '+e.key 
-    span.textContent = e.code.codePointAt()
+    
+    span.textContent = e.key
     
 })

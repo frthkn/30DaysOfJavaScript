@@ -2,13 +2,42 @@
 <html>
   <head>
     <title>Document Object Model:30 Days Of JavaScript Day 23</title>
+    <style>
+      body {
+        vertical-align: super;
+
+      }
+
+      .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 650px;
+      
+  
+      }
+      .flex-container>div{
+        border: solid;
+        background-color: #f1f1f1;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        width: 500px;
+        height: 100px;
+      }
+
+    
+      </style>
   </head>
 
   <body>
-    <div class="container" style="border: solid; width: 250px; height: 50px; position:relative; margin: auto; padding: auto;">
-      <label for="span" class="showKeyCode"><span></span></label>
-      <label class="ShowKeyUnicode"></label>
+    <div class="flex-container" >
+      <div id="key"><span></span></div>
+      <div id="keyCode" style="height: 150px; width: 200px;"></div>
     </div>
+
     <script type="module" src="main2.js"></script>
   </body>
 </html>
