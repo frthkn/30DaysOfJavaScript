@@ -2,7 +2,9 @@
 
 // Exercise 2
 
-const div = document.querySelector('div')
+document.body.addEventListener('keypress', p => {
+    print('Press')
+})
 
 // div.style.margin = 'auto'
 // div.style.padding = '35%'
