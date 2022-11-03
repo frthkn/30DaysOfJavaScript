@@ -1,9 +1,10 @@
 // Day 23
 
 // Exercise 2
+document.querySelector('h1').style.textAlign ='center'
 
 document.body.addEventListener('keypress', p => {
-    print('Press')
+    
 })
 
 // div.style.margin = 'auto'
