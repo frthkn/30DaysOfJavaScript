@@ -19,7 +19,7 @@ divKeyCode.style.fontSize='50px'
 
 
 divKey = document.addEventListener('keydown' ,e => {
-    divKey.textContent = 'You pressed '
+    divKey.innerHTML = 'You pressed '
     e.preventDefault()
     span.innerHTML = e.key[0].toUpperCase()+e.key.slice(1)
     divKey.appendChild(span)
