@@ -2,10 +2,11 @@
 
 // Number Generator Exercise
 
-const div  = document.querySelector('div')
-const label = document.querySelector('.enterNum')
-const input = document.querySelector('input').addEventListener('blur',e =>{
-    if(e.target ==='string'){
-        label.innerText = 'input value must be number'
-    }
+const p = document.querySelector('p')
+document.querySelector('input').addEventListener('blur',(e) =>{
+   p.textContent = 'Enter number value on the input field to generate numbers'
+   p.style.color = 'red'
+   
+
 })
+
