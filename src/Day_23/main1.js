@@ -3,10 +3,10 @@
 // Number Generator Exercise
 
 const p = document.querySelector('p')
-document.querySelector('input').addEventListener('blur',(e) =>{
-   p.textContent = 'Enter number value on the input field to generate numbers'
-   p.style.color = 'red'
-   
-
+const inputa = document.querySelector('input')
+const button = document.querySelector('button')
+p.style.color = 'red'
+inputa.addEventListener('input',(e) =>{
+   p.textContent = e.target.value
 })
 
