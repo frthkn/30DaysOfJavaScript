@@ -2,7 +2,11 @@
 
 // Number Generator Exercise
 
-const body  = document.querySelector('body')
-const h1 = document.querySelector('h1')
+const div  = document.querySelector('div')
 
-h1.style.color ='green'
+const input = document.querySelector('input').addEventListener('keydown',e =>{
+    if(typeof e.key !='number'){
+        const p = document.createElement('p')
+        p.textContent = 'input value must be number'
+    }
+})
