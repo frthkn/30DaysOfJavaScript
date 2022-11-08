@@ -12,7 +12,6 @@ const newDiv = document.createElement('div')
 newDiv.style.display ='grid'
 newDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
 newDiv.style.gap ='10px'
-//newDiv.style.maxWidth ='800px'
 newDiv.style.padding ='30px'
 newDiv.style.margin = '30px'
 document.querySelector('div').appendChild(newDiv)
