@@ -31,7 +31,6 @@ function isPrime(n) {
    return true;
 }
 
-
 function generateNumber(){
 
    if(!input.value){
