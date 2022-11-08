@@ -6,6 +6,7 @@ const p = document.querySelector('p')
 const input = document.querySelector('input')
 const button = document.querySelector('#btn')
 p.style.color = 'red'
+p.style.fontSize='14px'
 
 const newDiv = document.createElement('div')
 newDiv.style.display ='grid'
