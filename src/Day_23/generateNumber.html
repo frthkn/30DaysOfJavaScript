@@ -8,7 +8,6 @@
         }
         body{
             padding: 30px 100px 50px 100px;
-            border: solid;
             max-width: auto;
             min-height: auto;
             
@@ -32,7 +31,7 @@
             padding-left: 5px;
             font-size: 20px;
         }
-        button {
+        #btn {
             width: 300px;
             height: 50px;
             background-color: forestgreen;
@@ -63,8 +62,11 @@
 	<h3>Author: Hakan Fırat</h3>
 	<div class="wrapper">
         <div>
+           <form action="#">
             <p></p>
-            <label for="input"><input type="text" id="nums" placeholder="Generate more numbers..."> <button>Generate Numbers</button></label>
+                <input type="text" class="number" name="number" id="nums" placeholder="Generate more numbers..." onreset="this.value"> 
+                <input type="button" value="Generate numbers" name="btn" id="btn" onclick="">
+           </form>
         </div>
 
 	</div>
