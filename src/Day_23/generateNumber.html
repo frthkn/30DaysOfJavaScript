@@ -32,6 +32,7 @@
             font-size: 20px;
         }
         #btn {
+            text-align: center;
             width: 300px;
             height: 50px;
             background-color: forestgreen;
@@ -62,10 +63,10 @@
 	<h3>Author: Hakan Fırat</h3>
 	<div class="wrapper">
         <div>
-           <form action="#">
+           <form action="" id="form" onclick="resetInput()">
             <p></p>
-                <input type="text" class="number" name="number" id="nums" placeholder="Generate more numbers..." onreset="this.value"> 
-                <input type="button" value="Generate numbers" name="btn" id="btn" onclick="">
+                <input type="text" class="number" name="number" id="nums" placeholder="Generate more numbers..."> 
+                <input type="button" value="Generate numbers" name="btn" id="btn">
            </form>
         </div>
 

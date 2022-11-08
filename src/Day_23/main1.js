@@ -32,6 +32,10 @@ function isPrime(n) {
    return true;
 }
 
+function resetInput() {
+  return document.querySelector('#form').reset()
+   
+}
 
 function generateNumber(){
 
@@ -60,7 +64,7 @@ function generateNumber(){
          newDiv.appendChild(divOpt)
          
       }
-      input.value =''
+      input.value=''      
 
    }
 
