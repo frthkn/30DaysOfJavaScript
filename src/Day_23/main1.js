@@ -59,10 +59,12 @@ function generateNumber(){
          newDiv.appendChild(divOpt)
          
       }
-      input.value=''      
+      input.value =''
+
+   }else{
 
    }
-   re
+   
 
 }
 
