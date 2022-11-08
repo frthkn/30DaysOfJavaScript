@@ -61,10 +61,7 @@ function generateNumber(){
       }
       input.value =''
 
-   }else{
-
    }
-   
 
 }
 
