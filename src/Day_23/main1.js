@@ -58,8 +58,9 @@ function generateNumber(){
             divOpt.style.backgroundColor ='red'
          }
          newDiv.appendChild(divOpt)
+         
       }
-      
+      input.value =''
 
    }
 
