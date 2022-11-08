@@ -31,10 +31,6 @@ function isPrime(n) {
    return true;
 }
 
-function resetInput() {
-  return document.querySelector('#form').reset()
-   
-}
 
 function generateNumber(){
 
@@ -66,6 +62,7 @@ function generateNumber(){
       input.value=''      
 
    }
+   re
 
 }
 
