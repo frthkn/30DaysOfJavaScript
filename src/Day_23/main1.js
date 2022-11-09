@@ -32,6 +32,7 @@ function isPrime(n) {
 }
 
 function generateNumber(){
+   let divOpt
 
    if(!input.value){
       p.textContent ='Enter number value on the input field to generate numbers'
@@ -40,8 +41,9 @@ function generateNumber(){
       p.textContent ='Input value must be number'
       input.value =''
    }else if(input.value.trim().match(/\d+/)){
+      p.textContent =''
       for (let index = 0; index < input.value; index++) {
-         const divOpt = document.createElement('div')
+         divOpt = document.createElement('div')
          divOpt.style.textAlign ='center'
          divOpt.style.lineHeight= '75px'
          divOpt.style.fontSize= '30px'
@@ -59,8 +61,10 @@ function generateNumber(){
          
       }
       input.value =''
+      
 
    }
+   
 
 }
 
