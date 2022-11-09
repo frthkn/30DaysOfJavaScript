@@ -3,7 +3,7 @@
 
 // Number Generator Exercise
 
-
+// get element and create new element
 
 const p = document.querySelector('p')
 const input = document.querySelector('input')
