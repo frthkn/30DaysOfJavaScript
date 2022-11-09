@@ -25,7 +25,7 @@ newDiv.style.gap ='10px'
 newDiv.style.padding ='30px'
 newDiv.style.margin = '30px'
 
-
+// old div style
 
 oldDiv.style.display ='grid'
 oldDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
