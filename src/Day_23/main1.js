@@ -3,14 +3,18 @@
 
 // Number Generator Exercise
 
+
+
 const p = document.querySelector('p')
 const input = document.querySelector('input')
 const button = document.querySelector('#btn')
 const div = document.querySelector('.wrapper')
+const newDiv = document.createElement('div')
+
 p.style.color = 'red'
 p.style.fontSize='18px'
 
-const newDiv = document.createElement('div')
+
 newDiv.style.display ='grid'
 newDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
 newDiv.style.gap ='10px'
