@@ -8,7 +8,7 @@ const input = document.querySelector('input')
 const button = document.querySelector('#btn')
 const div = document.querySelector('.wrapper')
 p.style.color = 'red'
-p.style.fontSize='17px'
+p.style.fontSize='18px'
 
 const newDiv = document.createElement('div')
 newDiv.style.display ='grid'
