@@ -37,9 +37,11 @@ function generateNumber(){
    if(!input.value){
       p.textContent ='Enter number value on the input field to generate numbers'
       input.value =''
+      //button.removeEventListener('click', generateNumber)
    }else if(input.value.trim().match(/[A-z]/g)){
       p.textContent ='Input value must be number'
       input.value =''
+      //button.removeEventListener('click', generateNumber)
    }else if(input.value.trim().match(/\d+/)){
       p.textContent =''
       for (let index = 0; index < input.value; index++) {
@@ -62,9 +64,7 @@ function generateNumber(){
       }
       input.value =''
       
-
    }
-   
-
+  
 }
 
