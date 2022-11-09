@@ -10,6 +10,7 @@ const input = document.querySelector('input')
 const button = document.querySelector('#btn')
 const div = document.querySelector('.wrapper')
 const newDiv = document.createElement('div')
+const oldDiv = document.createElement('div')
 
 p.style.color = 'red'
 p.style.fontSize='18px'
@@ -22,7 +23,7 @@ newDiv.style.padding ='30px'
 newDiv.style.margin = '30px'
 
 
-const oldDiv = document.createElement('div')
+
 oldDiv.style.display ='grid'
 oldDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
 oldDiv.style.gap ='10px'
