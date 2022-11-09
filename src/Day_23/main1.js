@@ -34,6 +34,8 @@ oldDiv.style.padding ='30px'
 oldDiv.style.margin = '30px'
 div.appendChild(oldDiv)
 
+// create default 50 numbers
+
 for (let index = 0; index <= 50; index++) {
    let divOpt0 = document.createElement('div')
    divOpt0.style.textAlign ='center'
