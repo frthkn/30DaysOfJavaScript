@@ -12,9 +12,12 @@ const div = document.querySelector('.wrapper')
 const newDiv = document.createElement('div')
 const oldDiv = document.createElement('div')
 
+//p tag style
+
 p.style.color = 'red'
 p.style.fontSize='18px'
 
+// new div style
 
 newDiv.style.display ='grid'
 newDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
