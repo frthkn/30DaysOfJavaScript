@@ -1,3 +1,4 @@
+
 // Day 23
 
 // Number Generator Exercise
@@ -5,6 +6,7 @@
 const p = document.querySelector('p')
 const input = document.querySelector('input')
 const button = document.querySelector('#btn')
+const div = document.querySelector('.wrapper')
 p.style.color = 'red'
 p.style.fontSize='17px'
 
@@ -14,8 +16,34 @@ newDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
 newDiv.style.gap ='10px'
 newDiv.style.padding ='30px'
 newDiv.style.margin = '30px'
-document.querySelector('div').appendChild(newDiv)
 
+
+const oldDiv = document.createElement('div')
+oldDiv.style.display ='grid'
+oldDiv.style.gridTemplateColumns ='auto auto auto auto auto auto auto auto auto'
+oldDiv.style.gap ='10px'
+oldDiv.style.padding ='30px'
+oldDiv.style.margin = '30px'
+div.appendChild(oldDiv)
+
+for (let index = 0; index <= 50; index++) {
+   let divOpt0 = document.createElement('div')
+   divOpt0.style.textAlign ='center'
+   divOpt0.style.lineHeight= '75px'
+   divOpt0.style.fontSize= '30px'
+   divOpt0.textContent =index 
+   if(isPrime(index) !=true){
+      if(index%2==0){
+         divOpt0.style.backgroundColor ='green'
+      }else if(index%2 !=0){
+         divOpt0.style.backgroundColor ='yellow'
+      }
+   }else{
+      divOpt0.style.backgroundColor ='red'
+   }
+   oldDiv.appendChild(divOpt0)
+   
+}
 
 button.addEventListener('click', generateNumber)
 
@@ -31,25 +59,27 @@ function isPrime(n) {
    return true;
 }
 
+
 function generateNumber(){
+   let value = input.value
    let divOpt
 
-   if(!input.value){
+   if(!value){
       p.textContent ='Enter number value on the input field to generate numbers'
       input.value =''
-      //button.removeEventListener('click', generateNumber)
-   }else if(input.value.trim().match(/[A-z]/g)){
+   }else if(value.trim().match(/[A-z]/g)){
       p.textContent ='Input value must be number'
       input.value =''
-      //button.removeEventListener('click', generateNumber)
-   }else if(input.value.trim().match(/\d+/)){
+   }else if(value.trim().match(/\d+/)){
       p.textContent =''
-      for (let index = 0; index < input.value; index++) {
+      newDiv.innerHTML =''
+      input.value =''
+      for (let index = 0; index <value; index++) {
          divOpt = document.createElement('div')
          divOpt.style.textAlign ='center'
          divOpt.style.lineHeight= '75px'
          divOpt.style.fontSize= '30px'
-         divOpt.textContent +=index 
+         divOpt.textContent =index 
          if(isPrime(index) !=true){
             if(index%2==0){
                divOpt.style.backgroundColor ='green'
@@ -62,9 +92,8 @@ function generateNumber(){
          newDiv.appendChild(divOpt)
          
       }
-      input.value =''
-      
+     
+      div.replaceChild(newDiv, oldDiv)
    }
-  
-}
 
+}
