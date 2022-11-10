@@ -56,9 +56,11 @@ Day 19- Closure Exercises
 
 Day 20- Clean Code Exercises
 
-Day 21- Document Object Model(DOM) Exercises
+Day 21- Document Object Model(DOM) Day 1 Exercises
 
-Day 22- Document Object Model(DOM) Projects
+Day 22- Document Object Model(DOM) Day 2 Projects
+
+Day 23- Document Object Model(DOM) Day 3 Projects
 
 
 
