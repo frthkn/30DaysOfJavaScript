@@ -83,7 +83,7 @@ I am thankful to Asabeneh S. Yetayeh , and Tayfun Erbilen
 - https://github.com/Asabeneh/30-Days-Of-JavaScript
 - https://stackoverflow.com
 - https://javascript.info
-- https://www.w3schools.com/js/default.asp
+- https://www.w3schools.com
 - https://www.javascript.com/
 - https://www.geeksforgeeks.org/
 
