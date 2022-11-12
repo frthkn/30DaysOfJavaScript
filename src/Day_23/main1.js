@@ -55,6 +55,10 @@ for (let index = 0; index <= 50; index++) {
    
 }
 
+
+// add event listener to button
+
+
 button.addEventListener('click', generateNumber)
 
 function isPrime(n) {
@@ -69,6 +73,7 @@ function isPrime(n) {
    return true;
 }
 
+// create function for generate number
 
 function generateNumber(){
    let value = input.value
