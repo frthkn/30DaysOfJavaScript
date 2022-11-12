@@ -1,0 +1,91 @@
+body{
+    text-align: center;
+    background: -webkit-image-set('./img/galaxy.gif');
+    font-family: serif;
+    
+    
+}
+header{
+    padding: 5px 0 5px 0;
+}
+h1{
+    color: beige;
+    font-size: 40px;
+    text-shadow: #fff;
+    padding: 5px 0 35px 0;
+}
+img{
+  
+    margin: 10px 30px 10px 10px;
+   
+}
+
+input {
+    font-size: 20px;
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    height: 40px;
+}
+
+select {
+    font-size: 20px;
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    height: 50px;
+}
+
+button {
+    font-size: 20px;
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: gray;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    height: 50px;
+    color: white;
+}
+
+
+main{
+    display:flex;
+    margin: 20px 180px 10px 180px;
+    padding: 30px;
+    flex-flow: row;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.15);
+    
+
+    
+}
+.flex-container{
+    display: flex; 
+    place-items: center;
+    text-align: center;
+}
+
+#calc {
+    display: flex;
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: auto;
+    background-color:rgba(250, 235, 215, 0.15); 
+    flex-flow:column;
+    
+
+}
+
