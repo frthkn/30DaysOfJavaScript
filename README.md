@@ -62,6 +62,8 @@ Day 22- Document Object Model(DOM) Day 2 Projects
 
 Day 23- Document Object Model(DOM) Day 3 Projects
 
+Day 24- Document Object Model(DOM) Mini Project: Solar System 
+
 
 
 
