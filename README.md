@@ -66,6 +66,8 @@ Day 24- Document Object Model(DOM) Mini Project: Solar System
 
 Day 25- World Countries Data Visualization 
 
+Day 26- World Countries Data Visualization 2
+
 
 ## Author
 
