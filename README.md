@@ -68,7 +68,9 @@ Day 25- World Countries Data Visualization
 
 Day 26- World Countries Data Visualization 2
 
-Day 26- Portfolio
+Day 27-  Portfolio
+
+Day 28- Project Leaderboard
 
 
 ## Author
