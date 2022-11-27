@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Leaderboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>30 Days Of JavaScript Challenge Leaderboard</h1>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="First Name" class="firstName" id="inputText">
+            <input type="text" placeholder="Last Name" class="lastName" id="inputText">
+            <input type="text" placeholder="Country" class="country" id="inputText">
+            <input type="text" placeholder="Player Score" class="score" id="inputText">
+            <button type="submit" id="addPlayer">Add Player</button>
+        </div>
+        <div class="handleP">
+            <p></p>
+        </div>
+        <div class="players">
+            <div id="id">
+                <table>
+                    <thead>
+                        <tr id="playerHeader">
+                            <td id="name">Players</td>
+                            <td id="country">Country</td>
+                            <td id="scores">Score</td>
+                            <td id="btns">Trash/Plus/Minus</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="player1">
+                            <td class="name1" id="name">Hakan Fırat <br> <span class="date"
+                                    id="date1"></span> </td>
+                            <td id="country">Turkey</td>
+                            <td id="score">95</td>
+                            <td id="btns">
+                                <button class="fa fa-trash"
+                                    onclick="this.parentElement.parentElement.style.display = 'none';"></button>
+                                <button class="fa fa-plus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)+Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum">5</button>
+                                <button class="fa fa-minus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)-Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum">5</button>
+                            </td>
+                        </tr>
+
+                        <tr id="player2">
+                            <td class="name2" id="name">John Doe <br> <span class="date" id="date2"></span>
+                            </td>
+                            <td id="country">France</td>
+                            <td id="score">93</td>
+                            <td id="btns">
+                                <button class="fa fa-trash"
+                                    onclick="this.parentElement.parentElement.style.display = 'none';"></button>
+                                <button class="fa fa-plus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)+Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum ">5</button>
+                                <button class="fa fa-minus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)-Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum">5</button>
+                            </td>
+                        </tr>
+                        <tr id="player3">
+                            <td class="name3" id="name"> Maria Anders<br> <span class="date"
+                                    id="date3"></span> </td>
+                            <td id="country">Germany</td>
+                            <td id="score">90</td>
+                            <td id="btns">
+                                <button class="fa fa-trash"
+                                    onclick="this.parentElement.parentElement.style.display = 'none';"></button>
+                                <button class="fa fa-plus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)+Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum ">5</button>
+                                <button class="fa fa-minus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)-Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum">5</button>
+                            </td>
+                        </tr>
+                        <tr id="player4">
+                            <td class="name4" id="name">Roland Mendel <br><span class="date"
+                                    id="date4"></span></td>
+                            <td id="country">Sweden</td>
+                            <td id="score">85</td>
+                            <td id="btns">
+                                <button class="fa fa-trash"
+                                    onclick="this.parentElement.parentElement.style.display = 'none';"></button>
+                                <button class="fa fa-plus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)+Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum ">5</button>
+                                <button class="fa fa-minus"
+                                    onclick="const thisNum= this.parentElement.parentElement.children[2].innerHTML; let lastNum =Number(thisNum)-Number(5); this.parentElement.parentElement.children[2].innerHTML=lastNum ">5</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
+

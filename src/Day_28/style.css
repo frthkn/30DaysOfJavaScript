@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
+
+*{
+    font-family: 'PT Serif Caption', serif;
+}
+
+body{
+    margin: 1rem 22rem 1rem 22rem;
+}
+
+h1{
+    text-align: center;
+    margin: 3rem;
+    font-size: xx-large;
+}
+p{
+    text-align: center;
+    color: red;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#inputText,#addPlayer{
+    padding: 1rem;
+    width: 233px;
+    font-size: large;
+    border: solid dodgerblue;
+    border-radius: 10px;
+}
+#inputText:hover{
+    
+    background-color: forestgreen;
+}
+#addPlayer{
+    background-color: dodgerblue;
+    font-size: 23px;
+    font-weight: 500;
+    color: black;
+}
+
+#addPlayer:hover{
+    background-color: forestgreen;
+    border: solid forestgreen;
+    color: antiquewhite;
+}
+.inputs{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+}
+thead>tr>td{
+  
+    padding: 1rem;
+    margin: 15px;
+    font-size: x-large;
+    font-weight: 600;
+    
+}
+
+table{
+    text-align: justify;
+    position: relative;
+    width: 100%;
+    
+}
+ 
+.date{
+    font-size: x-small;
+}
+
+td{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid green;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size:large;
+    font-weight: bold;
+    background-color: dodgerblue;
+    
+}
+
+td>button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+   
+    
+}
+.fa:hover{
+    background-color: forestgreen;
+}
+.fa-trash{
+    color: brown;
+}
+
