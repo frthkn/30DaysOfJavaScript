@@ -72,6 +72,8 @@ Day 27-  Portfolio
 
 Day 28- Project Leaderboard
 
+Day 29- Project Animating Characters
+
 
 ## Author
 
