@@ -1,0 +1,57 @@
+
+
+header{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family:Georgia, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: seagreen;
+
+}
+
+h1{
+    text-align: center; 
+    margin: 0;
+    padding: 0; 
+    
+}
+
+
+.container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+}
+.container>div{
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+    background-color: #CBD18F;
+    border: solid #E3B448;
+    margin: 1.5rem auto;
+    
+}
+.btn{
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: seagreen;
+
+    
+}
+form{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+   
+}
+
+
