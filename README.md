@@ -74,6 +74,8 @@ Day 28- Project Leaderboard
 
 Day 29- Project Animating Characters
 
+Day 30- Projects Final
+
 
 ## Author
 
