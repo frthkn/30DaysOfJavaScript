@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.search{
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+input{
+
+    padding: 1rem;
+    width: 60rem;
+    border-radius: 30px;
+    text-align: left;
+    font-size: medium;
+    font-weight: 400;
+    border: solid gray;
+    color: green;
+}
+input:focus{
+    outline: none;
+}
+
+.img{
+    width: 100%;
+    width: 200px;
+    height: 120px;
+    background-color: aliceblue;
+    padding-top: 0.5rem;
+
+    
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    padding: 1.5rem;
+}
+.headerName{
+    color: green;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.inputCount{
+    color: green;
+    font-size: large;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+button{
+    width: 15rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family:'Franklin Gothic Medium', sans-serif;
+    
+}
+
+.btns>button>i{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#aTag{ 
+    color: green;
+    margin: 1rem;
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+#faChart{
+    font-size: 3rem;
+    color: green;
+    
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: rgb(224, 224, 224);
+    word-break: break-all;
+    
+
+}
+
+
+.itemChild{
+    text-align: center;
+    width: 280px;
+    height: 370px;
+    margin: 1.5rem;
+    padding-top: 1rem;
+    background-color: aliceblue;
+    border: solid green;
+
+    
+}
+
+.countryName{
+    color: green;
+    text-transform: uppercase;
+}
+
+.barBtns{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+.barBtnP{
+    font-size: larger;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+.bars{
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin:0;
+    background-color: rgb(224, 224, 224);
+    
+   
+}
+.bar{
+    display: flex;
+    height: 60px;
+    vertical-align: middle;
+    margin: 1rem 1.5rem;
+    
+    
+}
+.barSpace{
+    background-color:green;
+    max-width: 80%;   
+    margin-right: 1rem;
+}
+#cName{
+    display: grid;
+    align-items: center;
+    width: 12%;
+    min-width: 10%;
+    height: 60px;
+    margin: 0;
+    word-break: break-all;
+    
+    
+}
+#popNum{
+    display: grid;
+    align-items: center;
+}
+
+
+.footer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    background-color: rgb(224, 224, 224);
+    align-items: center;
+}
+.footer>p{
+    color:green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.footer>p, .footer>i{
+    
+    margin: 1rem;
+}
+#top{
+    font-size: 3rem;
+    color:green;
+    
+    padding: 1rem;
+}
