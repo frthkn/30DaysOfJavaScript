@@ -23,7 +23,7 @@ import {webTechs} from './web_techs.js'
 // let getMiddle = Math.floor(fiveNumbers.length/2)
 // console.log(fiveNumbers[0])
 // console.log(fiveNumbers[getMiddle])
-// console.log(fiveNumbers[6])
+// console.log(fiveNumbers[fiveNumbers.length])
 
 // 5- Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
